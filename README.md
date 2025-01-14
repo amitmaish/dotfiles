@@ -8,6 +8,6 @@ all the dotfiles for all of my things
 # usage
 clone the git repo to a directory of your choice, then run 
 
-'''
+```
 stow .
-'''
+```
