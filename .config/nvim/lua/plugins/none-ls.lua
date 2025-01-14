@@ -12,6 +12,9 @@ return {
 				-- python
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.isort,
+
+				-- rust
+				null_ls.builtins.formatting.dxfmt,
 			},
 		})
 
