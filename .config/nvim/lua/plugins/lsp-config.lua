@@ -35,6 +35,15 @@ return {
 			require("lspconfig").clangd.setup({
 				capabilities = capabilities,
 			})
+			require("lspconfig").rust_analyzer.setup({
+				settings = {
+					["rust-analyzer"] = {
+						diagnostics = {
+							enable = false,
+						},
+					},
+				},
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
