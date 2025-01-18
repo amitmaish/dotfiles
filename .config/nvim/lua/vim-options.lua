@@ -7,9 +7,13 @@ vim.wo.number = true
 vim.g.mapleader = ","
 
 vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("i", "kj", "<Esc>")
 
 vim.keymap.set("n", "<S-h>", "0")
 vim.keymap.set("n", "<S-l>", "$")
+
+vim.keymap.set("v", "<S-h>", "0")
+vim.keymap.set("v", "<S-l>", "$")
 
 -- Navigate vim panes better
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { silent = true })
