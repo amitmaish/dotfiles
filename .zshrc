@@ -45,5 +45,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # aliases
 alias ls='ls --color'
+alias vim='nvim'
+alias lazy='lazygit'
+
 
 eval "$(zoxide init zsh --cmd cd)"
