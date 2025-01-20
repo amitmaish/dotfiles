@@ -20,3 +20,15 @@ vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { silent = true })
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { silent = true })
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", { silent = true })
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", { silent = true })
+
+-- remember folds
+vim.api.nvim_create_autocmd({"BufWinLeave"}, {
+  pattern = {"*.*"},
+  desc = "save view (folds), when closing file",
+  command = "mkview",
+})
+vim.api.nvim_create_autocmd({"BufWinEnter"}, {
+  pattern = {"*.*"},
+  desc = "load view (folds), when opening file",
+  command = "silent! loadview"
+})
