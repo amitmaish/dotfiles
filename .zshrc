@@ -59,3 +59,5 @@ function y() {
 }
 
 eval "$(zoxide init zsh --cmd cd)"
+
+. "$HOME/.local/bin/env"

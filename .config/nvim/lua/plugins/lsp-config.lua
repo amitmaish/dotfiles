@@ -35,6 +35,7 @@ return {
 			require("lspconfig").clangd.setup({
 				capabilities = capabilities,
 			})
+			require'lspconfig'.pyright.setup{}
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
