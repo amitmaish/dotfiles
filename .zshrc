@@ -48,6 +48,7 @@ alias ls='ls --color'
 alias vim='nvim'
 alias lazy='lazygit'
 alias python='python3'
+alias ta='tmux attach'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
