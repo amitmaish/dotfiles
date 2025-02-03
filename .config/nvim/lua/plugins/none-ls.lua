@@ -9,9 +9,13 @@ return {
 				-- lua
 				null_ls.builtins.formatting.stylua,
 
+				-- prose
+				-- null_ls.builtins.diagnostics.cspell,
+				null_ls.builtins.diagnostics.proselint,
+
 				-- python
 				null_ls.builtins.formatting.black,
-				null_ls.builtins.formatting.isort,
+				null_ls.builtins.diagnostics.pylint,
 
 				-- rust
 				null_ls.builtins.formatting.dxfmt,

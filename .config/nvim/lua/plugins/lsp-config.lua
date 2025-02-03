@@ -20,22 +20,26 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
-			lspconfig.ts_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.solargraph.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.html.setup({
-				capabilities = capabilities,
-			})
 			require("lspconfig").lua_ls.setup({
 				capabilities = capabilities,
+				filetypes = { "lua" },
 			})
 			require("lspconfig").clangd.setup({
 				capabilities = capabilities,
+				filetypes = { "c", "cpp", "h", "hpp" },
 			})
-			require'lspconfig'.pyright.setup{}
+			-- require("lspconfig").pyright.setup({
+			-- 	capabilities = capabilities,
+			-- 	filetypes = { "python" },
+			-- })
+			require("lspconfig").jedi_language_server.setup({
+				capabilities = capabilities,
+				filetypes = { "python" },
+			})
+			require("lspconfig").typos_lsp.setup({
+				capabilities = capabilities,
+				filetypes = { "text", "markdown", "latex" },
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
