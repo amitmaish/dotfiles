@@ -19,7 +19,6 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			local lspconfig = require("lspconfig")
 			require("lspconfig").lua_ls.setup({
 				capabilities = capabilities,
 				filetypes = { "lua" },
@@ -46,6 +45,7 @@ return {
 			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
+			vim.keymap.set("n", "<leader>qf", vim.diagnostic.setqflist, {})
 			-- vim.keymap.set("n", "<C- >", vim.lsp.completion.trigger, {select = true})
 		end,
 	},

@@ -21,7 +21,7 @@ vim.keymap.set("n", "<S-l>", "$")
 vim.keymap.set("v", "<S-h>", "^")
 vim.keymap.set("v", "<S-l>", "$")
 
-vim.keymap.set("n", "<Leader>ch", ":noh<CR>")
+vim.keymap.set("n", "<leader>ch", ":noh<CR>")
 
 -- Navigate vim panes better
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { silent = true })
