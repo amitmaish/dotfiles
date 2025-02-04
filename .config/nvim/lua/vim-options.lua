@@ -23,6 +23,9 @@ vim.keymap.set("v", "<S-l>", "$")
 
 vim.keymap.set("n", "<leader>ch", ":noh<CR>")
 
+vim.keymap.set("n", "<D-s>", ":w<CR>")
+vim.keymap.set("i", "<D-s>", "<Esc>:w<CR>a")
+
 -- Navigate vim panes better
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", { silent = true })
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", { silent = true })
