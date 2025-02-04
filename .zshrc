@@ -36,6 +36,9 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# completions
+bindkey '^I' autosuggest-accept  # tab  | autosuggest
+
 # completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -48,6 +51,7 @@ alias ls='ls --color'
 alias vim='nvim'
 alias lazy='lazygit'
 alias python='python3'
+alias tm='tmux'
 alias ta='tmux attach'
 
 function y() {
