@@ -11,7 +11,6 @@ return {
 
 				-- prose
 				-- null_ls.builtins.diagnostics.cspell,
-				null_ls.builtins.diagnostics.proselint,
 
 				-- python
 				null_ls.builtins.formatting.black,
