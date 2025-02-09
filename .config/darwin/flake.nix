@@ -36,7 +36,6 @@
 						pkgs.oh-my-posh
 						pkgs.python3
 						pkgs.rustup
-						pkgs.stow
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.uv
@@ -53,15 +52,12 @@
 						"mas"
 					];
 				casks = [
-						"firefox"
+						# "firefox"
 					];
 				masApps = {
 						"forScore" = 363738376;
-						"hotkey" = 975890633;
 					};
 				onActivation.cleanup = "zap";
-				onActivation.autoUpdate = true;
-				onActivation.upgrade = true;
 			};
 
 			# fonts.packages = [
