@@ -35,6 +35,7 @@ return {
 				capabilities = capabilities,
 				filetypes = { "python" },
 			})
+			require("lspconfig").nil_ls.setup({ capabilities = capabilities })
 			require("lspconfig").typos_lsp.setup({
 				capabilities = capabilities,
 				filetypes = { "text", "markdown", "latex" },
