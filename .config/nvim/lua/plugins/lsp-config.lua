@@ -23,19 +23,25 @@ return {
 				capabilities = capabilities,
 				filetypes = { "lua" },
 			})
+
 			require("lspconfig").clangd.setup({
 				capabilities = capabilities,
 				filetypes = { "c", "cpp", "h", "hpp" },
 			})
+
 			-- require("lspconfig").pyright.setup({
 			-- 	capabilities = capabilities,
 			-- 	filetypes = { "python" },
 			-- })
+			--
 			require("lspconfig").jedi_language_server.setup({
 				capabilities = capabilities,
 				filetypes = { "python" },
 			})
+
 			require("lspconfig").nil_ls.setup({ capabilities = capabilities })
+			require("lspconfig").rnix.setup({ capabilities = capabilities })
+
 			require("lspconfig").typos_lsp.setup({
 				capabilities = capabilities,
 				filetypes = { "text", "markdown", "latex" },
