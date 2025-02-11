@@ -21,6 +21,7 @@
             pkgs.anki-bin
             pkgs.cmake
             pkgs.discord
+						pkgs.discordo
             pkgs.ffmpeg
             pkgs.fzf
             pkgs.go
