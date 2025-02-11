@@ -65,9 +65,6 @@
             "vlc"
           ];
           masApps = {
-            "affinity designer" = 1616831348;
-            "affinity photo" = 1616822987;
-            "affinity publisher" = 1606941598;
             "compressor" = 424390742;
             "final cut" = 424389933;
             "forScore" = 363738376;
