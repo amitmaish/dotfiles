@@ -36,7 +36,7 @@
             pkgs.nodejs
             pkgs.nerd-fonts.jetbrains-mono
             pkgs.oh-my-posh
-						pkgs.openssl
+						# pkgs.openssl
             pkgs.poetry
             pkgs.python3
             pkgs.rustup
@@ -56,6 +56,7 @@
           brews = [
             "kanata"
             "mas"
+						"openssl"
           ];
           casks = [
             "dorico"
