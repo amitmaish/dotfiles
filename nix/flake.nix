@@ -36,6 +36,7 @@
             pkgs.nodejs
             pkgs.nerd-fonts.jetbrains-mono
             pkgs.oh-my-posh
+						pkgs.openssl
             pkgs.poetry
             pkgs.python3
             pkgs.rustup
