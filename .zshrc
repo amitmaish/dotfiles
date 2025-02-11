@@ -53,7 +53,7 @@ alias lazy='lazygit'
 alias python='python3'
 alias tm='tmux'
 alias ta='tmux attach'
-alias drs='darwin-rebuild switch --flake /Users/amit/nix/'
+alias drs='darwin-rebuild switch --flake /Users/amit/dotfiles/nix/'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
