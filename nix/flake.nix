@@ -62,6 +62,8 @@
             "dorico"
             "firefox"
             "handbrake"
+						"steinberg-activation-manager"
+						"steinberg-download-assistant"
             "obs"
             "parsec"
             "plover"
