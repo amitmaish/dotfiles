@@ -25,13 +25,13 @@
             pkgs.ffmpeg
             pkgs.fzf
             pkgs.go
+						pkgs.hyfetch
             pkgs.kitty
             pkgs.lazygit
             pkgs.lua
             pkgs.luarocks-nix
             pkgs.mkalias
             pkgs.miru
-            pkgs.neofetch
             pkgs.neovim
             pkgs.nodejs
             pkgs.nerd-fonts.jetbrains-mono
