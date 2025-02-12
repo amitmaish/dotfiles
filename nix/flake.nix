@@ -19,6 +19,7 @@
         environment.systemPackages =
           [
             pkgs.anki-bin
+						pkgs.bat
             pkgs.cmake
             pkgs.discord
 						pkgs.discordo
