@@ -12,7 +12,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # turn on Oh My Posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config 'https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/catppuccin.omp.json')" 
+  eval "$(oh-my-posh init zsh --config ~/oh-my-posh.toml)" 
 fi
 
 # add in zsh plugins
