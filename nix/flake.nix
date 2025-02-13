@@ -55,7 +55,7 @@
         homebrew = {
           enable = true;
           brews = [
-            # "kanata"
+            "kanata"
             "mas"
 						"openssl"
           ];
@@ -63,7 +63,7 @@
             "dorico"
             "firefox"
             "handbrake"
-						"karabiner-elements"
+						# "karabiner-elements"
 						"kitty"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
