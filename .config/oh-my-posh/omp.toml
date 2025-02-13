@@ -30,6 +30,7 @@ alignment = "left"
 	trailing_diamond = ""
 	background = "p:blue"
 	foreground = "p:text"
+	template = "{{ if .SSHSession }} {{ end }}{{ .UserName }}@{{ .HostName }}"
 
 	[[blocks.segments]]
 	type = "path"
