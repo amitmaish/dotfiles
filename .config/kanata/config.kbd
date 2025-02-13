@@ -1,13 +1,18 @@
 ;; kanata configuration for caps to esc+ctrl
 
-(defcfg process-unmapped-keys yes)
+(defcfg
+  macos-dev-names-exclude (
+    "MX Master"
+  )
+	process-unmapped-keys yes
+)
 
 (defsrc
 	caps
 )
 
 (defalias
-	escctrl (tap-hold 100 100 esc lctrl)
+	escctrl (tap-hold-press 100 100 esc lctrl)
 )
 
 (deflayer base
