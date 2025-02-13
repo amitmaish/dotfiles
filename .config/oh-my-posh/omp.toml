@@ -20,12 +20,14 @@ alignment = "left"
 	background = "p:blue"
 	foreground = "p:wight"
 	leading_diamond = "\ue0b6"
-	trailing_diamond = "\ue0b4"
+	trailing_diamond = ""
 	template = "{{.Icon}} "
 
 	[[blocks.segments]]
 	type = "session"
 	style = "diamond"
+	leading_diamond = ""
+	trailing_diamond = ""
 	background = "p:blue"
 	foreground = "p:text"
 
@@ -35,7 +37,7 @@ alignment = "left"
 	powerline_symbol = "\ue0b4"
 	background = "p:pink"
 	foreground = "p:text"
-	template = " {{ .Path }}"
+	template = " {{.Path}}"
 
 		[blocks.segments.properties]
 	   folder_icon = "..\ue5fe.."
@@ -45,7 +47,7 @@ alignment = "left"
 	type = "git"
 	style = "powerline"
 	powerline_symbol = "\ue0b4"
-	template = " {{ .HEAD }}"
+	template = " {{.HEAD}}"
 	background = "p:lavender"
 	foreground = "p:text"
 
