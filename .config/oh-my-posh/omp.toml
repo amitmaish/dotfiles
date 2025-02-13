@@ -41,7 +41,7 @@ alignment = "left"
 	template = " {{.Path}}"
 
 		[blocks.segments.properties]
-	   folder_icon = "..\ue5fe.."
+	   folder_icon = "\ue5fe"
 	   style = "agnoster_short"
 
 	[[blocks.segments]]
