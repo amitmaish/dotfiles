@@ -18,36 +18,36 @@ alignment = "left"
 	type = "os"
 	style = "diamond"
 	background = "p:blue"
-	 foreground = "p:wight"
-	 leading_diamond = "\ue0b6"
-	 trailing_diamond = "\ue0b4"
-	 template = "{{.Icon}} "
+	foreground = "p:wight"
+	leading_diamond = "\ue0b6"
+	trailing_diamond = "\ue0b4"
+	template = "{{.Icon}} "
 
 	[[blocks.segments]]
-	 type = "session"
+	type = "session"
 	style = "diamond"
 	background = "p:blue"
 	foreground = "p:text"
 
 	[[blocks.segments]]
-	 type = "path"
-	 style = "powerline"
-	 powerline_symbol = "\ue0b4"
-	 background = "p:pink"
-	 foreground = "p:text"
-	 template = " {{ .Path }}"
+	type = "path"
+	style = "powerline"
+	powerline_symbol = "\ue0b4"
+	background = "p:pink"
+	foreground = "p:text"
+	template = " {{ .Path }}"
 
-	   [blocks.segments.properties]
+		[blocks.segments.properties]
 	   folder_icon = "..\ue5fe.."
 	   style = "agnoster_short"
 
 	[[blocks.segments]]
 	type = "git"
-	 style = "powerline"
+	style = "powerline"
 	powerline_symbol = "\ue0b4"
 	template = " {{ .HEAD }}"
-	 background = "p:lavender"
-	 foreground = "p:text"
+	background = "p:lavender"
+	foreground = "p:text"
 
 		[properties]
 		branch_icon = "\ue725 "
