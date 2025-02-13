@@ -1,6 +1,9 @@
 # set the directory we want to store zinint and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zint.git"
 
+VISUAL=nvim
+EDITOR=nvim
+
 # download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
 	makedir -p "$(dirname $ZINIT_HOME)"
