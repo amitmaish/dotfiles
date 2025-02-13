@@ -55,7 +55,8 @@
         homebrew = {
           enable = true;
           brews = [
-            "kanata"
+            # "kanata"
+						"karabiner-elements"
             "mas"
 						"openssl"
           ];
