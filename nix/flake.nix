@@ -21,6 +21,7 @@
             pkgs.anki-bin
 						pkgs.bat
             pkgs.cmake
+						pkgs.cron
             pkgs.discord
 						pkgs.discordo
             pkgs.ffmpeg
