@@ -56,7 +56,6 @@
           enable = true;
           brews = [
             # "kanata"
-						"karabiner-elements"
             "mas"
 						"openssl"
           ];
@@ -64,6 +63,7 @@
             "dorico"
             "firefox"
             "handbrake"
+						"karabiner-elements"
 						"kitty"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
