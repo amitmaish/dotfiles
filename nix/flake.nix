@@ -27,7 +27,7 @@
             pkgs.fzf
             pkgs.go
 						pkgs.hyfetch
-            pkgs.kitty
+            # pkgs.kitty
             pkgs.lazygit
             pkgs.lua
             pkgs.luarocks-nix
@@ -63,6 +63,7 @@
             "dorico"
             "firefox"
             "handbrake"
+						"kitty"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
             "obs"
