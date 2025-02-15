@@ -4,5 +4,5 @@
 
 --ddefault keymap
 vim.keymap.set("i", "jk", "<esc>")
-vim.keymap.set("n", "H", "^")
-vim.keymap.set("n", "L", "$")
+vim.keymap.set({ "n", "v" }, "H", "^")
+vim.keymap.set({ "n", "v" }, "L", "$")
