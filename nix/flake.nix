@@ -21,6 +21,7 @@
 						pkgs.anki-bin
 						pkgs.bat
 						pkgs.cmake
+            pkgs.cmatrix
 						# pkgs.cron
 						pkgs.discord
 						pkgs.discordo
