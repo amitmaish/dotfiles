@@ -20,6 +20,7 @@
 					[
 						pkgs.anki-bin
 						pkgs.bat
+            pkgs.cbonsai
 						pkgs.cmake
             pkgs.cmatrix
 						# pkgs.cron
