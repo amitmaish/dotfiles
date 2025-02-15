@@ -9,5 +9,3 @@ vim.opt.relativenumber = false
 vim.g.snacks_animate = false
 
 vim.opt.cursorline = false
-
-vim.opt.expandtab = false
