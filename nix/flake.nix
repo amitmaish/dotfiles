@@ -29,7 +29,7 @@
 						pkgs.ffmpeg
             pkgs.figlet
 						pkgs.fzf
-            pkgs.libgcc
+            pkgs.gcc
 						pkgs.go
 						pkgs.hyfetch
 						# pkgs.kitty
