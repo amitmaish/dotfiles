@@ -25,6 +25,7 @@
 						pkgs.discord
 						pkgs.discordo
 						pkgs.ffmpeg
+            pkgs.figlet
 						pkgs.fzf
 						pkgs.go
 						pkgs.hyfetch
