@@ -19,6 +19,7 @@
 				environment.systemPackages =
 					[
 						pkgs.anki-bin
+            pkgs.ast-grep
 						pkgs.bat
             pkgs.cbonsai
 						pkgs.cmake
@@ -26,6 +27,7 @@
 						# pkgs.cron
 						pkgs.discord
 						pkgs.discordo
+            pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
 						pkgs.fzf
@@ -43,8 +45,10 @@
 						pkgs.nerd-fonts.jetbrains-mono
 						pkgs.oh-my-posh
 						# pkgs.openssl
+            pkgs.php
 						pkgs.poetry
 						pkgs.python3
+            pkgs.ripgrep
 						pkgs.rustup
 						pkgs.stow
 						pkgs.tmux
