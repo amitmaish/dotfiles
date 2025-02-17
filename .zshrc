@@ -1,8 +1,8 @@
 # set the directory we want to store zinint and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zint.git"
 
-VISUAL=nvim
-EDITOR=nvim
+VISUAL=vim
+EDITOR=vim
 
 # download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -22,9 +22,26 @@ fi
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Add in snippets
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::aws
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::kubectx
+zinit snippet OMZP::command-not-found
 
 # load completions
 autoload -U compinit && compinit
+
+# completions
+bindkey -e
+bindkey '^ ' forward-word
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
 
 # history
 HISTSIZE=5000
@@ -38,9 +55,6 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
-
-# completions
-bindkey '^I' autosuggest-accept  # tab  | autosuggest
 
 # completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -67,6 +81,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# shell integrations
+eval "$(fzf --zsh)"
 eval "$(zoxide init zsh --cmd cd)"
 
 . "$HOME/.local/bin/env"
