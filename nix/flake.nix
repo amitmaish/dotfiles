@@ -34,6 +34,7 @@
             # pkgs.gcc
 						pkgs.go
 						pkgs.hyfetch
+            pkgs.imagemagick
 						# pkgs.kitty
 						pkgs.lazygit
 						pkgs.lua
