@@ -11,7 +11,9 @@ all the dotfiles for all of my things
 
 ## installation
 
-first install nix by running
+first, clone this git repo to ~/dotfiles/
+
+install the nix package manager by running
 
 ``` sh
 sh <(curl -L https://nixos.org/nix/install)
@@ -23,7 +25,7 @@ then install nix-darwin by running:
 nix run nix-darwin/master#darwin-rebuild -- switch
 ```
 
-clone this git repo to ~/dotfiles/, then run:
+finally run stow in the dotfiles directory to ensure all dotfiles are up to date:
 
 ``` sh
 stow .
@@ -35,5 +37,5 @@ to update your system when this repository changes, make sure the local reposito
 
 ``` sh
 drs    # aliased to darwin-rebuild switch, will update all packages and system settings
-stow . #ensures that all dotfiles are up to date
+stow . # ensures that all dotfiles are up to date
 ```
