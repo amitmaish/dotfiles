@@ -20,6 +20,7 @@
 					[
 						pkgs.anki-bin
             pkgs.ast-grep
+            pkgs.atkinson-hyperlegible
 						pkgs.bat
             pkgs.cbonsai
 						pkgs.cmake
