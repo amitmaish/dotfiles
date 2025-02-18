@@ -133,7 +133,10 @@
             "/Applications/Dorico\ 5.app"
             "/System/Applications/Music.app"
           ];
+          finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "clmv";
+          finder.ShowExternalHardDrivesOnDesktop = false;
+          finder.ShowMountedServersOnDesktop = false;
           loginwindow.GuestEnabled = false;
           NSGlobalDomain.AppleInterfaceStyle = "Dark";
           NSGlobalDomain.AppleShowAllExtensions = true;
