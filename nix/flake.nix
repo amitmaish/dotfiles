@@ -22,6 +22,7 @@
             pkgs.ast-grep
             pkgs.atkinson-hyperlegible
 						pkgs.bat
+            pkgs.bibdesk
             pkgs.cbonsai
 						pkgs.cmake
             pkgs.cmatrix
