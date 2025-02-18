@@ -119,6 +119,21 @@
 												done
 											'';
 
+        system.defaults = {
+          dock.persistent-apps = [
+            "~/Applications/Launchpad.app"
+            "~/Applications/Messages.app"
+            "${pkgs.discord}/Applications/Discord.app"
+            "~/Applications/kitty.app"
+            "~/Applications/Firefox.app"
+            "~/Applications/Calendar.app"
+            "~/Applications/Reaper.app"
+            "~/Applications/Ableton Live 11 Suite.app"
+            "~/Applications/Dorico 5.app"
+            "~/Applications/Music.app"
+          ];
+        };
+
 				# Necessary for using flakes on this system.
 				nix.settings.experimental-features = "nix-command flakes";
 
