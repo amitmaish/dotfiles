@@ -121,17 +121,24 @@
 
         system.defaults = {
           dock.persistent-apps = [
-            "~/Applications/Launchpad.app"
-            "~/Applications/Messages.app"
+            "/System/Applications/Launchpad.app"
+            "/System/Applications/Messages.app"
             "${pkgs.discord}/Applications/Discord.app"
-            "~/Applications/kitty.app"
-            "~/Applications/Firefox.app"
-            "~/Applications/Calendar.app"
-            "~/Applications/Reaper.app"
-            "~/Applications/Ableton Live 11 Suite.app"
-            "~/Applications/Dorico 5.app"
-            "~/Applications/Music.app"
+            "/Applications/kitty.app"
+            "/Applications/Firefox.app"
+            "/System/Applications/Calendar.app"
+            "/Applications/Pianoteq 8/Pianoteq 8.app"
+            "/Applications/Reaper.app"
+            "/Applications/Ableton\ Live\ 11\ Suite.app"
+            "/Applications/Dorico\ 5.app"
+            "/System/Applications/Music.app"
           ];
+          finder.FXPreferredViewStyle = "clmv";
+          loginwindow.GuestEnabled = false;
+          NSGlobalDomain.AppleInterfaceStyle = "Dark";
+          NSGlobalDomain.AppleShowAllExtensions = true;
+          NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
+          NSGlobalDomain.KeyRepeat = 2;
         };
 
 				# Necessary for using flakes on this system.
