@@ -75,7 +75,7 @@
 						"dorico"
 						"firefox"
 						"handbrake"
-						"karabiner-elements"
+						# "karabiner-elements"
 						"kitty"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
