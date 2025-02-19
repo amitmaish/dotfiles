@@ -56,6 +56,7 @@
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.uv
+            pkgs.wget
 						pkgs.whatsapp-for-mac
 						pkgs.yazi
 						pkgs.yt-dlp
