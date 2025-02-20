@@ -78,6 +78,7 @@
 						"handbrake"
 						# "karabiner-elements"
 						"kitty"
+            "shortcat"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
 						"obs"
