@@ -22,6 +22,7 @@
             pkgs.ast-grep
             pkgs.atkinson-hyperlegible
 						pkgs.bat
+            pkgs.cargo
             pkgs.cbonsai
 						pkgs.cmake
             pkgs.cmatrix
@@ -33,6 +34,7 @@
             pkgs.figlet
 						pkgs.fzf
             # pkgs.gcc
+            pkgs.gh
 						pkgs.go
 						pkgs.hyfetch
             pkgs.imagemagick
@@ -50,6 +52,7 @@
             pkgs.php
 						pkgs.poetry
 						pkgs.python3
+            pkgs.qmk
             pkgs.ripgrep
 						pkgs.rustup
 						pkgs.stow
