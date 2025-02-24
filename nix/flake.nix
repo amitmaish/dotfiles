@@ -84,6 +84,7 @@
 						"obs"
 						"parsec"
 						"plover"
+            "qmk-toolbox"
 						"vlc"
 					];
 					masApps = {
