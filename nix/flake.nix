@@ -22,7 +22,7 @@
             pkgs.ast-grep
             pkgs.atkinson-hyperlegible
 						pkgs.bat
-            pkgs.cargo
+            pkgs.cargo-bundle
             pkgs.cbonsai
 						pkgs.cmake
             pkgs.cmatrix
@@ -55,6 +55,7 @@
             pkgs.qmk
             pkgs.ripgrep
 						pkgs.rustup
+            pkgs.sendme
 						pkgs.stow
 						pkgs.tmux
 						pkgs.transmission_4
