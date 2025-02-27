@@ -5,8 +5,6 @@
 vim.g.mapleader = ","
 vim.g.maplocalleader = ";"
 
-vim.opt.relativenumber = false
-
 vim.g.snacks_animate = false
 
 vim.opt.cursorline = false
