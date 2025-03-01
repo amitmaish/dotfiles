@@ -26,19 +26,16 @@
             pkgs.cbonsai
 						pkgs.cmake
             pkgs.cmatrix
-						# pkgs.cron
 						pkgs.discord
 						pkgs.discordo
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
 						pkgs.fzf
-            # pkgs.gcc
             pkgs.gh
 						pkgs.go
 						pkgs.hyfetch
             pkgs.imagemagick
-						# pkgs.kitty
 						pkgs.lazygit
 						pkgs.lua
 						pkgs.luarocks-nix
@@ -48,7 +45,6 @@
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
 						pkgs.oh-my-posh
-						# pkgs.openssl
             pkgs.php
 						pkgs.poetry
 						pkgs.python3
@@ -80,7 +76,6 @@
 						"dorico"
 						"firefox"
 						"handbrake"
-						# "karabiner-elements"
 						"kitty"
             "shortcat"
 						"steinberg-activation-manager"
