@@ -40,6 +40,7 @@
 						pkgs.lua
 						pkgs.luarocks-nix
 						pkgs.mkalias
+            pkgs.minecraft
 						pkgs.miru
 						pkgs.neovim
 						pkgs.nodejs
@@ -47,6 +48,7 @@
 						pkgs.oh-my-posh
             pkgs.php
 						pkgs.poetry
+            pkgs.prismlauncher
 						pkgs.python3
             pkgs.qmk
             pkgs.ripgrep
