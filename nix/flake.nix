@@ -40,7 +40,6 @@
 						pkgs.lua
 						pkgs.luarocks-nix
 						pkgs.mkalias
-            pkgs.minecraft
 						pkgs.miru
 						pkgs.neovim
 						pkgs.nodejs
