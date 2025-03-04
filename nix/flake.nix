@@ -29,6 +29,7 @@
 						pkgs.discord
 						pkgs.discordo
             pkgs.docker
+            pkgs.docker-compose
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
