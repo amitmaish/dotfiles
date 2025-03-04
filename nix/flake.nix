@@ -28,6 +28,7 @@
             pkgs.cmatrix
 						pkgs.discord
 						pkgs.discordo
+            pkgs.docker
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
