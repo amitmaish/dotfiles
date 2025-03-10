@@ -5,7 +5,7 @@
 vim.g.mapleader = ","
 vim.g.maplocalleader = ";"
 
-vim.g.expandtab = false
+vim.o.expandtab = false
 
 vim.g.snacks_animate = false
 
