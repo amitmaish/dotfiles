@@ -28,8 +28,6 @@
             pkgs.cmatrix
 						pkgs.discord
 						pkgs.discordo
-            pkgs.docker
-            pkgs.docker-compose
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
@@ -76,6 +74,7 @@
 					];
 					casks = [
             "bibdesk"
+            "docker"
 						"dorico"
 						"firefox"
 						"handbrake"
