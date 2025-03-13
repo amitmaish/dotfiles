@@ -73,6 +73,7 @@
 						"openssl"
 					];
 					casks = [
+						"arduino-cli"
             "bibdesk"
             "docker"
 						"dorico"
