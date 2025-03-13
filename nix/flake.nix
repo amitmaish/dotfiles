@@ -19,6 +19,8 @@
 				environment.systemPackages =
 					[
 						pkgs.anki-bin
+						pkgs.arduino-cli
+						pkgs.arduino-language-server
             pkgs.ast-grep
             pkgs.atkinson-hyperlegible
 						pkgs.bat
@@ -73,8 +75,8 @@
 						"openssl"
 					];
 					casks = [
-						"arduino-cli"
             "bibdesk"
+						"clangd"
             "docker"
 						"dorico"
 						"firefox"
