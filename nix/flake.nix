@@ -76,7 +76,6 @@
 					];
 					casks = [
             "bibdesk"
-						"clangd"
             "docker"
 						"dorico"
 						"firefox"
