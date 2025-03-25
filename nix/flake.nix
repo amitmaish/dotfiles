@@ -28,6 +28,7 @@
             pkgs.cbonsai
 						pkgs.cmake
             pkgs.cmatrix
+						pkgs.direnv
 						pkgs.discord
 						pkgs.discordo
             pkgs.fd
@@ -53,14 +54,14 @@
 						pkgs.python3
             pkgs.qmk
             pkgs.ripgrep
-						pkgs.rustup
+						# pkgs.rustup
             pkgs.sendme
 						pkgs.stow
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.uv
             pkgs.wget
-						pkgs.whatsapp-for-mac
+						# pkgs.whatsapp-for-mac
 						pkgs.yazi
 						pkgs.yt-dlp
 						pkgs.zoom-us
