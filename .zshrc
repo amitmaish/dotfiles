@@ -84,5 +84,6 @@ function y() {
 # shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh --cmd cd)"
+eval "$(direnv hook zsh)"
 
 . "$HOME/.local/bin/env"
