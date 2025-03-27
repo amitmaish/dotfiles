@@ -25,10 +25,10 @@ then install nix-darwin by running:
 nix run nix-darwin/master#darwin-rebuild -- switch
 ```
 
-finally run stow in the dotfiles directory to ensure all dotfiles are up to date:
+finally run stow in the dotfiles directory for each app you want to manage from this directory
 
 ``` sh
-stow .
+stow <app name>
 ```
 
 ## updating
@@ -36,6 +36,6 @@ stow .
 to update your system when this repository changes, make sure the local repository is up to date and run:
 
 ``` sh
-drs    # aliased to darwin-rebuild switch, will update all packages and system settings
-stow . # ensures that all dotfiles are up to date
+drs              # aliased to darwin-rebuild switch, will update all packages and system settings, run to update system
+stow <app name>  # ensures that all dotfiles are up to date, run to update an app
 ```
