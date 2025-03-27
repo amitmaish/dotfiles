@@ -6,7 +6,7 @@ return {
 			---@type lspconfig.options
 			servers = {
 				-- arduino_language_server = {},
-				glslls = {},
+				-- glslls = {},
 			},
 			inlay_hints = { enabled = false },
 		},
