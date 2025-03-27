@@ -85,6 +85,7 @@
             "shortcat"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
+						"tailscale"
 						"obs"
 						"parsec"
 						"plover"
