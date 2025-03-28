@@ -49,7 +49,6 @@
 						pkgs.nerd-fonts.jetbrains-mono
 						pkgs.oh-my-posh
             pkgs.php
-						pkgs.plugdata
 						pkgs.poetry
             pkgs.prismlauncher
 						pkgs.python3
@@ -90,6 +89,7 @@
 						"obs"
 						"parsec"
 						"plover"
+						"plugdata"
             "qmk-toolbox"
 						"vlc"
 					];
