@@ -56,6 +56,7 @@
             pkgs.ripgrep
 						# pkgs.rustup
             pkgs.sendme
+						pkgs.starship
 						pkgs.stow
 						pkgs.tmux
 						pkgs.transmission_4
@@ -69,7 +70,7 @@
 					];
 
 				homebrew = {
-					enable = true;
+					enable = false;
 					brews = [
 						"kanata"
 						"mas"
