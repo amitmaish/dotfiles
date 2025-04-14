@@ -47,14 +47,12 @@
 						pkgs.neovim
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
-						pkgs.oh-my-posh
             pkgs.php
 						pkgs.poetry
             pkgs.prismlauncher
 						pkgs.python3
             pkgs.qmk
             pkgs.ripgrep
-						# pkgs.rustup
             pkgs.sendme
 						pkgs.starship
 						pkgs.stow
@@ -62,7 +60,6 @@
 						pkgs.transmission_4
 						pkgs.uv
             pkgs.wget
-						# pkgs.whatsapp-for-mac
 						pkgs.yazi
 						pkgs.yt-dlp
 						pkgs.zoom-us
