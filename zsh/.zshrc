@@ -15,7 +15,6 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # turn on Oh My Posh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  # eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/omp.toml)" 
 	eval "$(starship init zsh)"
 fi
 
