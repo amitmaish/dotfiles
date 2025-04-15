@@ -67,7 +67,7 @@
 					];
 
 				homebrew = {
-					enable = false;
+					enable = true;
 					brews = [
 						"kanata"
 						"mas"
@@ -91,15 +91,15 @@
             "qmk-toolbox"
 						"vlc"
 					];
-					masApps = {
-						"compressor" = 424390742;
-						"final cut" = 424389933;
-						"forScore" = 363738376;
-						"hotkey" = 975890633;
-						"logic" = 634148309;
-						"motion" = 434290957;
-						"xcode" = 497799835;
-					};
+					# masApps = {
+					# 	"compressor" = 424390742;
+					# 	"final cut" = 424389933;
+					# 	"forScore" = 363738376;
+					# 	"hotkey" = 975890633;
+					# 	"logic" = 634148309;
+					# 	"motion" = 434290957;
+					# 	"xcode" = 497799835;
+					# };
 					onActivation.cleanup = "zap";
 					onActivation.autoUpdate = true;
 					onActivation.upgrade = true;
