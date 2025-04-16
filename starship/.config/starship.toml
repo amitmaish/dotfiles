@@ -3,7 +3,7 @@ format = """
 $os\
 $nix_shell\
 $username\
-[](bg:red fg:mauve)\
+[◗](bg:red fg:mauve)\
 $directory\
 [](fg:red bg:pink)\
 $git_branch\
@@ -71,7 +71,7 @@ topaz = "#d0d010"
 show_always = true
 style_user = "bg:mauve fg:base"
 style_root = "bg:mauve"
-format = '[$user ]($style)'
+format = '[$user]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
