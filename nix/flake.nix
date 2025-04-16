@@ -26,6 +26,7 @@
 						pkgs.bat
             pkgs.cargo-bundle
             pkgs.cbonsai
+						pkgs.clang-tools
 						pkgs.cmake
             pkgs.cmatrix
 						pkgs.direnv
