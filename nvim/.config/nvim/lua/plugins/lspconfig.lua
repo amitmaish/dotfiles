@@ -1,15 +1,13 @@
 return {
 	{
 		"neovim/nvim-lspconfig",
-		---@class PluginLspOpts
 		opts = {
-			---@type lspconfig.options
 			servers = {
-				-- arduino_language_server = {},
-				-- glslls = {},
+				arduino_language_server = {},
 				clangd = {
 					mason = false,
 				},
+				wgsl_analyzer = {},
 			},
 			inlay_hints = { enabled = false },
 		},
