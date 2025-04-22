@@ -79,6 +79,7 @@
             "docker"
 						"dorico"
 						"firefox"
+						"google-drive"
 						"handbrake"
 						"kitty"
             "shortcat"
