@@ -57,6 +57,7 @@
             pkgs.sendme
 						pkgs.starship
 						pkgs.stow
+						pkgs.syncthing
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.uv
@@ -82,6 +83,7 @@
 						"google-drive"
 						"handbrake"
 						"kitty"
+						"praat"
             "shortcat"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
@@ -92,6 +94,7 @@
 						"plugdata"
             "qmk-toolbox"
 						"vlc"
+						"whatsapp"
 					];
 					# masApps = {
 					# 	"compressor" = 424390742;
