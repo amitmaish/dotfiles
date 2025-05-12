@@ -31,7 +31,6 @@
             pkgs.cmatrix
 						pkgs.direnv
 						pkgs.discord
-						pkgs.discordo
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
@@ -64,7 +63,6 @@
             pkgs.wget
 						pkgs.yazi
 						pkgs.yt-dlp
-						pkgs.zoom-us
 						pkgs.zoxide
 					];
 
@@ -83,6 +81,7 @@
 						"google-drive"
 						"handbrake"
 						"kitty"
+						"macvim"
 						"praat"
             "shortcat"
 						"steinberg-activation-manager"
@@ -95,6 +94,7 @@
             "qmk-toolbox"
 						"vlc"
 						"whatsapp"
+						"zoom"
 					];
 					# masApps = {
 					# 	"compressor" = 424390742;
