@@ -53,16 +53,20 @@
 						pkgs.python3
             pkgs.qmk
             pkgs.ripgrep
+						pkgs.rusty-man
             pkgs.sendme
 						pkgs.starship
 						pkgs.stow
 						pkgs.syncthing
+						pkgs.tlrc
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.uv
             pkgs.wget
+						pkgs.wiki-tui
 						pkgs.yazi
 						pkgs.yt-dlp
+						pkgs.zellij
 						pkgs.zoxide
 					];
 
@@ -81,7 +85,6 @@
 						"google-drive"
 						"handbrake"
 						"kitty"
-						"macvim"
 						"praat"
             "shortcat"
 						"steinberg-activation-manager"
