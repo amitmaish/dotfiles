@@ -34,6 +34,7 @@
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
+						pkgs.fish
 						pkgs.fzf
             pkgs.gh
 						pkgs.go
@@ -42,11 +43,13 @@
 						pkgs.lazygit
 						pkgs.lua
 						pkgs.luarocks-nix
+						pkgs.mermaid-cli
 						pkgs.mkalias
 						pkgs.miru
 						pkgs.neovim
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
+						pkgs.obsidian
             pkgs.php
 						pkgs.poetry
             pkgs.prismlauncher
@@ -57,7 +60,6 @@
             pkgs.sendme
 						pkgs.starship
 						pkgs.stow
-						pkgs.syncthing
 						pkgs.tlrc
 						pkgs.tmux
 						pkgs.transmission_4
@@ -76,6 +78,7 @@
 						"kanata"
 						"mas"
 						"openssl"
+						"syncthing"
 					];
 					casks = [
             "bibdesk"
@@ -141,6 +144,7 @@
             "${pkgs.discord}/Applications/Discord.app"
             "/Applications/kitty.app"
             "/Applications/Firefox.app"
+						"${pkgs.obsidian}/Applications/Obsidian.app"
             "/System/Applications/Calendar.app"
             "/Applications/Pianoteq 8/Pianoteq 8.app"
             "/Applications/Reaper.app"
