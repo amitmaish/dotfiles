@@ -46,6 +46,7 @@
 						pkgs.mermaid-cli
 						pkgs.mkalias
 						pkgs.miru
+						pkgs.ncspot
 						pkgs.neovim
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
@@ -63,9 +64,11 @@
 						pkgs.tlrc
 						pkgs.tmux
 						pkgs.transmission_4
+						pkgs.ueberzugpp
 						pkgs.uv
             pkgs.wget
 						pkgs.wiki-tui
+						pkgs.yarn
 						pkgs.yazi
 						pkgs.yt-dlp
 						pkgs.zellij
