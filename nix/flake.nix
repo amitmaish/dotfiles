@@ -98,7 +98,6 @@
 						"tailscale"
 						"obs"
 						"parsec"
-						"plover"
 						"plugdata"
             "qmk-toolbox"
 						"vlc"
