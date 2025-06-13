@@ -31,6 +31,7 @@
             pkgs.cmatrix
 						pkgs.direnv
 						pkgs.discord
+						pkgs.eslint
             pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
@@ -50,7 +51,6 @@
 						pkgs.neovim
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
-						pkgs.obsidian
             pkgs.php
 						pkgs.poetry
             pkgs.prismlauncher
@@ -65,6 +65,7 @@
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.ueberzugpp
+						pkgs.uutils-coreutils-noprefix
 						pkgs.uv
             pkgs.wget
 						pkgs.wiki-tui
@@ -92,7 +93,6 @@
 						"handbrake"
 						"kitty"
 						"praat"
-            "shortcat"
 						"steinberg-activation-manager"
 						"steinberg-download-assistant"
 						"tailscale"
@@ -108,7 +108,6 @@
 					# 	"compressor" = 424390742;
 					# 	"final cut" = 424389933;
 					# 	"forScore" = 363738376;
-					# 	"hotkey" = 975890633;
 					# 	"logic" = 634148309;
 					# 	"motion" = 434290957;
 					# 	"xcode" = 497799835;
@@ -146,7 +145,6 @@
             "${pkgs.discord}/Applications/Discord.app"
             "/Applications/kitty.app"
             "/Applications/Firefox.app"
-						"${pkgs.obsidian}/Applications/Obsidian.app"
             "/System/Applications/Calendar.app"
             "/Applications/Pianoteq 8/Pianoteq 8.app"
             "/Applications/Reaper.app"
