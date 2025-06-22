@@ -5,6 +5,7 @@ return {
 		opts = {
 			---@type lspconfig.options
 			servers = {
+				bacon_ls = {},
 				wgsl_analyzer = {},
 			},
 			setup = {
