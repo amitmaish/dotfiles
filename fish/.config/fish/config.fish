@@ -1,4 +1,4 @@
-/run/current-system/sw/bin/starship init fish | source
+/Users/amit/.cargo/bin/starship init fish | source
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
