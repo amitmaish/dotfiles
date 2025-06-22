@@ -21,25 +21,17 @@
 						pkgs.anki-bin
 						pkgs.arduino-cli
 						pkgs.arduino-language-server
-            pkgs.ast-grep
             pkgs.atkinson-hyperlegible
-						pkgs.bat
-            pkgs.cargo-bundle
-            pkgs.cbonsai
 						pkgs.clang-tools
 						pkgs.cmake
-            pkgs.cmatrix
 						pkgs.direnv
 						pkgs.discord
 						pkgs.eslint
-            pkgs.fd
 						pkgs.ffmpeg
             pkgs.figlet
 						pkgs.fish
 						pkgs.fzf
-            pkgs.gh
 						pkgs.go
-						pkgs.hyfetch
             pkgs.imagemagick
 						pkgs.lazygit
 						pkgs.lua
@@ -47,7 +39,6 @@
 						pkgs.mermaid-cli
 						pkgs.mkalias
 						pkgs.miru
-						pkgs.ncspot
 						pkgs.neovim
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
@@ -56,29 +47,21 @@
             pkgs.prismlauncher
 						pkgs.python3
             pkgs.qmk
-            pkgs.ripgrep
-						pkgs.rusty-man
-            pkgs.sendme
-						pkgs.starship
 						pkgs.stow
-						pkgs.tlrc
 						pkgs.tmux
 						pkgs.transmission_4
 						pkgs.ueberzugpp
 						pkgs.uutils-coreutils-noprefix
 						pkgs.uv
             pkgs.wget
-						pkgs.wiki-tui
 						pkgs.yarn
-						pkgs.yazi
 						pkgs.yt-dlp
-						pkgs.zellij
-						pkgs.zoxide
 					];
 
 				homebrew = {
 					enable = true;
 					brews = [
+						"evil-helix"
 						"kanata"
 						"mas"
 						"openssl"
