@@ -2,7 +2,7 @@
 ast-grep = "0.38.5"
 bacon = "3.14.0"
 bat = "0.25.0"
-cargo-binstall = "1.12.7"
+cargo-binstall = "1.14.1"
 cargo-bundle = "0.7.0"
 cargo-generate = "0.23.3"
 cargo-info = "0.7.7"
