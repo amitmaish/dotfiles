@@ -38,7 +38,6 @@
 						pkgs.luarocks-nix
 						pkgs.mermaid-cli
 						pkgs.mkalias
-						pkgs.miru
 						pkgs.neovim
 						pkgs.nodejs
 						pkgs.nerd-fonts.jetbrains-mono
@@ -62,6 +61,7 @@
 					enable = true;
 					brews = [
 						"evil-helix"
+						"gh"
 						"kanata"
 						"mas"
 						"openssl"
