@@ -1,5 +1,7 @@
 /Users/amit/.cargo/bin/starship init fish | source
 
+set MANPAGER "sh -c 'col -bx | bat -l man -p'"
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -14,5 +16,6 @@ function y
     rm -f -- "$tmp"
 end
 
+direnv hook fish | source
 fzf --fish | source
 zoxide init fish --cmd cd | source
