@@ -1,6 +1,7 @@
 /Users/amit/.cargo/bin/starship init fish | source
 
 set MANPAGER "sh -c 'col -bx | bat -l man -p'"
+set -gx EDITOR nvim
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
