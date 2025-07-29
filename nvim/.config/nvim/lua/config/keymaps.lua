@@ -6,3 +6,5 @@
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set({ "n", "v" }, "H", "^")
 vim.keymap.set({ "n", "v" }, "L", "$")
+
+vim.keymap.set("n", "<leader>o", ":Oil<cr>")
