@@ -1,4 +1,4 @@
-/Users/amit/.cargo/bin/starship init fish | source
+/usr/local/bin/starship init fish | source
 
 set MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -gx EDITOR nvim
