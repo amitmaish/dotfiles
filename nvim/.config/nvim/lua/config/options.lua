@@ -11,3 +11,5 @@ vim.o.wrap = true
 vim.g.snacks_animate = false
 
 vim.opt.cursorline = false
+
+vim.opt.winborder = "rounded"

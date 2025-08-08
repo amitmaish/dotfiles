@@ -5,15 +5,7 @@ return {
 		opts = {
 			---@type lspconfig.options
 			servers = {
-				bacon_ls = {},
 				wgsl_analyzer = {},
-			},
-			setup = {
-				prettier = function(client)
-					if client.name == "prettier" then
-						client.server_capabilities.documentFormattingProvider = true
-					end
-				end,
 			},
 			inlay_hints = { enabled = false },
 		},
