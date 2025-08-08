@@ -199,6 +199,10 @@ format = "[$symbol]($style)"
 symbol = " "
 format = "[$symbol]($style)"
 
+[status]
+format = '[\[$status\]]($style) '
+disabled = false
+
 [swift]
 symbol = " "
 format = "[$symbol]($style)"
