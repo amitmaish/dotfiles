@@ -9,6 +9,7 @@ symbol = " "
 
 [c]
 symbol = " "
+format = "[$symbol]($style)"
 
 [cpp]
 symbol = " "
