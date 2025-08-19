@@ -23,8 +23,6 @@ vim.pack.add({
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
 	{ src = "https://github.com/saghen/blink.cmp" },
 	{ src = "https://github.com/stevearc/conform.nvim" },
-	{ src = "https://github.com/echasnovski/mini.surround" },
-	{ src = "https://github.com/mrcjkb/rustaceanvim" },
 })
 
 require("mason").setup()
@@ -33,11 +31,10 @@ require("nvim-treesitter.configs").setup({
 })
 
 require("mini.pick").setup()
-require("mini.surround").setup()
 require("oil").setup()
 require("nvim-autopairs").setup()
 
-vim.lsp.enable({ "alejandra", "clangd", "biome", "lua_ls", "prettier" })
+vim.lsp.enable({ "ast_grep", "biome", "lua_ls", "prettier" })
 vim.lsp.config("*", {
 	root_markers = { ".git" },
 })
@@ -78,15 +75,7 @@ vim.cmd("colorscheme catppuccin_mocha")
 vim.cmd("hi statusline guibg=NONE")
 
 require("luasnip").setup({ enable_autosnippets = true })
-
-local appname
-if vim.env.NVIM_APPNAME ~= nil then
-	appname = vim.env.NVIM_APPNAME
-else
-	appname = "nvim"
-end
-
-require("luasnip.loaders.from_lua").load({ paths = "~/.config/" .. appname .. "/snippets" })
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/" .. vim.env.NVIM_APPNAME .. "/snippets" })
 
 local ls = require("luasnip")
 vim.keymap.set({ "i" }, "<C-e>", function()
