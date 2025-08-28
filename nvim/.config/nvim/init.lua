@@ -70,6 +70,7 @@ vim.lsp.config("lua_ls", {
 		},
 	},
 })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 
 require("conform").setup({
 	formatters_by_ft = {
