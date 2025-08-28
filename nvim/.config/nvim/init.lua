@@ -25,25 +25,37 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/echasnovski/mini.surround" },
 	{ src = "https://github.com/mrcjkb/rustaceanvim" },
+	{ src = "https://github.com/mbbill/undotree" },
+	{ src = "https://github.com/folke/snacks.nvim" },
+	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
+	{ src = "https://github.com/folke/flash.nvim" },
 })
 
-require("mason").setup()
-require("nvim-treesitter.configs").setup({
-	auto_install = true,
+require("mason").setup({
+	ui = {
+		border = "rounded",
+	},
 })
 
 require("mini.pick").setup()
-require("mini.surround").setup()
+require("mini.surround").setup({
+	mappings = {
+		add = "gsa", -- Add surrounding in Normal and Visual modes
+		delete = "gsd", -- Delete surrounding
+		find = "gsf", -- Find surrounding (to the right)
+		find_left = "gsF", -- Find surrounding (to the left)
+		highlight = "gsh", -- Highlight surrounding
+		replace = "gsr", -- Replace surrounding
+		update_n_lines = "gsn", -- Update `n_lines`
+
+		suffix_last = "l", -- Suffix to search with "prev" method
+		suffix_next = "n", -- Suffix to search with "next" method
+	},
+})
 require("oil").setup()
 require("nvim-autopairs").setup()
 
-vim.lsp.enable({ "alejandra", "clangd", "biome", "lua_ls", "prettier" })
-vim.lsp.config("*", {
-	root_markers = { ".git" },
-})
-vim.lsp.config("biome", {
-	workspace_required = false,
-})
+vim.lsp.enable({ "clangd", "biome", "lua_ls", "vtsls" })
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
@@ -53,14 +65,13 @@ vim.lsp.config("lua_ls", {
 		},
 	},
 })
-vim.lsp.config("prettier", {
-	filetypes = { "css", "html", "json", "jsx", "javascript", "typescript", "yaml" },
-})
 
 require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
+		json = { "prettier" },
+		rust = { "rustfmt" },
 	},
 })
 vim.keymap.set("n", "<leader>lf", require("conform").format)
@@ -72,6 +83,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.keymap.set("n", "<leader> ", ":Pick files<CR>", { silent = true })
+vim.keymap.set("n", "<leader>so", ":so<CR>")
 vim.keymap.set("n", "<leader>o", ":Oil<CR>", { silent = true })
 
 vim.cmd("colorscheme catppuccin_mocha")
@@ -107,7 +119,6 @@ local list_snips = function()
 	end
 	print(vim.inspect(ft_snips))
 end
-
 vim.api.nvim_create_user_command("SnipList", list_snips, {})
 
 require("blink.cmp").setup({
@@ -125,3 +136,29 @@ require("blink.cmp").setup({
 		},
 	},
 })
+
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+
+require("snacks")
+
+vim.keymap.set("n", "<leader>gg", function()
+	Snacks.lazygit()
+end)
+
+require("flash").setup()
+
+vim.keymap.set({ "n", "x", "o" }, "s", function()
+	require("flash").jump()
+end)
+vim.keymap.set({ "n", "x", "o" }, "S", function()
+	require("flash").treesitter()
+end)
+vim.keymap.set({ "o" }, "r", function()
+	require("flash").remote()
+end)
+vim.keymap.set({ "x", "o" }, "R", function()
+	require("flash").treesitter_search()
+end)
+vim.keymap.set({ "c" }, "<c-s>", function()
+	require("flash").toggle()
+end)
