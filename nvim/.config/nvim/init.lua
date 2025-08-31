@@ -91,6 +91,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.keymap.set("n", "<leader> ", ":Pick files<CR>", { silent = true })
+vim.keymap.set("n", "<leader>pg", ":Pick files tool='git'<CR>", { silent = true })
 vim.keymap.set("n", "<leader>so", ":so<CR>")
 vim.keymap.set("n", "<leader>o", ":Oil<CR>", { silent = true })
 
