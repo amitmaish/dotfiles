@@ -60,7 +60,18 @@ require("mini.surround").setup({
 require("oil").setup()
 require("nvim-autopairs").setup()
 
-vim.lsp.enable({ "clangd", "biome", "lua_ls", "ruff", "vtsls" })
+vim.lsp.enable({
+	"arduino_language_server",
+	"biome",
+	"clangd",
+	"gopls",
+	"lua_ls",
+	"markdown_oxide",
+	"nil_ls",
+	"ruff",
+	"tinymist",
+	"vtsls",
+})
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
@@ -71,12 +82,15 @@ vim.lsp.config("lua_ls", {
 	},
 })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
+vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition)
 
 require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
 		json = { "prettier" },
+		markdown = { "mdsf" },
+		nix = { "alejandra" },
 		python = { "ruff" },
 		rust = { "rustfmt" },
 		typescript = { "prettier" },
@@ -91,7 +105,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.keymap.set("n", "<leader> ", ":Pick files<CR>", { silent = true })
-vim.keymap.set("n", "<leader>pg", ":Pick files tool='git'<CR>", { silent = true })
+vim.keymap.set("n", "<leader>pf", ":Pick files tool='git'<CR>", { silent = true })
 vim.keymap.set("n", "<leader>so", ":so<CR>")
 vim.keymap.set("n", "<leader>o", ":Oil<CR>", { silent = true })
 
