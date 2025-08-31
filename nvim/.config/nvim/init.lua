@@ -82,7 +82,8 @@ vim.lsp.config("lua_ls", {
 	},
 })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
-vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
 require("conform").setup({
 	formatters_by_ft = {
