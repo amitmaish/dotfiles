@@ -60,7 +60,7 @@ require("mini.surround").setup({
 require("oil").setup()
 require("nvim-autopairs").setup()
 
-vim.lsp.enable({ "clangd", "biome", "lua_ls", "vtsls" })
+vim.lsp.enable({ "clangd", "biome", "lua_ls", "ruff", "vtsls" })
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
@@ -77,7 +77,9 @@ require("conform").setup({
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
 		json = { "prettier" },
+		python = { "ruff" },
 		rust = { "rustfmt" },
+		typescript = { "prettier" },
 	},
 })
 vim.keymap.set("n", "<leader>lf", require("conform").format)
