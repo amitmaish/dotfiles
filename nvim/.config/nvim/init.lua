@@ -4,6 +4,7 @@ vim.o.signcolumn = "yes"
 vim.o.tabstop = 2
 vim.o.swapfile = false
 vim.o.winborder = "rounded"
+vim.o.syntax = "enable"
 
 vim.g.mapleader = " "
 
