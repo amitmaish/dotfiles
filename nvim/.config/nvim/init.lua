@@ -91,6 +91,7 @@ vim.lsp.enable({
 	"arduino_language_server",
 	"biome",
 	"clangd",
+	"jsonls",
 	"gopls",
 	"lua_ls",
 	"markdown_oxide",
@@ -98,6 +99,7 @@ vim.lsp.enable({
 	"ruff",
 	"tinymist",
 	"vtsls",
+	"zls",
 })
 vim.lsp.config("lua_ls", {
 	settings = {
@@ -114,6 +116,7 @@ vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
 require("conform").setup({
 	formatters_by_ft = {
+		go = { "gofumpt" },
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
 		json = { "prettier" },
@@ -122,6 +125,7 @@ require("conform").setup({
 		python = { "ruff" },
 		rust = { "rustfmt" },
 		typescript = { "prettier" },
+		zig = { lsp_format = "prefer" },
 	},
 })
 vim.keymap.set("n", "<leader>lf", require("conform").format)
