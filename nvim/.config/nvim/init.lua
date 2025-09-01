@@ -112,6 +112,7 @@ vim.lsp.enable({
 	"markdown_oxide",
 	"nil_ls",
 	"ruff",
+	"shellcheck",
 	"taplo",
 	"texlab",
 	"tinymist",
@@ -135,7 +136,9 @@ vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 require("conform").setup({
 	formatters_by_ft = {
 		c = { "clang-format" },
-		go = { "gofumpt" },
+		cpp = { "clang-format" },
+		cs = { "clang-format" },
+		go = { "gofumpt", "goimports" },
 		html = { "prettier" },
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
