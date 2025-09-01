@@ -33,6 +33,7 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/conform.nvim" },
 	{ src = "https://github.com/echasnovski/mini.surround" },
 	{ src = "https://github.com/mrcjkb/rustaceanvim" },
+	{ src = "https://github.com/saecki/crates.nvim" },
 	{ src = "https://github.com/mbbill/undotree" },
 	{ src = "https://github.com/folke/snacks.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
@@ -73,6 +74,15 @@ require("mason").setup({
 	},
 })
 
+require("crates").setup({
+	lsp = {
+		enabled = true,
+		actions = true,
+		completion = true,
+		hover = true,
+	},
+})
+
 require("mini.pick").setup()
 require("mini.surround").setup({
 	mappings = {
@@ -96,6 +106,7 @@ vim.lsp.enable({
 	"biome",
 	"clangd",
 	"gopls",
+	"html",
 	"jsonls",
 	"lua_ls",
 	"markdown_oxide",
@@ -125,6 +136,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		c = { "clang-format" },
 		go = { "gofumpt" },
+		html = { "prettier" },
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
 		json = { "prettier" },
