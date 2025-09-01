@@ -5,6 +5,8 @@ vim.o.tabstop = 2
 vim.o.swapfile = false
 vim.o.winborder = "rounded"
 vim.o.syntax = "disable"
+vim.o.spell = true
+vim.o.spellcapcheck = ""
 
 vim.g.mapleader = " "
 
@@ -35,6 +37,8 @@ vim.pack.add({
 	{ src = "https://github.com/folke/snacks.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/folke/flash.nvim" },
+	{ src = "https://github.com/mfussenegger/nvim-dap" },
+	{ src = "https://github.com/rcarriga/nvim-dap-ui" },
 })
 
 require("catppuccin").setup({
@@ -91,14 +95,17 @@ vim.lsp.enable({
 	"arduino_language_server",
 	"biome",
 	"clangd",
-	"jsonls",
 	"gopls",
+	"jsonls",
 	"lua_ls",
 	"markdown_oxide",
 	"nil_ls",
 	"ruff",
+	"taplo",
+	"texlab",
 	"tinymist",
 	"vtsls",
+	"yaml_language_server",
 	"zls",
 })
 vim.lsp.config("lua_ls", {
@@ -116,6 +123,7 @@ vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
 require("conform").setup({
 	formatters_by_ft = {
+		c = { "clang-format" },
 		go = { "gofumpt" },
 		lua = { "stylua" },
 		javascript = { "prettier", stop_after_first = true },
@@ -124,6 +132,7 @@ require("conform").setup({
 		nix = { "alejandra" },
 		python = { "ruff" },
 		rust = { "rustfmt" },
+		toml = { "taplo" },
 		typescript = { "prettier" },
 		zig = { lsp_format = "prefer" },
 	},
