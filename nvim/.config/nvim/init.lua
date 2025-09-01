@@ -50,8 +50,17 @@ require("catppuccin").setup({
 })
 
 require("nvim-treesitter.configs").setup({
-	highlight = true,
+	modules = {},
 	auto_install = true,
+	sync_install = false,
+	ensure_installed = {},
+	highlight = {
+		enable = true,
+	},
+	ignore_install = {},
+	incremental_selection = {
+		enable = false,
+	},
 })
 
 require("mason").setup({
