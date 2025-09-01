@@ -4,7 +4,7 @@ vim.o.signcolumn = "yes"
 vim.o.tabstop = 2
 vim.o.swapfile = false
 vim.o.winborder = "rounded"
-vim.o.syntax = "enable"
+vim.o.syntax = "disable"
 
 vim.g.mapleader = " "
 
@@ -19,7 +19,7 @@ vim.keymap.set("n", "<c-k>", "<c-w>k")
 vim.keymap.set("n", "<c-l>", "<c-w>l")
 
 vim.pack.add({
-	{ src = "https://github.com/catppuccin/vim" },
+	{ src = "https://github.com/catppuccin/nvim" },
 	{ src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/windwp/nvim-autopairs" },
@@ -35,6 +35,23 @@ vim.pack.add({
 	{ src = "https://github.com/folke/snacks.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
 	{ src = "https://github.com/folke/flash.nvim" },
+})
+
+require("catppuccin").setup({
+	integrations = {
+		gitsigns = true,
+		treesitter = true,
+	},
+	custom_highlights = function(colors)
+		return {
+			["@property"] = { fg = colors.lavender },
+		}
+	end,
+})
+
+require("nvim-treesitter.configs").setup({
+	highlight = true,
+	auto_install = true,
 })
 
 require("mason").setup({
@@ -111,7 +128,7 @@ vim.keymap.set("n", "<leader>pf", ":Pick files tool='git'<CR>", { silent = true 
 vim.keymap.set("n", "<leader>so", ":so<CR>")
 vim.keymap.set("n", "<leader>o", ":Oil<CR>", { silent = true })
 
-vim.cmd("colorscheme catppuccin_mocha")
+vim.cmd.colorscheme("catppuccin")
 vim.cmd("hi statusline guibg=NONE")
 
 require("luasnip").setup({ enable_autosnippets = true })
