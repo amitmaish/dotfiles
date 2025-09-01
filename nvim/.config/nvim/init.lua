@@ -109,7 +109,7 @@ vim.lsp.enable({
 	"html",
 	"jsonls",
 	"lua_ls",
-	"markdown_oxide",
+	"marksman",
 	"nil_ls",
 	"ruff",
 	"shellcheck",
