@@ -112,13 +112,23 @@ vim.lsp.enable({
 	"marksman",
 	"nil_ls",
 	"ruff",
-	"shellcheck",
 	"taplo",
 	"texlab",
 	"tinymist",
 	"vtsls",
-	"yaml_language_server",
+	"yamlls",
 	"zls",
+})
+vim.lsp.config("arduino_language_server", {
+	cmd = {
+		"arduino-language-server",
+		"-clangd",
+		vim.fn.stdpath("data") .. "/mason/bin/clangd",
+		"-cli",
+		"/usr/local/bin/arduino-cli",
+		"-cli-config",
+		vim.fn.expand("$HOME/") .. ".arduinoIDE/arduino-cli.yaml",
+	},
 })
 vim.lsp.config("lua_ls", {
 	settings = {
@@ -135,6 +145,7 @@ vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
 require("conform").setup({
 	formatters_by_ft = {
+		arduino = { "clang-format" },
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		cs = { "clang-format" },
