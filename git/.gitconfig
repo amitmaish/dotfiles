@@ -1,0 +1,11 @@
+[user]
+	email = 83043520+AmitMaish@users.noreply.github.com
+	name = AmitMaish
+[core]
+	editor = nvim
+	pager = delta
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
