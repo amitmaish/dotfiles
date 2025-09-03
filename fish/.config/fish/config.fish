@@ -18,5 +18,6 @@ end
 direnv hook fish | source
 fzf --fish | source
 zoxide init fish --cmd cd | source
+thefuck --alias | source
 
 starship init fish | source
