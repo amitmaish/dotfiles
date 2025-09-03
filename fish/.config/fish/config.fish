@@ -15,6 +15,8 @@ function y
     rm -f -- "$tmp"
 end
 
+alias ls="exa"
+
 direnv hook fish | source
 fzf --fish | source
 zoxide init fish --cmd cd | source
