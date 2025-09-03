@@ -102,6 +102,8 @@ require("oil").setup()
 require("nvim-autopairs").setup()
 
 vim.lsp.enable({
+	"asm_lsp",
+	"ast_grep",
 	"arduino_language_server",
 	"biome",
 	"clangd",
@@ -145,6 +147,7 @@ vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
 require("conform").setup({
 	formatters_by_ft = {
+		assembly = { "asmfmt" },
 		arduino = { "clang-format" },
 		c = { "clang-format" },
 		cpp = { "clang-format" },
