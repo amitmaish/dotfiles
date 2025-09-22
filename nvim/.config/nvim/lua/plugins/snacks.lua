@@ -18,6 +18,6 @@ return {
 		scope = { enabled = true },
 		scroll = { enabled = false },
 		statuscolumn = { enabled = false },
-		words = { enabled = true },
+		words = { enabled = false },
 	},
 }
