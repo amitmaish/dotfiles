@@ -20,86 +20,7 @@ vim.keymap.set("n", "<c-j>", "<c-w>j")
 vim.keymap.set("n", "<c-k>", "<c-w>k")
 vim.keymap.set("n", "<c-l>", "<c-w>l")
 
-vim.pack.add({
-	{ src = "https://github.com/catppuccin/nvim" },
-	{ src = "https://github.com/stevearc/oil.nvim" },
-	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-	{ src = "https://github.com/windwp/nvim-autopairs" },
-	{ src = "https://github.com/echasnovski/mini.pick" },
-	{ src = "https://github.com/neovim/nvim-lspconfig" },
-	{ src = "https://github.com/mason-org/mason.nvim" },
-	{ src = "https://github.com/L3MON4D3/LuaSnip" },
-	{ src = "https://github.com/saghen/blink.cmp" },
-	{ src = "https://github.com/stevearc/conform.nvim" },
-	{ src = "https://github.com/echasnovski/mini.surround" },
-	{ src = "https://github.com/mrcjkb/rustaceanvim" },
-	{ src = "https://github.com/saecki/crates.nvim" },
-	{ src = "https://github.com/mbbill/undotree" },
-	{ src = "https://github.com/folke/snacks.nvim" },
-	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
-	{ src = "https://github.com/folke/flash.nvim" },
-	{ src = "https://github.com/mfussenegger/nvim-dap" },
-	{ src = "https://github.com/rcarriga/nvim-dap-ui" },
-})
-
-require("catppuccin").setup({
-	integrations = {
-		gitsigns = true,
-		treesitter = true,
-	},
-	custom_highlights = function(colors)
-		return {
-			["@property"] = { fg = colors.lavender },
-		}
-	end,
-})
-
-require("nvim-treesitter.configs").setup({
-	modules = {},
-	auto_install = true,
-	sync_install = false,
-	ensure_installed = {},
-	highlight = {
-		enable = true,
-	},
-	ignore_install = {},
-	incremental_selection = {
-		enable = false,
-	},
-})
-
-require("mason").setup({
-	ui = {
-		border = "rounded",
-	},
-})
-
-require("crates").setup({
-	lsp = {
-		enabled = true,
-		actions = true,
-		completion = true,
-		hover = true,
-	},
-})
-
-require("mini.pick").setup()
-require("mini.surround").setup({
-	mappings = {
-		add = "gsa", -- Add surrounding in Normal and Visual modes
-		delete = "gsd", -- Delete surrounding
-		find = "gsf", -- Find surrounding (to the right)
-		find_left = "gsF", -- Find surrounding (to the left)
-		highlight = "gsh", -- Highlight surrounding
-		replace = "gsr", -- Replace surrounding
-		update_n_lines = "gsn", -- Update `n_lines`
-
-		suffix_last = "l", -- Suffix to search with "prev" method
-		suffix_next = "n", -- Suffix to search with "next" method
-	},
-})
-require("oil").setup()
-require("nvim-autopairs").setup()
+require("config.lazy")
 
 vim.lsp.enable({
 	"asm_lsp",
@@ -108,6 +29,7 @@ vim.lsp.enable({
 	"biome",
 	"clangd",
 	"gopls",
+	"hls",
 	"html",
 	"jsonls",
 	"lua_ls",
@@ -145,27 +67,6 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
-require("conform").setup({
-	formatters_by_ft = {
-		assembly = { "asmfmt" },
-		arduino = { "clang-format" },
-		c = { "clang-format" },
-		cpp = { "clang-format" },
-		cs = { "clang-format" },
-		go = { "gofumpt", "goimports" },
-		html = { "prettier" },
-		lua = { "stylua" },
-		javascript = { "prettier", stop_after_first = true },
-		json = { "prettier" },
-		markdown = { "mdsf" },
-		nix = { "alejandra" },
-		python = { "ruff" },
-		rust = { "rustfmt" },
-		toml = { "taplo" },
-		typescript = { "prettier" },
-		zig = { lsp_format = "prefer" },
-	},
-})
 vim.keymap.set("n", "<leader>lf", require("conform").format)
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
@@ -181,8 +82,6 @@ vim.keymap.set("n", "<leader>o", ":Oil<CR>", { silent = true })
 
 vim.cmd.colorscheme("catppuccin")
 vim.cmd("hi statusline guibg=NONE")
-
-require("luasnip").setup({ enable_autosnippets = true })
 
 local appname
 if vim.env.NVIM_APPNAME ~= nil then
@@ -213,22 +112,6 @@ local list_snips = function()
 	print(vim.inspect(ft_snips))
 end
 vim.api.nvim_create_user_command("SnipList", list_snips, {})
-
-require("blink.cmp").setup({
-	keymap = { preset = "default" },
-
-	appearance = { nerd_font_variant = "mono" },
-	completion = { documentation = { auto_show = false } },
-	sources = {
-		default = { "lsp", "path", "buffer" },
-	},
-	fuzzy = {
-		implementation = "prefer_rust",
-		prebuilt_binaries = {
-			download = true,
-		},
-	},
-})
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
