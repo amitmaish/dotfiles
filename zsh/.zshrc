@@ -87,3 +87,4 @@ eval "$(zoxide init zsh --cmd cd)"
 eval "$(direnv hook zsh)"
 
 . "$HOME/.local/bin/env"
+source ${HOME}/.ghcup/env

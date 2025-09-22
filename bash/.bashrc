@@ -15,3 +15,4 @@ alias cd="z"
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+source ${HOME}/.ghcup/env
