@@ -35,7 +35,7 @@ return {
 								port = 6013,
 							},
 						},
-						fps = 30,
+						fps = 45,
 					},
 				},
 				sclang = {
@@ -44,7 +44,7 @@ return {
 					args = {},
 					--- SuperCollider boot file
 					file = vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1],
-					enabled = true,
+					enabled = false,
 				},
 				split = "v",
 			},
