@@ -1,3 +1,7 @@
+local tidal_bootfile = vim.env.TIDAL_BOOTFILE
+if tidal_bootfile == nil then
+	tidal_bootfile = vim.api.nvim_get_runtime_file("bootfiles/BootTidal.hs", false)[1]
+end
 return {
 	{
 		"thgrund/tidal.nvim",
@@ -12,7 +16,7 @@ return {
 						"-v0",
 					},
 					--- Tidal boot file path
-					file = vim.api.nvim_get_runtime_file("bootfiles/BootTidal.hs", false)[1],
+					file = tidal_bootfile,
 					enabled = true,
 
 					highlight = {
