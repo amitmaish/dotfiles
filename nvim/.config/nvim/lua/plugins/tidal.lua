@@ -2,6 +2,9 @@ local tidal_bootfile = vim.env.TIDAL_BOOTFILE
 if tidal_bootfile == nil then
 	tidal_bootfile = vim.api.nvim_get_runtime_file("bootfiles/BootTidal.hs", false)[1]
 end
+
+local colors = require("catppuccin.palettes").get_palette("mocha")
+
 return {
 	{
 		"thgrund/tidal.nvim",
@@ -28,10 +31,13 @@ return {
 							},
 							-- [Tidal ID] -> hl style
 							custom = {
-								["drums"] = { bg = "#e7b9ed", foreground = "#000000" },
-								["2"] = { bg = "#b9edc7", foreground = "#000000" },
+								["drums"] = { bg = colors.pink, foreground = colors.crust },
+								["2"] = { bg = colors.green, foreground = colors.crust },
 							},
-							global = { baseName = "CodeHighlight", style = { bg = "#7eaefc", foreground = "#000000" } },
+							global = {
+								baseName = "CodeHighlight",
+								style = { bg = colors.blue, foreground = colors.crust },
+							},
 						},
 						events = {
 							osc = {
