@@ -22,7 +22,7 @@
   "scnvim": { "branch": "main", "commit": "8148e9b5700956b14b0202ee4b08d6856510d3fd" },
   "snacks.nvim": { "branch": "main", "commit": "f6c06415a27bd63b038e0c624b11d272c300390f" },
   "tidal-makros.nvim": { "branch": "main", "commit": "e4398c52ad2a758ced76316034a8bfb082361beb" },
-  "tidal.nvim": { "branch": "develop", "commit": "ddf79197738011c8fccffe88d2b75175e56ce520" },
+  "tidal.nvim": { "branch": "develop", "commit": "3cfc6871b077b21b814c7fc8180f707942abec5f" },
   "undotree": { "branch": "master", "commit": "fe9a9d0645f0f5532360b5e5f5c550d7bb4f1869" },
   "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },
   "which-key.nvim": { "branch": "main", "commit": "904308e6885bbb7b60714c80ab3daf0c071c1492" }

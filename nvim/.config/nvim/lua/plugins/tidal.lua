@@ -7,7 +7,7 @@ local colors = require("catppuccin.palettes").get_palette("mocha")
 
 return {
 	{
-		"thgrund/tidal.nvim",
+		"amitmaish/tidal.nvim",
 		branch = "develop",
 		opts = {
 			--- Configure TidalLaunch command
@@ -81,8 +81,11 @@ return {
 		},
 		-- Recommended: Install TreeSitter parsers for Haskell and SuperCollider
 		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			opts = { ensure_installed = { "haskell", "supercollider" } },
+			{
+				"nvim-treesitter/nvim-treesitter",
+				opts = { ensure_installed = { "haskell", "supercollider" } },
+				"davidgranstrom/scnvim",
+			},
 		},
 	},
 	{
