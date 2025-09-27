@@ -140,3 +140,7 @@ end)
 vim.keymap.set({ "c" }, "<c-s>", function()
 	require("flash").toggle()
 end)
+
+if vim.g.neovide then
+	vim.g.neovide_cursor_animation_length = 0
+end
