@@ -22,5 +22,8 @@ return {
 			typescriptreact = { "prettier" },
 			zig = { lsp_format = "prefer" },
 		},
+		format_on_save = {
+			lsp_format = "fallback",
+		},
 	},
 }
