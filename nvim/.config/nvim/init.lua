@@ -9,6 +9,7 @@ vim.o.winborder = "rounded"
 vim.o.syntax = "disable"
 vim.o.spell = true
 vim.o.spellcapcheck = ""
+vim.o.linebreak = true
 
 vim.g.mapleader = " "
 
