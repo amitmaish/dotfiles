@@ -48,14 +48,6 @@ return {
 						fps = 45,
 					},
 				},
-				sclang = {
-					--- Command to launch SuperCollider
-					cmd = "sclang",
-					args = {},
-					--- SuperCollider boot file
-					file = vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1],
-					enabled = false,
-				},
 				split = "v",
 			},
 			--- Default keymaps
