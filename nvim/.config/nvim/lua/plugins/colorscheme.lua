@@ -7,6 +7,8 @@ return {
 		custom_highlights = function(colors)
 			return {
 				["@property"] = { fg = colors.lavender },
+				["@markup.italic"] = { fg = colors.green },
+				["@markup.strong"] = { fg = colors.mauve },
 			}
 		end,
 	},
