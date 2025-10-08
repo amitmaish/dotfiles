@@ -10,7 +10,6 @@ vim.o.syntax = "disable"
 vim.o.spell = true
 vim.o.spellcapcheck = ""
 vim.o.linebreak = true
-vim.o.conceallevel = 2
 
 vim.g.mapleader = " "
 
