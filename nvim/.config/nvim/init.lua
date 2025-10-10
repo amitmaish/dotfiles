@@ -25,6 +25,8 @@ vim.keymap.set("n", "<c-l>", "<c-w>l")
 
 require("config.lazy")
 
+require("digraphs")
+
 vim.lsp.enable({
 	"asm_lsp",
 	"ast_grep",
