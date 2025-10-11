@@ -13,7 +13,7 @@ return {
 			lua = { "stylua" },
 			javascript = { "prettier", stop_after_first = true },
 			json = { "prettier" },
-			markdown = { "mdsf" },
+			markdown = { "mdsf", "prettier" },
 			nix = { "alejandra" },
 			python = { "ruff" },
 			rust = { "rustfmt" },

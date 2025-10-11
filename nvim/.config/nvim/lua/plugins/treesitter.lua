@@ -12,6 +12,7 @@ return {
 			sync_install = false,
 			highlight = {
 				enable = true,
+				additional_vim_regex_highlighting = { "markdown" },
 			},
 			ignore_install = {},
 			incremental_selection = {
