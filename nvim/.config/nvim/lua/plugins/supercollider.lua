@@ -12,7 +12,6 @@ return {
 	lazy = false,
 	config = function()
 		local scnvim = require("scnvim")
-		local sc_bootfile
 
 		local map = scnvim.map
 		local map_expr = scnvim.map_expr

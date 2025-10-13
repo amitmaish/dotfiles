@@ -95,7 +95,7 @@ else
 	appname = "nvim"
 end
 
-require("luasnip.loaders.from_lua").load({ paths = "~/.config/" .. appname .. "/snippets" })
+require("luasnip.loaders.from_lua").load({ paths = { "~/.config/" .. appname .. "/snippets" } })
 
 local ls = require("luasnip")
 vim.keymap.set({ "i" }, "<C-e>", function()
