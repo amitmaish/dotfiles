@@ -73,10 +73,16 @@ vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
 vim.keymap.set("n", "<leader>lf", require("conform").format)
+local autoformat = true
+vim.api.nvim_create_user_command("ConformToggle", function()
+	autoformat = not autoformat
+end, {})
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function()
-		require("conform").format()
+		if autoformat then
+			require("conform").format()
+		end
 	end,
 })
 
