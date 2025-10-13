@@ -7,14 +7,35 @@ return {
 			function()
 				vim.cmd.Telescope("find_files")
 			end,
-			desc = "pick files",
+			desc = "telescope files",
 		},
 		{
 			"<leader>pf",
 			function()
 				vim.cmd.Telescope("git_files")
 			end,
-			desc = "pick in git repo",
+			desc = "telescope git files",
+		},
+		{
+			"<leader>fh",
+			function()
+				vim.cmd.Telescope("help_tags")
+			end,
+			desc = "telescope help tags",
+		},
+		{
+			"<leader>lg",
+			function()
+				vim.cmd.Telescope("live_grep")
+			end,
+			desc = "telescope grep",
+			{
+				"<leader>fh",
+				function()
+					vim.cmd.Telescope("help_tags")
+				end,
+				desc = "telescope help tags",
+			},
 		},
 	},
 }
