@@ -17,25 +17,18 @@ return {
 			desc = "telescope git files",
 		},
 		{
-			"<leader>fh",
+			"<leader>ph",
 			function()
 				vim.cmd.Telescope("help_tags")
 			end,
 			desc = "telescope help tags",
 		},
 		{
-			"<leader>lg",
+			"<leader>pg",
 			function()
 				vim.cmd.Telescope("live_grep")
 			end,
 			desc = "telescope grep",
-			{
-				"<leader>fh",
-				function()
-					vim.cmd.Telescope("help_tags")
-				end,
-				desc = "telescope help tags",
-			},
 		},
 	},
 }

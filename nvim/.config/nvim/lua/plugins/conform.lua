@@ -5,7 +5,7 @@ return {
 		local autoformat = true
 		vim.api.nvim_create_user_command("ConformToggle", function()
 			autoformat = not autoformat
-		end, {})
+		end, { desc = "format file" })
 		vim.api.nvim_create_autocmd("BufWritePre", {
 			pattern = "*",
 			callback = function()
