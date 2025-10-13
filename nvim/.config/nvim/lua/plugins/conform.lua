@@ -1,5 +1,20 @@
 return {
 	"stevearc/conform.nvim",
+	init = function()
+		vim.keymap.set("n", "<leader>lf", require("conform").format)
+		local autoformat = true
+		vim.api.nvim_create_user_command("ConformToggle", function()
+			autoformat = not autoformat
+		end, {})
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			pattern = "*",
+			callback = function()
+				if autoformat then
+					require("conform").format()
+				end
+			end,
+		})
+	end,
 	opts = {
 		formatters_by_ft = {
 			assembly = { "asmfmt" },

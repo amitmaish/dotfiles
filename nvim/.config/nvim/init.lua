@@ -72,82 +72,17 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename)
 
-vim.keymap.set("n", "<leader>lf", require("conform").format)
-local autoformat = true
-vim.api.nvim_create_user_command("ConformToggle", function()
-	autoformat = not autoformat
-end, {})
-vim.api.nvim_create_autocmd("BufWritePre", {
-	pattern = "*",
-	callback = function()
-		if autoformat then
-			require("conform").format()
-		end
-	end,
-})
-
 vim.keymap.set("n", "<leader> ", ":Pick files<CR>", { silent = true })
 vim.keymap.set("n", "<leader>pf", ":Pick files tool='git'<CR>", { silent = true })
 vim.keymap.set("n", "<leader>so", ":so<CR>")
-vim.keymap.set("n", "<leader>o", ":Oil<CR>", { silent = true })
 
 vim.cmd.colorscheme("catppuccin")
 vim.cmd("hi statusline guibg=NONE")
 
-local appname
-if vim.env.NVIM_APPNAME ~= nil then
-	appname = vim.env.NVIM_APPNAME
-else
-	appname = "nvim"
-end
-
-require("luasnip.loaders.from_lua").load({ paths = { "~/.config/" .. appname .. "/snippets" } })
-
-local ls = require("luasnip")
-vim.keymap.set({ "i" }, "<C-e>", function()
-	ls.expand()
-end, { silent = true })
-vim.keymap.set({ "i", "s" }, "<C-n>", function()
-	ls.jump(1)
-end, { silent = true })
-vim.keymap.set({ "i", "s" }, "<C-p>", function()
-	ls.jump(-1)
-end, { silent = true })
-
-local list_snips = function()
-	local ft_list = require("luasnip").available()[vim.o.filetype]
-	local ft_snips = {}
-	for _, item in pairs(ft_list) do
-		ft_snips[item.trigger] = item.name
-	end
-	print(vim.inspect(ft_snips))
-end
-vim.api.nvim_create_user_command("SnipList", list_snips, {})
-
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
-
-require("snacks")
+local snacks = require("snacks")
 
 vim.keymap.set("n", "<leader>gg", function()
-	Snacks.lazygit()
-end)
-
-require("flash").setup()
-
-vim.keymap.set({ "n", "x", "o" }, "s", function()
-	require("flash").jump()
-end)
-vim.keymap.set({ "n", "x", "o" }, "S", function()
-	require("flash").treesitter()
-end)
-vim.keymap.set({ "o" }, "r", function()
-	require("flash").remote()
-end)
-vim.keymap.set({ "x", "o" }, "R", function()
-	require("flash").treesitter_search()
-end)
-vim.keymap.set({ "c" }, "<c-s>", function()
-	require("flash").toggle()
+	snacks.lazygit()
 end)
 
 if vim.g.neovide then
