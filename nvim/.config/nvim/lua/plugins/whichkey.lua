@@ -5,8 +5,19 @@ return {
 		preset = "helix",
 		---@type number | fun(ctx: { keys: string, mode: string, plugin?: string }):number
 		delay = function(ctx)
-			return ctx.plugin and 0 or 1500
+			return ctx.plugin and 0 or 200
 		end,
+		spec = {
+			{ "<leader>", group = "leader" },
+			{ "<leader>c", group = "code" },
+			{ "<leader>g", group = "go" },
+			{ "<leader>p", group = "pick" },
+			{ "<leader>t", group = "tidal" },
+			{ "<leader>q", group = "quit" },
+			{ "gr", group = "lsp" },
+			{ "gs", group = "surround" },
+			{ "z", group = "fold" },
+		},
 	},
 	keys = {
 		{

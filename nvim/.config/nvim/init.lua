@@ -38,18 +38,6 @@ vim.keymap.set("n", "<leader>gg", function()
 	snacks.lazygit()
 end, { desc = "lazygit" })
 
-require("which-key").add({
-	{ "<leader>", group = "leader" },
-	{ "<leader>c", group = "code" },
-	{ "<leader>g", group = "go" },
-	{ "<leader>p", group = "pick" },
-	{ "<leader>t", group = "tidal" },
-	{ "<leader>q", group = "quit" },
-	{ "gr", group = "lsp" },
-	{ "gs", group = "surround" },
-	{ "z", group = "fold" },
-})
-
 if vim.g.neovide then
 	vim.g.neovide_cursor_animation_length = 0
 end
