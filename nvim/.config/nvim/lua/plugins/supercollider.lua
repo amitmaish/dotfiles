@@ -1,3 +1,12 @@
+function Bootfile()
+	local file = vim.env.SC_BOOTFILE
+	if file then
+		local f = assert(io.open(file, "r"), "bootfile not found")
+		local content = f:read("a")
+		return content
+	end
+end
+
 return {
 	"davidgranstrom/scnvim",
 	lazy = false,
@@ -5,18 +14,11 @@ return {
 		local scnvim = require("scnvim")
 		local sc_bootfile
 
-		if vim.env.SC_BOOTFILE then
-			sc_bootfile = vim.env.SC_BOOTFILE
-		else
-			sc_bootfile = "/Users/amit/Library/Application Support/SuperCollider/startup.scd"
-		end
-
 		local map = scnvim.map
 		local map_expr = scnvim.map_expr
 		scnvim.setup({
 			sclang = {
 				cmd = "/Applications/SuperCollider.app/Contents/MacOS/sclang",
-				args = { sc_bootfile },
 			},
 			keymaps = {
 				["<D-e>"] = map("editor.send_line", { "i", "n" }),
@@ -42,7 +44,11 @@ return {
 			postwin = {
 				float = {
 					enabled = true,
+					config = { border = "rounded" },
 				},
+			},
+			documentation = {
+				cmd = "/usr/local/bin/pandoc",
 			},
 		})
 
@@ -51,6 +57,10 @@ return {
 				pattern = "TidalLaunch",
 				callback = function()
 					scnvim.start()
+
+					if vim.env.SC_BOOTFILE then
+						scnvim.send(Bootfile())
+					end
 				end,
 			})
 		end
