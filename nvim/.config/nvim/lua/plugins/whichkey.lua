@@ -17,6 +17,7 @@ return {
 			{ "gr", group = "lsp" },
 			{ "gs", group = "surround" },
 			{ "z", group = "fold" },
+			{ "q", group = "quit" },
 		},
 	},
 	keys = {

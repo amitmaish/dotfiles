@@ -16,7 +16,8 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set({ "n", "v" }, "H", "^")
 vim.keymap.set({ "n", "v" }, "L", "$")
-vim.keymap.set("n", "<leader>qq", ":qa<cr>")
+vim.keymap.set("n", "<leader>qq", ":qa<cr>", { desc = "quit" })
+vim.keymap.set("n", "<leader>qQ", ":qa!<cr>", { desc = "quit without saving" })
 
 vim.keymap.set("n", "<c-h>", "<c-w>h")
 vim.keymap.set("n", "<c-j>", "<c-w>j")
