@@ -16,6 +16,8 @@ return {
 		end
 		require("luasnip.loaders.from_lua").load({ paths = { "~/.config/" .. appname .. "/snippets" } })
 
+		require("luasnip").add_snippets("supercollider", require("scnvim/utils").get_snippets())
+
 		local ls = require("luasnip")
 		vim.keymap.set({ "i" }, "<C-e>", function()
 			ls.expand()
