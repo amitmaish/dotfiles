@@ -1,10 +1,11 @@
 function Bootfile()
-	local file = vim.env.SC_BOOTFILE
-	if file then
-		local f = assert(io.open(file, "r"), "bootfile not found")
-		local content = f:read("a")
-		return content
+	local file = vim.env.HOME .. "/.local/share/nvim/lazy/tidal.nvim/bootfiles/BootSuperDirt.scd"
+	if vim.env.SC_BOOTFILE then
+		file = vim.env.SC_BOOTFILE
 	end
+	local f = assert(io.open(file, "r"), "bootfile not found")
+	local content = f:read("a")
+	return content
 end
 
 return {
@@ -58,9 +59,7 @@ return {
 				callback = function()
 					scnvim.start()
 
-					if vim.env.SC_BOOTFILE then
-						scnvim.send(Bootfile())
-					end
+					scnvim.send(Bootfile())
 				end,
 			})
 		end
