@@ -15,8 +15,13 @@ return {
 
 		completion = { documentation = { auto_show = false } },
 
+		snippets = { preset = "luasnip" },
+
 		sources = {
-			default = { "lsp", "path", "snippets", "buffer" },
+			default = { "lsp", "path", "buffer" },
+			per_filetype = {
+				supercollider = { inherit_defaults = true, "snippets" },
+			},
 		},
 
 		fuzzy = { implementation = "prefer_rust_with_warning" },
