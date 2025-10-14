@@ -10,6 +10,7 @@ end
 return {
 	"davidgranstrom/scnvim",
 	lazy = false,
+	pin = true,
 	config = function()
 		local scnvim = require("scnvim")
 
