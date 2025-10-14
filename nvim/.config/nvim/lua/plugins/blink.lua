@@ -18,10 +18,7 @@ return {
 		snippets = { preset = "luasnip" },
 
 		sources = {
-			default = { "lsp", "path", "buffer" },
-			per_filetype = {
-				supercollider = { inherit_defaults = true, "snippets" },
-			},
+			default = { "lsp", "path", "buffer", "snippets" },
 		},
 
 		fuzzy = { implementation = "prefer_rust_with_warning" },
