@@ -21,10 +21,12 @@ return {
 		words = { enabled = false },
 	},
 	keys = {
-		"<leader>gg",
-		function()
-			Snacks.lazygit()
-		end,
-		{ desc = "lazygit" },
+		{
+			"<leader>gg",
+			function()
+				require("snacks").lazygit()
+			end,
+			{ desc = "lazygit" },
+		},
 	},
 }

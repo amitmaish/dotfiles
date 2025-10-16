@@ -17,18 +17,47 @@ vim.o.linebreak = true
 
 vim.g.mapleader = " "
 
-vim.keymap.set("i", "jk", "<esc>")
-vim.keymap.set({ "n", "v" }, "H", "^")
-vim.keymap.set({ "n", "v" }, "L", "$")
-vim.keymap.set("n", "<leader>qq", ":qa<cr>", { desc = "quit" })
-vim.keymap.set("n", "<leader>qQ", ":qa!<cr>", { desc = "quit without saving" })
+local wk = require("which-key")
 
-vim.keymap.set("n", "<c-h>", "<c-w>h")
-vim.keymap.set("n", "<c-j>", "<c-w>j")
-vim.keymap.set("n", "<c-k>", "<c-w>k")
-vim.keymap.set("n", "<c-l>", "<c-w>l")
+local navWrap = false
+local notNavWrap = function()
+	return not navWrap
+end
+wk.add({
+	{ "jk", "<esc>", mode = { "i" }, hidden = true },
+	{ "H", "^", mode = { "n", "v" }, hidden = true, cond = notNavWrap },
+	{ "L", "$", mode = { "n", "v" }, hidden = true, cond = notNavWrap },
+	{ "<leader>qq", ":qa<cr>", desc = "quit" },
+	{ "<leader>qQ", ":qa!<cr>", desc = "quit without saving" },
 
-vim.keymap.set("n", "<leader>so", ":so<CR>", { desc = "source file" })
+	-- navWrap
+	{
+		"<leader>uw",
+		function()
+			navWrap = not navWrap
+		end,
+		desc = "toggle navigation line wrap",
+		icon = function()
+			if navWrap then
+				return "󰨚"
+			end
+			return "󰨙"
+		end,
+	},
+	{ "h", "gh", mode = { "i", "v" }, hidden = true, cond = navWrap },
+	{ "j", "gj", mode = { "i", "v" }, hidden = true, cond = navWrap },
+	{ "k", "gk", mode = { "i", "v" }, hidden = true, cond = navWrap },
+	{ "l", "gl", mode = { "i", "v" }, hidden = true, cond = navWrap },
+	{ "H", "g^", mode = { "i", "v" }, hidden = true, cond = navWrap },
+	{ "L", "g$", mode = { "i", "v" }, hidden = true, cond = navWrap },
+
+	{ "<c-h>", "<c-w>h", hidden = true },
+	{ "<c-j>", "<c-w>j", hidden = true },
+	{ "<c-k>", "<c-w>k", hidden = true },
+	{ "<c-l>", "<c-w>l", hidden = true },
+
+	{ "<leader>so", ":so<CR>", desc = "source file" },
+})
 
 vim.cmd.colorscheme("catppuccin")
 vim.cmd("hi statusline guibg=NONE")
