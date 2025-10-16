@@ -20,4 +20,11 @@ return {
 		statuscolumn = { enabled = false },
 		words = { enabled = false },
 	},
+	keys = {
+		"<leader>gg",
+		function()
+			Snacks.lazygit()
+		end,
+		{ desc = "lazygit" },
+	},
 }

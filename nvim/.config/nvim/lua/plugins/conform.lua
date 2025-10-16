@@ -1,17 +1,35 @@
 return {
 	"stevearc/conform.nvim",
 	init = function()
-		vim.keymap.set("n", "<leader>lf", require("conform").format)
+		vim.keymap.set("n", "<leader>lf", require("conform").format, { desc = "format buffer" })
+		local wk = require("which-key")
 		local autoformat = true
-		vim.api.nvim_create_user_command("ConformToggle", function()
-			autoformat = not autoformat
-		end, { desc = "format file" })
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			pattern = "*",
-			callback = function()
+
+		local conform_group = vim.api.nvim_create_augroup("conform", { clear = true })
+
+		wk.add({
+			"<leader>uf",
+			function()
+				autoformat = not autoformat
 				if autoformat then
-					require("conform").format()
+					vim.api.nvim_create_autocmd("BufWritePre", {
+						group = conform_group,
+						pattern = "*",
+						callback = function()
+							require("conform").format()
+						end,
+					})
+				else
+					vim.api.nvim_clear_autocmds({ group = conform_group })
 				end
+			end,
+
+			desc = "toggle autoformating",
+			icon = function()
+				if autoformat then
+					return "󰨚"
+				end
+				return "󰨙"
 			end,
 		})
 	end,

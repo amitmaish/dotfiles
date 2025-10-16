@@ -35,5 +35,12 @@ return {
 			end,
 			desc = "telescope grep",
 		},
+		{
+			"<leader>pb",
+			function()
+				vim.cmd.Telescope("builtin")
+			end,
+			desc = "telescope builtins",
+		},
 	},
 }

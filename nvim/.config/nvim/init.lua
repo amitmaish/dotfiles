@@ -1,3 +1,7 @@
+require("config.lazy")
+require("digraphs")
+require("neovide")
+
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
@@ -24,21 +28,7 @@ vim.keymap.set("n", "<c-j>", "<c-w>j")
 vim.keymap.set("n", "<c-k>", "<c-w>k")
 vim.keymap.set("n", "<c-l>", "<c-w>l")
 
-require("config.lazy")
-
-require("digraphs")
-
 vim.keymap.set("n", "<leader>so", ":so<CR>", { desc = "source file" })
 
 vim.cmd.colorscheme("catppuccin")
 vim.cmd("hi statusline guibg=NONE")
-
-local snacks = require("snacks")
-
-vim.keymap.set("n", "<leader>gg", function()
-	snacks.lazygit()
-end, { desc = "lazygit" })
-
-if vim.g.neovide then
-	vim.g.neovide_cursor_animation_length = 0
-end
