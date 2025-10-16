@@ -18,38 +18,65 @@ vim.o.linebreak = true
 vim.g.mapleader = " "
 
 local wk = require("which-key")
+local snacks = require("snacks")
 
-local navWrap = false
-local notNavWrap = function()
-	return not navWrap
+snacks.toggle
+	.new({
+		id = "autoformat",
+		name = "autoformat",
+		get = function()
+			return not vim.g.disable_autoformat
+		end,
+		set = function(state)
+			vim.g.disable_autoformat = not state
+		end,
+	})
+	:map("<leader>uf")
+
+NavWrap = false
+local updateNavWrap = function()
+	wk.add({
+		{
+			mode = { "n", "v" },
+			hidden = true,
+			cond = NavWrap,
+			{ "j", "gj" },
+			{ "k", "gk" },
+			{ "H", "g^" },
+			{ "L", "g$" },
+		},
+		{
+			mode = { "n", "v" },
+			hidden = true,
+			cond = not NavWrap,
+			{ "H", "^" },
+			{ "L", "$" },
+		},
+	})
 end
+updateNavWrap()
+snacks.toggle
+	.new({
+		id = "navWrap",
+		name = "navWrap",
+		get = function()
+			return NavWrap
+		end,
+		set = function(state)
+			NavWrap = state
+			if not NavWrap then
+				vim.keymap.del({ "n", "v" }, "j")
+				vim.keymap.del({ "n", "v" }, "k")
+			end
+			updateNavWrap()
+		end,
+	})
+	:map("<leader>uw")
+
 wk.add({
 	{ "jk", "<esc>", mode = { "i" }, hidden = true },
-	{ "H", "^", mode = { "n", "v" }, hidden = true, cond = notNavWrap },
-	{ "L", "$", mode = { "n", "v" }, hidden = true, cond = notNavWrap },
 	{ "<leader>qq", ":qa<cr>", desc = "quit" },
 	{ "<leader>qQ", ":qa!<cr>", desc = "quit without saving" },
-
-	-- navWrap
-	{
-		"<leader>uw",
-		function()
-			navWrap = not navWrap
-		end,
-		desc = "toggle navigation line wrap",
-		icon = function()
-			if navWrap then
-				return "󰨚"
-			end
-			return "󰨙"
-		end,
-	},
-	{ "h", "gh", mode = { "i", "v" }, hidden = true, cond = navWrap },
-	{ "j", "gj", mode = { "i", "v" }, hidden = true, cond = navWrap },
-	{ "k", "gk", mode = { "i", "v" }, hidden = true, cond = navWrap },
-	{ "l", "gl", mode = { "i", "v" }, hidden = true, cond = navWrap },
-	{ "H", "g^", mode = { "i", "v" }, hidden = true, cond = navWrap },
-	{ "L", "g$", mode = { "i", "v" }, hidden = true, cond = navWrap },
 
 	{ "<c-h>", "<c-w>h", hidden = true },
 	{ "<c-j>", "<c-w>j", hidden = true },
