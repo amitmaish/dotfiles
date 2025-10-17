@@ -14,6 +14,7 @@ vim.o.syntax = "disable"
 vim.o.spell = true
 vim.o.spellcapcheck = ""
 vim.o.linebreak = true
+vim.o.showmode = false
 
 vim.g.mapleader = " "
 
@@ -35,10 +36,6 @@ Snacks.toggle
 
 NavWrap = false
 UpdateNavWrap = function()
-	if not NavWrap then
-		vim.keymap.del({ "n", "v" }, "j")
-		vim.keymap.del({ "n", "v" }, "k")
-	end
 	WK.add({
 		{
 			mode = { "n", "v" },
@@ -68,6 +65,10 @@ Snacks.toggle
 		end,
 		set = function(state)
 			NavWrap = state
+			if not NavWrap then
+				vim.keymap.del({ "n", "v" }, "j")
+				vim.keymap.del({ "n", "v" }, "k")
+			end
 			UpdateNavWrap()
 		end,
 	})
