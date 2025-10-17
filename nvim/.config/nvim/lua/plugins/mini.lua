@@ -2,7 +2,12 @@ return {
 	"nvim-mini/mini.nvim",
 	version = "*",
 	config = function()
+		require("mini.ai").setup()
+		require("mini.bracketed").setup()
+		require("mini.comment").setup()
+		require("mini.icons").setup()
 		require("mini.pairs").setup()
+		-- require("mini.statusline").setup()
 		require("mini.surround").setup({
 			mappings = {
 				add = "gsa", -- Add surrounding in Normal and Visual modes
