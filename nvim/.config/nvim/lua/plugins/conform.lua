@@ -20,9 +20,11 @@ return {
 			nix = { "alejandra" },
 			python = { "ruff" },
 			rust = { "rustfmt" },
+			tex = { "tex-fmt" },
 			toml = { "taplo" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
+			typst = { "prettypst" },
 			zig = { lsp_format = "prefer" },
 		},
 		format_on_save = function(bufnr)
