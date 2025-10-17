@@ -24,7 +24,7 @@ return {
 		{
 			"<leader>gg",
 			function()
-				require("snacks").lazygit()
+				Snacks.lazygit()
 			end,
 			{ desc = "lazygit" },
 		},

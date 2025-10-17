@@ -17,10 +17,10 @@ vim.o.linebreak = true
 
 vim.g.mapleader = " "
 
-local wk = require("which-key")
-local snacks = require("snacks")
+WK = require("which-key")
+Snacks = require("snacks")
 
-snacks.toggle
+Snacks.toggle
 	.new({
 		id = "autoformat",
 		name = "autoformat",
@@ -35,7 +35,7 @@ snacks.toggle
 
 NavWrap = false
 UpdateNavWrap = function()
-	wk.add({
+	WK.add({
 		{
 			mode = { "n", "v" },
 			hidden = true,
@@ -55,7 +55,7 @@ UpdateNavWrap = function()
 	})
 end
 UpdateNavWrap()
-snacks.toggle
+Snacks.toggle
 	.new({
 		id = "navWrap",
 		name = "navWrap",
@@ -73,7 +73,7 @@ snacks.toggle
 	})
 	:map("<leader>uw")
 
-wk.add({
+WK.add({
 	{ "jk", "<esc>", mode = { "i" }, hidden = true },
 	{ "<leader>qq", ":qa<cr>", desc = "quit" },
 	{ "<leader>qQ", ":qa!<cr>", desc = "quit without saving" },
