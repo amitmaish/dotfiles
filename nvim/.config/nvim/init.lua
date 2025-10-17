@@ -101,4 +101,3 @@ WK.add({
 })
 
 vim.cmd.colorscheme("catppuccin")
-vim.cmd("hi statusline guibg=NONE")
