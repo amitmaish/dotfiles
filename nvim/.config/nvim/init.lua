@@ -34,7 +34,7 @@ snacks.toggle
 	:map("<leader>uf")
 
 NavWrap = false
-local updateNavWrap = function()
+UpdateNavWrap = function()
 	wk.add({
 		{
 			mode = { "n", "v" },
@@ -54,7 +54,7 @@ local updateNavWrap = function()
 		},
 	})
 end
-updateNavWrap()
+UpdateNavWrap()
 snacks.toggle
 	.new({
 		id = "navWrap",
@@ -68,7 +68,7 @@ snacks.toggle
 				vim.keymap.del({ "n", "v" }, "j")
 				vim.keymap.del({ "n", "v" }, "k")
 			end
-			updateNavWrap()
+			UpdateNavWrap()
 		end,
 	})
 	:map("<leader>uw")
