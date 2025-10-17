@@ -84,6 +84,19 @@ WK.add({
 	{ "<c-l>", "<c-w>l", hidden = true },
 
 	{ "<leader>so", ":so<CR>", desc = "source file" },
+
+	{
+		"gd",
+		require("telescope.builtin").lsp_definition,
+		desc = "go to definition",
+	},
+	{ "<leader>ca", vim.lsp.buf.code_action, desc = "code action" },
+	{ "<leader>cr", vim.lsp.buf.rename, desc = "lsp rename" },
+	{
+		"<leader>cd",
+		require("telescope.builtin").diagnostics,
+		desc = "Pick diagnostics",
+	},
 })
 
 vim.cmd.colorscheme("catppuccin")

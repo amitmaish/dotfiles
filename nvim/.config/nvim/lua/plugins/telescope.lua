@@ -2,44 +2,34 @@ return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = { "nvim-lua/plenary.nvim", "davidgranstrom/telescope-scdoc.nvim" },
 	config = function(opts)
-		Telescope = require("telescope")
-		Telescope.setup(opts)
-		Telescope.load_extension("scdoc")
+		local telescope = require("telescope")
+		telescope.setup(opts)
+		telescope.load_extension("scdoc")
 	end,
 	keys = {
 		{
 			"<leader> ",
-			function()
-				Telescope.builtin.find_files()
-			end,
+			require("telescope.builtin").find_files,
 			desc = "telescope files",
 		},
 		{
 			"<leader>pf",
-			function()
-				Telescope.builtin.git_files()
-			end,
+			require("telescope.builtin").git_files,
 			desc = "telescope git files",
 		},
 		{
 			"<leader>ph",
-			function()
-				Telescope.builtin.help_tags()
-			end,
+			require("telescope.builtin").help_tags,
 			desc = "telescope help tags",
 		},
 		{
 			"<leader>pg",
-			function()
-				Telescope.builtin.live_grep()
-			end,
+			require("telescope.builtin").live_grep,
 			desc = "telescope grep",
 		},
 		{
 			"<leader>pb",
-			function()
-				Telescope.builtin.builtin()
-			end,
+			require("telescope.builtin").builtin,
 			desc = "telescope builtins",
 		},
 	},
