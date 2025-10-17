@@ -2,6 +2,7 @@ return {
 	"nvim-mini/mini.nvim",
 	version = "*",
 	config = function()
+		require("mini.pairs").setup()
 		require("mini.surround").setup({
 			mappings = {
 				add = "gsa", -- Add surrounding in Normal and Visual modes
