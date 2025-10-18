@@ -88,7 +88,7 @@ WK.add({
 
 	{
 		"gd",
-		require("telescope.builtin").lsp_definition,
+		vim.lsp.buf.definition,
 		desc = "go to definition",
 	},
 	{ "<leader>ca", vim.lsp.buf.code_action, desc = "code action" },
