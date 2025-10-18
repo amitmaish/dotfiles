@@ -7,6 +7,7 @@ return {
 		require("mini.comment").setup()
 		require("mini.icons").setup()
 		require("mini.pairs").setup()
+		require("mini.sessions").setup()
 		require("mini.statusline").setup({
 			content = {
 				active = function()
