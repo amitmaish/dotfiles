@@ -18,9 +18,9 @@ return {
 				["MiniStatuslineModeCommand"] = { fg = colors.peach, bg = colors.none },
 				["MiniStatuslineModeReplace"] = { fg = colors.red, bg = colors.none },
 				["MiniStatuslineModeOther"] = { fg = colors.teal, bg = colors.none },
-				["MiniStatuslineFilename"] = { bg = colors.none },
-				["MiniStatuslineFileinfo"] = { bg = colors.none },
-				["MiniStatuslineDevinfo"] = { bg = colors.none },
+				["MiniStatuslineFilename"] = { link = "Comment" },
+				["MiniStatuslineFileinfo"] = { link = "Comment" },
+				["MiniStatuslineDevinfo"] = { link = "Comment" },
 			}
 		end,
 	},
