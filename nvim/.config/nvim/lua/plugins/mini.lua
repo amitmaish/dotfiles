@@ -21,7 +21,7 @@ return {
 					local search = MiniStatusline.section_searchcount({ trunc_width = 75 })
 
 					return MiniStatusline.combine_groups({
-						{ hl = mode_hl, strings = { string.lower(mode) } },
+						{ hl = mode_hl, strings = { mode:lower() } },
 						{ hl = "MiniStatuslineDevinfo", strings = { git, diff, diagnostics, lsp } },
 						"%<", -- Mark general truncate point
 						{
