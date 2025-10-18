@@ -9,6 +9,7 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = false
 vim.o.swapfile = false
+vim.o.undofile = true
 vim.o.winborder = "rounded"
 vim.o.syntax = "disable"
 vim.o.spell = true
