@@ -4,6 +4,7 @@ return {
 	build = "make install_jsregexp",
 	opts = {
 		enable_autosnippets = true,
+		update_events = { "TextChanged", "TextChangedI" },
 	},
 	init = function()
 		local appname
