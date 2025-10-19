@@ -27,7 +27,7 @@ return {
 						"%<", -- Mark general truncate point
 						{
 							hl = "MiniStatuslineFilename",
-							strings = { vim.bo.filetype ~= "" and filename },
+							strings = { vim.bo.filetype ~= "" and filename:gsub("%F", "%f") },
 						},
 						"%=", -- End left alignment
 						{ hl = "MiniStatuslineFileinfo", strings = { fileinfo:gsub("%[.*%]", "") } },
