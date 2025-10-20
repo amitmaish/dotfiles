@@ -1,4 +1,5 @@
 require("config.lazy")
+require("config.lsp_configs")
 require("digraphs")
 require("neovide")
 
