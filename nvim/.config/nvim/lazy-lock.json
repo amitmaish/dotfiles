@@ -26,7 +26,7 @@
   "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
   "telescope_sessions_picker.nvim": { "branch": "main", "commit": "ebe77f5a2e9f57173178d0a838060c90f117a9ae" },
   "tidal-makros.nvim": { "branch": "main", "commit": "e4398c52ad2a758ced76316034a8bfb082361beb" },
-  "tidal.nvim": { "branch": "develop", "commit": "71431f8d5f39147351464f3fd3156d4b9d380462" },
+  "tidal.nvim": { "branch": "develop", "commit": "dfc626fef111e29ab556d5bc8087e4c691cab94a" },
   "undotree": { "branch": "master", "commit": "0f1c9816975b5d7f87d5003a19c53c6fd2ff6f7f" },
   "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },
   "which-key.nvim": { "branch": "main", "commit": "b4177e3eaf15fe5eb8357ebac2286d488be1ed00" }

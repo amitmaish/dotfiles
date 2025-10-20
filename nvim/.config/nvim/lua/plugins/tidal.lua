@@ -7,7 +7,7 @@ local colors = require("catppuccin.palettes").get_palette("mocha")
 
 return {
 	{
-		"amitmaish/tidal.nvim",
+		"thgrund/tidal.nvim",
 		branch = "develop",
 		opts = {
 			--- Configure TidalLaunch command
