@@ -3,6 +3,7 @@ return {
 	init = function()
 		vim.keymap.set("n", "<leader>lf", require("conform").format, { desc = "format buffer" })
 	end,
+	---@type conform.setupOpts
 	opts = {
 		formatters_by_ft = {
 			assembly = { "asmfmt" },

@@ -1,6 +1,7 @@
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
+	---@type wk.Opts
 	opts = {
 		preset = "helix",
 		---@type number | fun(ctx: { keys: string, mode: string, plugin?: string }):number
