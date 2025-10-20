@@ -3,6 +3,7 @@ return {
 	version = "*",
 	config = function()
 		require("mini.ai").setup()
+		require("mini.align").setup()
 		require("mini.bracketed").setup()
 		require("mini.comment").setup()
 		require("mini.icons").setup()
