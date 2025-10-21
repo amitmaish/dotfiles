@@ -51,5 +51,10 @@ return {
 			end,
 			desc = "telescope sessions",
 		},
+		{
+			"<leader>pc",
+			require("telescope.builtin").colorscheme,
+			desc = "telescope colorschemes",
+		},
 	},
 }
