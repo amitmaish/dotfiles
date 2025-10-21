@@ -32,7 +32,7 @@ return {
 								["2"] = { bg = colors.yellow, foreground = colors.crust },
 							},
 							global = {
-								baseName = "CodeHighlight",
+								baseName = "TidalHighlight",
 								style = { bg = colors.sky, foreground = colors.crust },
 							},
 						},
