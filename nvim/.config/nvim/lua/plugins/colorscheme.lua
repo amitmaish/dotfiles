@@ -25,4 +25,8 @@ return {
 			}
 		end,
 	},
+	config = function(opts)
+		require("catppuccin").setup(opts)
+		vim.cmd.colorscheme("catppuccin")
+	end,
 }

@@ -101,5 +101,3 @@ WK.add({
 		desc = "Pick diagnostics",
 	},
 })
-
-vim.cmd.colorscheme("catppuccin")
