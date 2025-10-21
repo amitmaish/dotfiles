@@ -11,15 +11,12 @@ return {
 		branch = "develop",
 		---@type TidalConfig
 		opts = {
-			--- Configure TidalLaunch command
 			boot = {
 				tidal = {
-					--- Command to launch ghci with tidal installation
 					cmd = "ghci",
 					args = {
 						"-v0",
 					},
-					--- Tidal boot file path
 					file = tidal_bootfile,
 					enabled = true,
 
@@ -30,7 +27,6 @@ return {
 								ip = "127.0.0.1",
 								port = 3335,
 							},
-							-- [Tidal ID] -> hl style
 							custom = {
 								["drums"] = { bg = colors.pink, foreground = colors.crust },
 								["2"] = { bg = colors.green, foreground = colors.crust },
@@ -51,8 +47,6 @@ return {
 				},
 				split = "v",
 			},
-			--- Default keymaps
-			--- Set to false to disable all default mappings
 			--- @type table | nil
 			mappings = {
 				send_line = { mode = { "i", "n" }, key = "<S-CR>" },
@@ -62,17 +56,12 @@ return {
 				send_silence = { mode = "n", key = "<leader>d" },
 				send_hush = { mode = "n", key = "<leader><Esc>" },
 			},
-			---- Configure highlight applied to selections sent to tidal interpreter
 			selection_highlight = {
-				--- Highlight definition table
-				--- see ':h nvim_set_hl' for details
 				--- @type vim.api.keyset.highlight
 				highlight = { link = "IncSearch" },
-				--- Duration to apply the highlight for
 				timeout = 150,
 			},
 		},
-		-- Recommended: Install TreeSitter parsers for Haskell and SuperCollider
 		dependencies = {
 			{
 				"nvim-treesitter/nvim-treesitter",
