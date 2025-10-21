@@ -10,7 +10,8 @@ return {
 					["@property"] = { fg = colors.lavender },
 					["@markup.italic"] = { fg = colors.green },
 					["@markup.strong"] = { fg = colors.mauve },
-					["statusline"] = { bg = colors.none },
+					["StatusLine"] = { bg = colors.none },
+					["StatusLineNC"] = { bg = colors.none },
 
 					-- mini
 					["MiniStatuslineModeNormal"] = { fg = colors.blue, bg = colors.none },
