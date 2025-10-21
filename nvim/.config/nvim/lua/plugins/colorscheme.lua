@@ -38,4 +38,5 @@ return {
 		dir = "~/dev/sakura-crush",
 		opts = {},
 	},
+	{ "cocopon/colorswatch.vim" },
 }
