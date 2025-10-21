@@ -9,6 +9,7 @@ return {
 	{
 		"thgrund/tidal.nvim",
 		branch = "develop",
+		---@type TidalConfig
 		opts = {
 			--- Configure TidalLaunch command
 			boot = {

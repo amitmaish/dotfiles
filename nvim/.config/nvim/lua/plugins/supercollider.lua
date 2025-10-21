@@ -7,6 +7,7 @@ local function Bootfile(default)
 end
 
 ---@param file string
+---@return string?
 local function ReadFile(file)
 	if file == nil then
 		vim.notify("provide a file to the ReadFile function", vim.log.levels.ERROR)
@@ -68,8 +69,8 @@ return {
 				callback = function()
 					scnvim.start()
 
-					local bootfile =
-						Bootfile(vim.env.HOME .. "~/.local/share/nvim/lazy/tidal.nvim/bootfiles/BootSuperDirt.scd")
+					local bootfile = Bootfile(vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1])
+					---@diagnostic disable-next-line: param-type-mismatch
 					scnvim.send(ReadFile(bootfile))
 				end,
 			})
