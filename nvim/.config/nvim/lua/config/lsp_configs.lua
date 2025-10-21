@@ -27,7 +27,7 @@ vim.lsp.config("arduino_language_server", {
 		"-cli",
 		"/usr/local/bin/arduino-cli",
 		"-cli-config",
-		vim.fn.expand("$HOME/") .. ".arduinoIDE/arduino-cli.yaml",
+		vim.env.HOME .. ".arduinoIDE/arduino-cli.yaml",
 	},
 })
 vim.lsp.config("lua_ls", {
