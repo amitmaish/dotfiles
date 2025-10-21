@@ -29,11 +29,11 @@ return {
 							},
 							custom = {
 								["drums"] = { bg = colors.pink, foreground = colors.crust },
-								["2"] = { bg = colors.green, foreground = colors.crust },
+								["2"] = { bg = colors.yellow, foreground = colors.crust },
 							},
 							global = {
 								baseName = "CodeHighlight",
-								style = { bg = colors.blue, foreground = colors.crust },
+								style = { bg = colors.sky, foreground = colors.crust },
 							},
 						},
 						events = {
