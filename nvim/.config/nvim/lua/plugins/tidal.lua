@@ -28,8 +28,8 @@ return {
 								port = 3335,
 							},
 							custom = {
-								["drums"] = { bg = colors.pink, foreground = colors.crust },
 								["2"] = { bg = colors.yellow, foreground = colors.crust },
+								["3"] = { bg = colors.pink, foreground = colors.crust },
 							},
 							global = {
 								baseName = "TidalHighlight",
