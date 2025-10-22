@@ -7,6 +7,14 @@ return {
 		bigfile = { enabled = true },
 		dashboard = { enabled = false },
 		explorer = { enabled = false },
+		image = {
+			enabled = true,
+			convert = {
+				magick = {
+					vector = { "-background", "-none", "-density", 256, "{src}[{page}]" },
+				},
+			},
+		},
 		indent = { enabled = false },
 		input = { enabled = true },
 		picker = { enabled = false },
