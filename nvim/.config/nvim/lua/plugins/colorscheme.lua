@@ -38,5 +38,9 @@ return {
 		dir = "~/dev/sakura-crush",
 		opts = {},
 	},
+	{ "folke/tokyonight.nvim" },
+	{ "sts10/vim-pink-moon" },
+	{ "nikolvs/vim-sunbather" },
+	{ "cocopon/iceberg.vim" },
 	{ "cocopon/colorswatch.vim" },
 }
