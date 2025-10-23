@@ -4,6 +4,7 @@ vim.lsp.enable({
 	"arduino_language_server",
 	"biome",
 	"clangd",
+	"css-lsp",
 	"gopls",
 	"hls",
 	"html",
