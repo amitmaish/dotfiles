@@ -9,6 +9,7 @@ return {
 			assembly = { "asmfmt" },
 			arduino = { "clang-format" },
 			c = { "clang-format" },
+			cmake = { "gersemi" },
 			cpp = { "clang-format" },
 			cs = { "clang-format" },
 			go = { "gofumpt", "goimports" },

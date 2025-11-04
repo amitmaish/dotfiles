@@ -11,6 +11,7 @@ vim.lsp.enable({
 	"jsonls",
 	"lua_ls",
 	"marksman",
+	"neocmake",
 	"nil_ls",
 	"ruff",
 	"taplo",
