@@ -14,6 +14,14 @@ return {
 					["StatusLine"] = { bg = colors.none },
 					["StatusLineNC"] = { bg = colors.none },
 
+					-- typst
+					["@markup.heading.1.typst"] = { link = "rainbow1" },
+					["@markup.heading.2.typst"] = { link = "rainbow2" },
+					["@markup.heading.3.typst"] = { link = "rainbow3" },
+					["@markup.heading.4.typst"] = { link = "rainbow4" },
+					["@markup.heading.5.typst"] = { link = "rainbow5" },
+					["@markup.heading.6.typst"] = { link = "rainbow6" },
+
 					-- mini
 					["MiniStatuslineModeNormal"] = { fg = colors.blue, bg = colors.none },
 					["MiniStatuslineModeInsert"] = { fg = colors.green, bg = colors.none },
