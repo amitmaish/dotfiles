@@ -13,6 +13,7 @@ return {
 					["@markup.strong"] = { fg = colors.mauve },
 					["StatusLine"] = { bg = colors.none },
 					["StatusLineNC"] = { bg = colors.none },
+					["LspInlayHint"] = { link = "SignColumn" },
 
 					-- typst
 					["@markup.heading.1.typst"] = { link = "rainbow1" },

@@ -35,9 +35,23 @@ vim.lsp.config("arduino_language_server", {
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
+			hint = { enable = true },
 			workspace = {
 				library = vim.api.nvim_get_runtime_file("", true),
 			},
 		},
 	},
 })
+
+Snacks.toggle
+	.new({
+		id = "inlay hints",
+		name = "inlay hints",
+		get = function()
+			return vim.lsp.inlay_hint.is_enabled()
+		end,
+		set = function(state)
+			vim.lsp.inlay_hint.enable(state)
+		end,
+	})
+	:map("<leader>ui")
