@@ -26,7 +26,7 @@ return {
 			toml = { "taplo" },
 			typescript = { "prettier" },
 			typescriptreact = { "prettier" },
-			typst = { "prettypst" },
+			typst = { "prettypst", "typstyle" },
 			zig = { lsp_format = "prefer" },
 		},
 		format_on_save = function(bufnr)
