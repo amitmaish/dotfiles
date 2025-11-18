@@ -28,3 +28,8 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# ZVM
+set -gx ZVM_INSTALL "$HOME/.zvm/self"
+set -gx PATH $PATH "$HOME/.zvm/bin"
+set -gx PATH $PATH "$ZVM_INSTALL/"
