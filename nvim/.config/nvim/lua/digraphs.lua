@@ -10,3 +10,4 @@ digraph("na", "̃") -- nasal diacritic
 digraph("um", "̈") -- umlaut
 digraph("ww", "ʍ") -- "upside down capital W"
 digraph("eh", "ε") -- epsilon
+digraph("th", "θ") -- theta
