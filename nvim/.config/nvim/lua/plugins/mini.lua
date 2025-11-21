@@ -7,7 +7,11 @@ return {
 		require("mini.bracketed").setup()
 		require("mini.comment").setup()
 		require("mini.icons").setup()
-		require("mini.pairs").setup()
+		require("mini.pairs").setup({
+			mappings = {
+				["'"] = false,
+			},
+		})
 		require("mini.sessions").setup()
 		require("mini.statusline").setup({
 			content = {
