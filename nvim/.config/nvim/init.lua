@@ -78,6 +78,7 @@ Snacks.toggle
 
 WK.add({
 	{ "jk", "<esc>", mode = { "i" }, hidden = true },
+	{ "JK", "", mode = { "t" }, hidden = true },
 	{ "<leader>qq", ":qa<cr>", desc = "quit" },
 	{ "<leader>qQ", ":qa!<cr>", desc = "quit without saving" },
 

@@ -23,6 +23,7 @@ return {
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		scroll = { enabled = false },
+		---@type snacks.terminal.Config
 		statuscolumn = { enabled = false },
 		words = { enabled = false },
 	},
