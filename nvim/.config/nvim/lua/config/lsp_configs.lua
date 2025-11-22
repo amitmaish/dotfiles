@@ -4,7 +4,7 @@ vim.lsp.enable({
 	"arduino_language_server",
 	"biome",
 	"clangd",
-	"css-lsp",
+	"cssls",
 	"gopls",
 	"hls",
 	"html",
@@ -13,6 +13,7 @@ vim.lsp.enable({
 	"marksman",
 	"neocmake",
 	"nil_ls",
+	"ron-lsp",
 	"ruff",
 	"taplo",
 	"texlab",
@@ -40,6 +41,17 @@ vim.lsp.config("lua_ls", {
 				library = vim.api.nvim_get_runtime_file("", true),
 			},
 		},
+	},
+})
+vim.lsp.config("ron-lsp", {
+	default_config = {
+		cmd = { vim.fn.expand("ron-lsp") },
+		filetypes = { "ron" },
+		root_dir = function(fname)
+			local util = require("lspconfig.util")
+			return util.root_pattern("Cargo.toml", ".git")(fname) or vim.loop.cwd()
+		end,
+		settings = {},
 	},
 })
 vim.lsp.config("tinymist", {
