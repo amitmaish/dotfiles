@@ -3,10 +3,9 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +22,6 @@
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        ./noctalia.nix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
@@ -33,6 +31,7 @@
             backupFileExtension = "backup";
           };
         }
+        ./noctalia.nix
       ];
     };
   };
