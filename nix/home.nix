@@ -37,8 +37,8 @@
 
   programs.git = {
     enable = true;
-    userEmail = "amit.maish1@gmail.com";
-    userName = "amit";
+    user.email = "amit.maish1@gmail.com";
+    user.name = "amit";
   };
 
   programs.fish = {
