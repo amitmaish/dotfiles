@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     fzf
+    fuzzel
     gcc
     go
     lazygit
@@ -16,15 +17,16 @@
     python3
     ripgrep
     rustup
+    swaylock
     yazi
   ];
 
+  xdg.configFile."niri" = {
+    source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/niri";
+    recursive = true;
+  };
   xdg.configFile."nvim" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/nvim/.config/nvim";
     recursive = true;
-  };
-
-  programs.bash = {
-    enable = true;
   };
 }
