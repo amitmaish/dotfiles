@@ -33,6 +33,8 @@
     yazi
     zoxide
 
+    asm-lsp
+    haskell-language-server
     ron-lsp
 
     blender
