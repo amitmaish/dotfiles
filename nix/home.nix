@@ -11,6 +11,7 @@
     bat
     cargo-generate
     cargo-sweep
+    cargo-workspaces
     direnv
     eza
     fuzzel
