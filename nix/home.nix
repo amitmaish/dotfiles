@@ -20,6 +20,7 @@
     gh
     go
     lazygit
+    lldb
     nodejs
     python3
     quickshell
