@@ -22,10 +22,10 @@
     lazygit
     lldb
     nodejs
+    pkgconf
     python3
     quickshell
     ripgrep
-    rustup
     starship
     swaybg
     swaylock

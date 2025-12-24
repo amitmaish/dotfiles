@@ -6,12 +6,17 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    rust-overlay,
     ...
   }: {
     nixosConfigurations.amit = nixpkgs.lib.nixosSystem {
@@ -27,6 +32,10 @@
             backupFileExtension = "backup";
           };
         }
+        ({pkgs, ...}: {
+          nixpkgs.overlays = [rust-overlay.overlays.default];
+          environment.systemPackages = [pkgs.rust-bin.stable.latest.default];
+        })
       ];
     };
   };
