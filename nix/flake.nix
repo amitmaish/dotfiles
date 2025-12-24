@@ -1,9 +1,14 @@
 {
   description = "tiny";
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-25.05";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -18,6 +23,7 @@
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
+        ./noctalia.nix
         home-manager.nixosModules.home-manager
         {
           home-manager = {

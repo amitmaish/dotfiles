@@ -17,6 +17,7 @@
     python3
     ripgrep
     rustup
+    swaybg
     swaylock
     yazi
   ];
