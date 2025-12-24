@@ -40,13 +40,6 @@ return {
 			end,
 		},
 	},
-	---@type LazyPluginSpec
-	{
-		name = "sakura-crush",
-		dev = true,
-		dir = "~/dev/sakura-crush",
-		opts = {},
-	},
 	{ "folke/tokyonight.nvim" },
 	{ "sts10/vim-pink-moon" },
 	{ "nikolvs/vim-sunbather" },

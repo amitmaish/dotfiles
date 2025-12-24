@@ -96,9 +96,9 @@ WK.add({
 	},
 	{ "<leader>ca", vim.lsp.buf.code_action, desc = "code action" },
 	{ "<leader>cr", vim.lsp.buf.rename, desc = "lsp rename" },
-	{
-		"<leader>cd",
-		require("telescope.builtin").diagnostics,
-		desc = "Pick diagnostics",
-	},
+	-- {
+	-- 	"<leader>cd",
+	-- 	require("telescope.builtin").diagnostics,
+	-- 	desc = "Pick diagnostics",
+	-- },
 })
