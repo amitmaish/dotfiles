@@ -8,6 +8,8 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
+    cargo-generate
+    cargo-sweep
     direnv
     eza
     fuzzel
