@@ -16,6 +16,7 @@
     python3
     ripgrep
     rustup
+    yazi
   ];
 
   xdg.configFile."nvim" = {
