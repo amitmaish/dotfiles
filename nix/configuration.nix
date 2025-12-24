@@ -61,12 +61,15 @@
 
   services.displayManager.ly.enable = true;
 
+  programs.fish.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.amit = {
     isNormalUser = true;
     description = "amit";
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
+    shell = pkgs.fish;
   };
 
   # Allow unfree packages
