@@ -8,8 +8,10 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
-    fzf
+    direnv
+    eza
     fuzzel
+    fzf
     gcc
     go
     lazygit
@@ -18,8 +20,10 @@
     quickshell
     ripgrep
     rustup
+    starship
     swaybg
     swaylock
+    tlrc
     waybar
     yazi
     zoxide
@@ -29,6 +33,38 @@
     pureref
     steam
   ];
+
+  programs.git = {
+    enable = true;
+    userEmail = "amit.maish1@gmail.com";
+    userName = "amit";
+  };
+
+  programs.fish = {
+    enable = true;
+    functions = {
+      y = {
+        body = ''
+          set tmp (mktemp -t "yazi-cwd.XXXXXX")
+          yazi $argv --cwd-file="$tmp"
+          if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+          	builtin cd -- "$cwd"
+          end
+          rm -f -- "$tmp"
+        '';
+      };
+    };
+    shellAliases = {
+      ls = "eza";
+    };
+    shellInit = ''
+      direnv hook fish | source
+      fzf --fish | source
+      zoxide init fish --cmd cd | source
+
+      starship init fish | source
+    '';
+  };
 
   xdg.configFile."ghostty" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/ghostty/.config/ghostty/";
@@ -40,10 +76,6 @@
   };
   xdg.configFile."nvim" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/nvim/.config/nvim";
-    recursive = true;
-  };
-  xdg.configFile."quickshell" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/quickshell";
     recursive = true;
   };
 }

@@ -15,6 +15,7 @@ return {
 			go = { "gofumpt", "goimports" },
 			haskell = { "ormolu" },
 			html = { "prettier" },
+			kdl = { "kdlfmt" },
 			lua = { "stylua" },
 			javascript = { "prettier", stop_after_first = true },
 			json = { "prettier" },

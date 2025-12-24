@@ -13,6 +13,7 @@ vim.lsp.enable({
 	"marksman",
 	"neocmake",
 	"nil_ls",
+	"qmlls",
 	"ron-lsp",
 	"ruff",
 	"taplo",
