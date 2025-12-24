@@ -33,6 +33,8 @@
     yazi
     zoxide
 
+    ron-lsp
+
     blender
     discord
     pureref
