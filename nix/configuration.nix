@@ -1,14 +1,15 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -45,45 +46,46 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-	programs.niri.enable = true;
+  programs.niri.enable = true;
 
-	services.xserver = {
-		enable = true;
-		autoRepeatDelay = 200;
-		autoRepeatInterval = 25;
+  services.xserver = {
+    enable = true;
+    autoRepeatDelay = 200;
+    autoRepeatInterval = 25;
 
-		xkb = {
-			layout = "us";
-			variant = "";
-		};
-	};
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
+  };
 
-	services.displayManager.ly.enable = true;
+  services.displayManager.ly.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.amit = {
     isNormalUser = true;
     description = "amit";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [];
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-	programs.firefox.enable = true;
+  programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-		alacritty
-		ghostty
-		git
-neovim
-		vim 
-		wget
+    alacritty
+    ghostty
+    git
+    neovim
+    vim
+    wget
+    unzip
   ];
 
   fonts.packages = with pkgs; [
-  	nerd-fonts.jetbrains-mono
+    nerd-fonts.jetbrains-mono
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -114,5 +116,4 @@ neovim
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.05"; # Did you read the comment?
-
 }
