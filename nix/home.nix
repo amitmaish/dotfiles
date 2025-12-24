@@ -8,6 +8,7 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
+    bat
     cargo-generate
     cargo-sweep
     direnv
@@ -58,6 +59,7 @@
       };
     };
     shellAliases = {
+      cat = "bat";
       ls = "eza";
     };
     shellInit = ''
@@ -68,6 +70,8 @@
       starship init fish | source
     '';
   };
+
+  home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
 
   xdg.configFile."ghostty" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/ghostty/.config/ghostty/";
