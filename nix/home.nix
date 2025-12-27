@@ -23,6 +23,7 @@ in {
     go
     lazygit
     lldb
+    neofetch
     nodejs
     pkgconf
     python3
@@ -108,5 +109,12 @@ in {
   xdg.configFile."nvim" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/nvim/.config/nvim";
     recursive = true;
+  };
+
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/x-blender" = "blender";
+    };
   };
 }
