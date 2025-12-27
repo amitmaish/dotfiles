@@ -32,6 +32,7 @@ in {
     syncthing
     tlrc
     typst
+    usbutils
     waybar
     yazi
     zoxide
