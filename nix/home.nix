@@ -50,6 +50,7 @@ in {
     discord
     hayase
     pureref
+    reaper
     signal-desktop
     zapzap
 
