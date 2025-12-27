@@ -30,8 +30,6 @@ in {
     quickshell
     ripgrep
     starship
-    swaybg
-    swaylock
     syncthing
     tlrc
     typst
