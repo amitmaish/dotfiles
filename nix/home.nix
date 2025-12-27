@@ -45,11 +45,13 @@ in {
       cudaSupport = true;
     })
 
+    anki
     calibre
     discord
     hayase
     pureref
     signal-desktop
+    zapzap
 
     bottles
     cemu
