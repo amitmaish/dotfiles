@@ -16,7 +16,6 @@ in {
     cargo-workspaces
     direnv
     eza
-    fuzzel
     fzf
     gcc
     gh
