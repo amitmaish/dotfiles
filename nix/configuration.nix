@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -89,7 +90,6 @@
 
   nixpkgs.config = {
     allowUnfree = true;
-    # cudaSupport = true;
   };
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -126,4 +126,16 @@
   services.openssh.enable = true;
 
   system.stateVersion = "25.05";
+
+  system.autoUpgrade = {
+    enable = true;
+    flake = inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "-L"
+    ];
+    dates = "02:00";
+    randomizedDelaySec = "45min";
+  };
 }
