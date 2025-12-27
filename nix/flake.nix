@@ -17,6 +17,7 @@
     nixpkgs,
     home-manager,
     rust-overlay,
+    nur,
     ...
   }: {
     nixosConfigurations.amit = nixpkgs.lib.nixosSystem {
@@ -36,6 +37,7 @@
           nixpkgs.overlays = [rust-overlay.overlays.default];
           environment.systemPackages = [pkgs.rust-bin.stable.latest.default];
         })
+        nur.modules.nixos.default
       ];
     };
   };

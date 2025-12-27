@@ -2,7 +2,9 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  hayase = import ./apps/hayase.nix {inherit pkgs;};
+in {
   home.username = "amit";
   home.homeDirectory = "/home/amit";
   home.stateVersion = "25.05";
@@ -29,7 +31,9 @@
     starship
     swaybg
     swaylock
+    syncthing
     tlrc
+    typst
     waybar
     yazi
     zoxide
@@ -38,10 +42,23 @@
     haskell-language-server
     ron-lsp
 
-    blender
+    (blender.override {
+      cudaSupport = true;
+    })
+
+    calibre
     discord
+    hayase
     pureref
+    signal-desktop
+
+    bottles
+    cemu
+    lutris
     steam
+    prismlauncher
+    protonup-ng
+    ukmm
   ];
 
   programs.git = {
@@ -66,6 +83,7 @@
     };
     shellAliases = {
       cat = "bat";
+      dot = "sudo nixos-rebuild switch --flake ~/dotfiles/nix#amit";
       ls = "eza";
     };
     shellInit = ''
