@@ -99,15 +99,19 @@ in {
   home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
 
   xdg.configFile."ghostty" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/ghostty/.config/ghostty/";
+    source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
     recursive = true;
   };
   xdg.configFile."niri" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/niri";
+    source = config.lib.file.mkOutOfStoreSymlink ../niri;
+    recursive = true;
+  };
+  xdg.configFile."noctalia" = {
+    source = config.lib.file.mkOutOfStoreSymlink ../noctalia;
     recursive = true;
   };
   xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/nvim/.config/nvim";
+    source = config.lib.file.mkOutOfStoreSymlink ../nvim/.config/nvim;
     recursive = true;
   };
 
