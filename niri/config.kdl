@@ -113,7 +113,7 @@ layout {
 
     }
 }
-spawn-sh-at-startup "qs -p ~/dev/ex/noctalia-shell/"
+spawn-sh-at-startup "noctalia-shell"
 hotkey-overlay {
     skip-at-startup
 }
