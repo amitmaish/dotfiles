@@ -124,6 +124,7 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   services.openssh.enable = true;
+  services.udisks2.enable = true;
 
   system.stateVersion = "25.05";
 
@@ -133,7 +134,7 @@
     flags = [
       "--update-input"
       "nixpkgs"
-      "-L"
+      "-L" # print build logs
     ];
     dates = "02:00";
     randomizedDelaySec = "45min";

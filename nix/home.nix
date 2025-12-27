@@ -121,4 +121,13 @@ in {
       "application/x-blender" = "blender";
     };
   };
+
+  services.udiskie = {
+    enable = true;
+    settings = {
+      program_options = {
+        file_manager = "${pkgs.kdePackages.dolphin}";
+      };
+    };
+  };
 }
