@@ -52,6 +52,7 @@ in {
     pureref
     reaper
     signal-desktop
+    thunderbird
     zapzap
 
     bottles
