@@ -16,6 +16,7 @@ in {
     cargo-workspaces
     direnv
     doppler
+    ffmpeg
     eza
     fzf
     gcc
