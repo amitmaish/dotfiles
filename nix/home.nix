@@ -15,6 +15,7 @@ in {
     cargo-sweep
     cargo-workspaces
     direnv
+    doppler
     eza
     fzf
     gcc
