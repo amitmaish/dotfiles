@@ -57,7 +57,10 @@ in {
     thunderbird
     zapzap
 
-    bottles
+    (bottles.override {
+      removeWarningPopup = true;
+    })
+
     cemu
     lutris
     steam
