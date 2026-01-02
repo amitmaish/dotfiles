@@ -16,8 +16,8 @@ in {
     cargo-workspaces
     direnv
     doppler
-    ffmpeg
     eza
+    ffmpeg
     fzf
     gcc
     gh
@@ -35,6 +35,7 @@ in {
     tlrc
     typst
     usbutils
+    vlc
     waybar
     yazi
     zoxide
