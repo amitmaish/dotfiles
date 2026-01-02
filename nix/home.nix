@@ -68,7 +68,13 @@ in {
     prismlauncher
     protonup-ng
     ukmm
+
+    atkinson-hyperlegible
+    noto-fonts
+    noto-fonts-cjk-sans
   ];
+
+  fonts.fontconfig.enable = true;
 
   programs.git = {
     enable = true;
