@@ -21,6 +21,7 @@ in {
     fzf
     gcc
     gh
+    ghc
     go
     lazygit
     lldb
