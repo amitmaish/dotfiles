@@ -121,6 +121,11 @@
     nerd-fonts.jetbrains-mono
   ];
 
+  virtualisation.virtualbox.host = {
+    enable = true;
+    enableExtensionPack = true;
+  };
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   services.openssh.enable = true;

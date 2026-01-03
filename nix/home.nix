@@ -56,7 +56,6 @@ in {
     reaper
     signal-desktop
     thunderbird
-    virtualbox
     zapzap
 
     (bottles.override {
