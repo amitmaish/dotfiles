@@ -139,4 +139,16 @@
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
+
+  nix.gc = {
+    automatic = true;
+    dates = "02:00";
+    randomizedDelaySec = "45min";
+  };
+
+  nix.optimise = {
+    automatic = true;
+    dates = "02:00";
+    randomizedDelaySec = "45min";
+  };
 }
