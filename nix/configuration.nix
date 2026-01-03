@@ -58,7 +58,7 @@
     powerManagement.finegrained = false;
 
     #open source driver
-    open = false;
+    open = true;
 
     package = config.boot.kernelPackages.nvidiaPackages.production;
   };
@@ -120,11 +120,6 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];
-
-  virtualisation.virtualbox.host = {
-    enable = true;
-    enableExtensionPack = true;
-  };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
