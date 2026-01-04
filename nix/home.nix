@@ -2,80 +2,23 @@
   config,
   pkgs,
   ...
-}: let
-  hayase = import ./apps/hayase.nix {inherit pkgs;};
-in {
+}: {
   home.username = "amit";
   home.homeDirectory = "/home/amit";
   home.stateVersion = "25.05";
 
-  home.packages = with pkgs; [
-    bat
-    cargo-generate
-    cargo-sweep
-    cargo-workspaces
-    direnv
-    doppler
-    eza
-    ffmpeg
-    fzf
-    gcc
-    gh
-    ghc
-    go
-    lazygit
-    lldb
-    neofetch
-    nodejs
-    pkgconf
-    python3
-    quickshell
-    ripgrep
-    starship
-    syncthing
-    tlrc
-    typst
-    usbutils
-    vlc
-    waybar
-    yazi
-    zoxide
-
-    asm-lsp
-    haskell-language-server
-    ron-lsp
-
-    (blender.override {
-      cudaSupport = true;
-    })
-
-    anki
-    calibre
-    discord
-    hayase
-    pureref
-    reaper
-    signal-desktop
-    thunderbird
-    zapzap
-
-    (bottles.override {
-      removeWarningPopup = true;
-    })
-
-    cemu
-    lutris
-    steam
-    prismlauncher
-    protonup-ng
-    ukmm
-
-    atkinson-hyperlegible
-    noto-fonts
-    noto-fonts-cjk-sans
+  imports = [
+    ./modules/apps.nix
+    ./modules/art.nix
+    ./modules/cli.nix
+    ./modules/dev.nix
+    ./modules/gaming.nix
   ];
 
-  fonts.fontconfig.enable = true;
+  home.packages = with pkgs; [
+    asm-lsp
+    ron-lsp
+  ];
 
   programs.git = {
     enable = true;

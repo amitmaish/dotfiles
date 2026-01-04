@@ -10,7 +10,6 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,6 +31,7 @@
         home-manager.nixosModules.home-manager
         {
           home-manager = {
+            extraSpecialArgs = {inherit inputs;};
             useGlobalPkgs = true;
             useUserPackages = true;
             users.amit = import ./home.nix;
@@ -42,7 +42,7 @@
           nixpkgs.overlays = [rust-overlay.overlays.default];
           environment.systemPackages = [pkgs.rust-bin.stable.latest.default];
         })
-        ./noctalia.nix
+        ./modules/noctalia.nix
       ];
     };
   };
