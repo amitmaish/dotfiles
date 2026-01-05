@@ -22,6 +22,7 @@ return {
 			markdown = { "mdsf", "prettier" },
 			nix = { "alejandra" },
 			python = { "ruff" },
+			ron = { "ronfmt" },
 			rust = { "rustfmt" },
 			tex = { "tex-fmt" },
 			toml = { "taplo" },

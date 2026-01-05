@@ -94,7 +94,7 @@ WK.add({
 		vim.lsp.buf.definition,
 		desc = "go to definition",
 	},
-	{ "<leader>ca", vim.lsp.buf.code_action, desc = "code action" },
+	{ "<leader>ca", vim.lsp.buf.code_action, mode = { "n", "v" }, desc = "code action" },
 	{ "<leader>cr", vim.lsp.buf.rename, desc = "lsp rename" },
 	-- {
 	-- 	"<leader>cd",
