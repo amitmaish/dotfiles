@@ -85,6 +85,7 @@
     isNormalUser = true;
     description = "amit";
     extraGroups = [
+      "docker"
       "kvm"
       "libvirtd"
       "networkmanager"
