@@ -72,6 +72,7 @@
     source = config.lib.file.mkOutOfStoreSymlink ../nvim/.config/nvim;
     recursive = true;
   };
+  programs.neovim.defaultEditor = true;
 
   xdg.mimeApps = {
     enable = true;

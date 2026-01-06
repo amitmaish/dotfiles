@@ -14,11 +14,12 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.kernelModules = [
+    "kvm-intel"
     "nvidia"
-    "nvidiafb"
     "nvidia-drm"
     "nvidia-modeset"
     "nvidia-uvm"
+    "nvidiafb"
   ];
   boot.initrd.kernelModules = ["nvidia"];
   boot.extraModulePackages = [config.boot.kernelPackages.nvidia_x11];
@@ -107,13 +108,13 @@
   environment.systemPackages = with pkgs; [
     alacritty
     cudatoolkit
-    kdePackages.dolphin
     ghostty
     git
+    kdePackages.dolphin
     neovim
+    unzip
     vim
     wget
-    unzip
     xwayland-satellite
   ];
 
@@ -125,6 +126,16 @@
 
   services.openssh.enable = true;
   services.udisks2.enable = true;
+
+  virtualisation = {
+    libvirtd = {
+      enable = true;
+      qemu. swtpm.enable = true;
+    };
+    spiceUSBRedirection.enable = true;
+  };
+  services.spice-vdagentd.enable = true;
+  programs.virt-manager.enable = true;
 
   system.stateVersion = "25.05";
 
