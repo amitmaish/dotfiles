@@ -84,7 +84,13 @@
   users.users.amit = {
     isNormalUser = true;
     description = "amit";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = [
+      "kvm"
+      "libvirtd"
+      "networkmanager"
+      "podman"
+      "wheel"
+    ];
     packages = with pkgs; [];
     shell = pkgs.fish;
   };
@@ -112,6 +118,7 @@
     git
     kdePackages.dolphin
     neovim
+    podman-compose
     unzip
     vim
     wget
@@ -128,6 +135,12 @@
   services.udisks2.enable = true;
 
   virtualisation = {
+    containers.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
     libvirtd = {
       enable = true;
       qemu. swtpm.enable = true;
