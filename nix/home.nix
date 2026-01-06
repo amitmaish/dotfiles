@@ -18,6 +18,7 @@
   home.packages = with pkgs; [
     asm-lsp
     ron-lsp
+    xclip
   ];
 
   programs.git = {
