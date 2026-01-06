@@ -2,6 +2,7 @@ vim.lsp.enable({
 	"asm_lsp",
 	"ast_grep",
 	"arduino_language_server",
+	"bashls",
 	"biome",
 	"clangd",
 	"cssls",

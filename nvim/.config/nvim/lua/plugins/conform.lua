@@ -8,6 +8,7 @@ return {
 		formatters_by_ft = {
 			assembly = { "asmfmt" },
 			arduino = { "clang-format" },
+			bash = { "shfmt" },
 			c = { "clang-format" },
 			cmake = { "gersemi" },
 			cpp = { "clang-format" },
