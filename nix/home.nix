@@ -57,6 +57,8 @@
 
   home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
 
+  home.file.".config/winapps/winapps.conf".source = ../winapps/winapps.conf;
+
   xdg.configFile."ghostty" = {
     source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
     recursive = true;
