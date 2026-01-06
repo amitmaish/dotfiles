@@ -96,6 +96,8 @@
     shell = pkgs.fish;
   };
 
+  users.extraGroups.docker.members = ["amit"];
+
   nixpkgs.config = {
     allowUnfree = true;
   };
@@ -140,9 +142,9 @@
     containers.enable = true;
     podman = {
       enable = true;
-      dockerCompat = true;
       defaultNetwork.settings.dns_enabled = true;
     };
+    docker.enable = true;
     libvirtd = {
       enable = true;
       qemu. swtpm.enable = true;
