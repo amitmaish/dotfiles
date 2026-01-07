@@ -9,5 +9,5 @@ warning: not applying GID change of group ‘docker’ (991 -> 131) in /etc/grou
 setting up /etc...
 reloading user units for amit...
 restarting sysinit-reactivation.target
-the following new units were started: NetworkManager-dispatcher.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
-Done. The new configuration is /nix/store/jiy0rzj57mr5l4nixs56ja9827h1zag7-nixos-system-nixos-26.05.20260102.fb7944c
+the following new units were started: libvirtd.service, NetworkManager-dispatcher.service
+Done. The new configuration is /nix/store/mv0yang3hpgxkknvsiyfjil5xda0lvyi-nixos-system-nixos-26.05.20260102.fb7944c
