@@ -1,9 +1,9 @@
 {pkgs, ...}: let
   pname = "hayase";
-  version = "6.4.44";
+  version = "6.4.46";
 
   src = pkgs.fetchurl {
-    url = "https://api.hayase.watch/files/linux-hayase-6.4.44-linux.AppImage";
+    url = "https://api.hayase.watch/files/linux-hayase-6.4.46-linux.AppImage";
     hash = "sha256-qzHjpeN6iNb+Wxi6ttVDMkxPSSqLts4QFkAVpBSwpv0=";
   };
   appimageContents = pkgs.appimageTools.extract {inherit pname version src;};
