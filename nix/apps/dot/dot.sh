@@ -6,6 +6,8 @@ red="\e[1;31m%s\e[0m\n"
 
 pushd ~/dotfiles/
 
+git pull
+
 printf "\n"
 
 $EDITOR
