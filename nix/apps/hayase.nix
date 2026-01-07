@@ -3,7 +3,7 @@
   version = "6.4.46";
 
   src = pkgs.fetchurl {
-    url = "https://api.hayase.watch/files/linux-hayase-${version}-linux.AppImage";
+    url = "https://api.hayase.watch/files/linux-hayase-6.4.46-linux.AppImage";
     hash = "sha256-QvuxWtkcZbC94e7BcpTnFrhEZNItLJQQqUFODzJ83HA=";
   };
   appimageContents = pkgs.appimageTools.extract {inherit pname version src;};
