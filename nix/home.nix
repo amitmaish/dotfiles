@@ -2,7 +2,9 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  dot = pkgs.callPackage ./apps/dot/dot.nix {inherit pkgs;};
+in {
   home.username = "amit";
   home.homeDirectory = "/home/amit";
   home.stateVersion = "25.05";
@@ -17,6 +19,7 @@
 
   home.packages = with pkgs; [
     asm-lsp
+    dot
     ron-lsp
     xclip
   ];
@@ -43,7 +46,6 @@
     };
     shellAliases = {
       cat = "bat";
-      dot = "sudo nixos-rebuild switch --flake ~/dotfiles/nix#amit";
       ls = "eza";
     };
     shellInit = ''
