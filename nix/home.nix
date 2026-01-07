@@ -20,6 +20,7 @@ in {
   home.packages = with pkgs; [
     asm-lsp
     dot
+    nushell
     ron-lsp
     xclip
   ];

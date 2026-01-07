@@ -8,8 +8,6 @@ pushd ~/dotfiles/
 
 printf "\n"
 
-head=$(git rev-parse HEAD)
-
 $EDITOR
 
 if git diff --quiet; then
@@ -25,20 +23,19 @@ if ! git diff --quiet "./nix/*"; then
 
 	git diff -U0 nix/*
 
-	printf "nixos rebuild...\n"
+	printf "\n%s\n" "rebuilding nixos"
 
 	# shellcheck disable=SC2024
 	sudo nixos-rebuild switch --flake ~/dotfiles/nix#amit &>nixos-switch.log || (
 		cat nixos-switch.log | grep --color error && exit 1
 	)
 
-	current=$(nixos-rebuild list-generations | grep current)
+	current=$(nu -c "nixos-rebuild list-generations | detect columns | where {|item| \$item.Current == True} | \$in.Generation.0")
 
-	if "$head" != "$(git rev-parse HEAD)"; then
-		printf "\nnew commit found\n"
-	else
-		git commit -am "nix - gen: $current"
-	fi
+	git commit -am "nix - gen $current" || (
+		printf "\n%s" "commit failed"
+		exit 1
+	)
 
 	notify-send -e "nixos rebuild ok!" --icon=software-update-available
 

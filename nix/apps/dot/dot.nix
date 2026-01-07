@@ -6,6 +6,7 @@ pkgs.writeShellApplication {
     alejandra
     git
     libnotify
+    nushell
   ];
 
   text = builtins.readFile ./dot.sh;
