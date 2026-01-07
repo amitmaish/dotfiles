@@ -37,7 +37,7 @@ if ! git diff --quiet "./nix/*"; then
 		exit 1
 	)
 
-	notify-send -e "nixos rebuild ok!" --icon=software-update-available
+	notify-send -e "nixos rebuild ok!" -a "dot" --icon=software-update-available
 
 fi
 
