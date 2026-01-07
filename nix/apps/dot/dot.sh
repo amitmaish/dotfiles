@@ -4,7 +4,7 @@ set -e
 
 red="\e[1;31m%s\e[0m\n"
 
-pushd ~/dotfiles/
+pushd ~/dotfiles/ >dev/null
 
 git pull
 
@@ -13,7 +13,7 @@ printf "\n"
 $EDITOR
 
 if git diff --quiet; then
-	popd
+	popd >dev/null
 	exit 0
 fi
 
@@ -36,6 +36,7 @@ if ! git diff --quiet "./nix/*"; then
 
 	git commit -am "nix - gen $current" || (
 		printf "\n%s" "commit failed"
+		popd >dev/null
 		exit 1
 	)
 
@@ -43,4 +44,4 @@ if ! git diff --quiet "./nix/*"; then
 
 fi
 
-popd
+popd >dev/null
