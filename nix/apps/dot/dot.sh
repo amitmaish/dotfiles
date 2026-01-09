@@ -22,7 +22,7 @@ fi
 if ! git diff --quiet "./nix/*"; then
 
 	alejandra "./nix/*" &>/dev/null || (
-		printf "\n%s%s" "$red" "formatting failed!" && exit 1
+		printf "\n%s%s" "$red" "formatting failed!" && reset 1
 	)
 
 	git diff -U0 nix/*
@@ -31,7 +31,7 @@ if ! git diff --quiet "./nix/*"; then
 
 	# shellcheck disable=SC2024
 	sudo nixos-rebuild switch --flake ~/dotfiles/nix#amit &>nixos-switch.log || (
-		cat nixos-switch.log | grep --color error && exit 1
+		cat nixos-switch.log | grep --color error && reset 1
 	)
 
 	current=$(nu -c "nixos-rebuild list-generations | detect columns | where {|item| \$item.Current == True} | \$in.Generation.0")
