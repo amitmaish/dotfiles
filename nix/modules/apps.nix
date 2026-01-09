@@ -7,7 +7,6 @@ in {
     discord
     hayase
     pureref
-    reaper
     signal-desktop
     thunderbird
     vlc
