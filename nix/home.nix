@@ -22,6 +22,7 @@ in {
     bat-extras.batman
     dot
     nushell
+    p7zip
     ron-lsp
     xclip
     zip
