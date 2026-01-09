@@ -1,8 +1,13 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    cargo-generate
-    cargo-sweep
-    cargo-workspaces
     # rust-bin
+    bacon
+    cargo-generate
+    cargo-leptos
+    cargo-sweep
+    cargo-tauri
+    cargo-workspaces
+    leptosfmt
+    trunk
   ];
 }
