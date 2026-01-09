@@ -57,6 +57,9 @@ in {
       starship init fish | source
     '';
   };
+  home.sessionVariables = {
+    MANPAGER = "less -R --use-color -Dd+r -Du+b";
+  };
 
   home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
 
