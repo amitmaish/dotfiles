@@ -3,5 +3,6 @@
     pianoteq.standard_8
     reaper
     supercollider
+    surge-XT
   ];
 }
