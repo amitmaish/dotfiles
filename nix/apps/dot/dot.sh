@@ -4,17 +4,19 @@ set -e
 
 red="\e[1;31m%s\e[0m\n"
 
+reset() {
+	popd >/dev/null
+	exit "$1"
+}
+
 pushd ~/dotfiles/ >/dev/null
 
 git pull >/dev/null
 
-printf "\n"
-
 $EDITOR
 
 if git diff --quiet; then
-	popd >/dev/null
-	exit 0
+	reset 0
 fi
 
 if ! git diff --quiet "./nix/*"; then
@@ -36,12 +38,11 @@ if ! git diff --quiet "./nix/*"; then
 
 	git commit -am "nix - gen $current" || (
 		printf "\n%s" "commit failed"
-		popd >/dev/null
-		exit 1
+		reset 1
 	)
 
 	notify-send -e "nixos rebuild ok!" -a "dot" --icon=software-update-available
 
 fi
 
-popd >/dev/null
+reset 0
