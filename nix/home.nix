@@ -19,6 +19,7 @@ in {
 
   home.packages = with pkgs; [
     asm-lsp
+    bat-extras.batman
     dot
     nushell
     ron-lsp
@@ -48,6 +49,7 @@ in {
     shellAliases = {
       cat = "bat";
       ls = "eza";
+      man = "batman";
     };
     shellInit = ''
       direnv hook fish | source
@@ -58,14 +60,14 @@ in {
     '';
   };
 
-  home.sessionVariables = {
-    MANPAGER = "less -R --use-color -Dd+r -Du+b";
-  };
-
   home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
 
   home.file.".config/winapps/winapps.conf".source = ../winapps/winapps.conf;
 
+  xdg.configFile."bat" = {
+    source = config.lib.file.mkOutOfStoreSymlink ../bat/.config/bat;
+    recursive = true;
+  };
   xdg.configFile."ghostty" = {
     source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
     recursive = true;
