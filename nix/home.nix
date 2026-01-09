@@ -24,6 +24,7 @@ in {
     nushell
     ron-lsp
     xclip
+    zip
   ];
 
   programs.git = {
