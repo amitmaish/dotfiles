@@ -17,11 +17,13 @@
   ];
 
   home.packages = with pkgs; [
-    doppler
+    asm-lsp
     direnv
+    doppler
     gh
     lazygit
     lldb
     pkgconf
+    ron-lsp
   ];
 }

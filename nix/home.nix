@@ -19,13 +19,8 @@ in {
   ];
 
   home.packages = with pkgs; [
-    asm-lsp
-    bat-extras.batman
     dot
-    nushell
     p7zip
-    ron-lsp
-    xclip
     zip
   ];
 
