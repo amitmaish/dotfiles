@@ -25,5 +25,6 @@
     lldb
     pkgconf
     ron-lsp
+    tree
   ];
 }
