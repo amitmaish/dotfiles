@@ -15,6 +15,7 @@ in {
     ./modules/cli.nix
     ./modules/dev.nix
     ./modules/gaming.nix
+    ./modules/music.nix
   ];
 
   home.packages = with pkgs; [

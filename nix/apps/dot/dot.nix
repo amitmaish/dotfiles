@@ -4,6 +4,7 @@ pkgs.writeShellApplication {
 
   runtimeInputs = with pkgs; [
     alejandra
+    doppler
     git
     libnotify
     nushell
