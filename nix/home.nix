@@ -57,6 +57,7 @@ in {
       starship init fish | source
     '';
   };
+
   home.sessionVariables = {
     MANPAGER = "less -R --use-color -Dd+r -Du+b";
   };
