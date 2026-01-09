@@ -85,6 +85,7 @@
     isNormalUser = true;
     description = "amit";
     extraGroups = [
+      "audio"
       "docker"
       "jackaudio"
       "kvm"
@@ -122,6 +123,7 @@
     kdePackages.dolphin
     neovim
     podman-compose
+    qjackctl
     unzip
     vim
     wget
@@ -168,11 +170,13 @@
     randomizedDelaySec = "45min";
   };
 
+  musnix.enable = true;
+
   services.jack = {
     jackd.enable = true;
-    alsa.enable = false;
+    alsa.enable = true;
     loopback = {
-      enable = true;
+      enable = false;
     };
   };
 

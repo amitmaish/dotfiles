@@ -18,6 +18,10 @@
       url = "github:winapps-org/winapps";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    musnix = {
+      url = "github:musnix/musnix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -32,6 +36,7 @@
       specialArgs = {inherit inputs system;};
       system = "x86_64-linux";
       modules = [
+        inputs.musnix.nixosModules.musnix
         ./configuration.nix
         home-manager.nixosModules.home-manager
         {
