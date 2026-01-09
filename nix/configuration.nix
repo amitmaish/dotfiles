@@ -86,13 +86,14 @@
     description = "amit";
     extraGroups = [
       "docker"
+      "jackaudio"
       "kvm"
       "libvirtd"
       "networkmanager"
       "podman"
       "wheel"
     ];
-    packages = with pkgs; [];
+    packages = [];
     shell = pkgs.fish;
   };
 
@@ -102,7 +103,7 @@
     allowUnfree = true;
   };
   programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
+  programs.nix-ld.libraries = [
     # Add any missing dynamic libraries for unpackaged
     # programs here, NOT in environment.systemPackages
   ];
@@ -166,6 +167,14 @@
     ];
     dates = "02:00";
     randomizedDelaySec = "45min";
+  };
+
+  services.jack = {
+    jackd.enable = true;
+    alsa.enable = false;
+    loopback = {
+      enable = true;
+    };
   };
 
   nix.gc = {

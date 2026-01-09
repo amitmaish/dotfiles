@@ -28,9 +28,6 @@ return {
 		local map = scnvim.map
 		local map_expr = scnvim.map_expr
 		scnvim.setup({
-			sclang = {
-				cmd = "/Applications/SuperCollider.app/Contents/MacOS/sclang",
-			},
 			keymaps = {
 				["<D-e>"] = map("editor.send_line", { "i", "n" }),
 				["<C-e>"] = {
