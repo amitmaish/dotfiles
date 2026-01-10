@@ -11,6 +11,7 @@
     ./dev/python.nix
     ./dev/rust.nix
     ./dev/tex.nix
+    ./dev/toml.nix
     ./dev/typst.nix
     ./dev/yaml.nix
     ./dev/zig.nix
