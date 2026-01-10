@@ -6,5 +6,5 @@
     surge-XT
   ];
 
-  home.file.".lv2/Pianoteq 8.lv2".source = pkgs.pianoteq.standard_8;
+  home.file.".lv2/Pianoteq 8.lv2".source = "${pkgs.pianoteq.standard_8}/bin/Pianoteq 8.lv2";
 }
