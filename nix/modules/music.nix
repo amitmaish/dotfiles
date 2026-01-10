@@ -5,4 +5,6 @@
     supercollider
     surge-XT
   ];
+
+  home.file.".lv2/Pianoteq 8.lv2".source = pkgs.pianoteq.standard_8;
 }
