@@ -5,13 +5,29 @@
   ...
 }: {
   options = {
-    emulation.enable = lib.mkEnableOption "enables emulators";
+    emulation.enable = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "enables video game emulation";
+    };
     cemu = {
-      enable = lib.mkEnableOption "enables cemu";
-      ukmm = lib.mkEnableOption "enables ukmm. has no effect if cemu is disabled";
+      enable = lib.mkOption {
+        type = lib.types.bool;
+        default = true;
+        description = "enables cemu";
+      };
+      ukmm = lib.mkOption {
+        type = lib.types.bool;
+        default = true;
+        description = "enables ukmm. has no effect if cemu is disabled";
+      };
     };
 
-    retroarch.enable = lib.mkEnableOption "enables retroarch";
+    retroarch.enable = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "enables retroarch";
+    };
   };
 
   config = lib.mkIf config.emulation.enable {
