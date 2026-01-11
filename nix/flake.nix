@@ -36,8 +36,8 @@
       specialArgs = {inherit inputs system;};
       system = "x86_64-linux";
       modules = [
-        inputs.musnix.nixosModules.musnix
         ./configuration.nix
+        inputs.musnix.nixosModules.musnix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
