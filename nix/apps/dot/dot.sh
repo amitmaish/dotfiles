@@ -29,8 +29,8 @@ if ! git diff --quiet "./nix/*"; then
 
 	printf "\n%s\n" "rebuilding nixos"
 
-	eval "$REBUILD_COMMAND" 2>&1 | tee nixos-switch.log || (
-		cat nixos-switch.log | grep --color error && reset 1
+	eval "$REBUILD_COMMAND" 2>&1 || (
+		printf "\n%s%s\n" "$red" "rebuild failed!" && reset 1
 	)
 
 	current=$CURRENT_COMMAND
