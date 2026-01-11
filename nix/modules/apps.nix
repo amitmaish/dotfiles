@@ -8,14 +8,14 @@ in {
   home.packages = with pkgs;
     [
       anki
-      calibre
       discord
-      thunderbird
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
+      calibre
       hayase
       pureref
       signal-desktop
+      thunderbird
       vlc
       zapzap
 

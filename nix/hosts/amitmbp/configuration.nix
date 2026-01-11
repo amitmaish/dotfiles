@@ -3,6 +3,9 @@
   inputs,
   ...
 }: {
+  imports = [
+    ../../modules/brew
+  ];
   environment.systemPackages = [pkgs.vim];
   environment.shells = with pkgs; [
     fish
@@ -24,6 +27,7 @@
   programs.fish.enable = true;
 
   system.stateVersion = 4;
+  system.primaryUser = "amit";
   ids.gids.nixbld = 350;
 
   # The platform the configuration will be used on.

@@ -22,6 +22,7 @@
       url = "github:nix-darwin/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
   outputs = {
@@ -63,6 +64,14 @@
             useUserPackages = true;
             users.amit = import ./hosts/amitmbp/home.nix;
             backupFileExtension = "backup";
+          };
+        }
+        inputs.nix-homebrew.darwinModules.nix-homebrew
+        {
+          nix-homebrew = {
+            enable = true;
+            user = "amit";
+            autoMigrate = true;
           };
         }
       ];

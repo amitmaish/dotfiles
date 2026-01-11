@@ -14,7 +14,7 @@ in {
   home.stateVersion = "25.05";
 
   imports = [
-    # ../../modules/apps.nix
+    ../../modules/apps.nix
     # ../../modules/gaming
     ../../modules/cli.nix
     ../../modules/dev
