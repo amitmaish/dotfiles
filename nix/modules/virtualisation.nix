@@ -1,4 +1,5 @@
 {...}: {
+  boot.kernelModules = ["kvm-intel"];
 
   virtualisation = {
     containers.enable = true;

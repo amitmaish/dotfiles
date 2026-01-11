@@ -1,28 +1,21 @@
 {
-  config,
   pkgs,
   inputs,
   ...
 }: {
   imports = [
     ./hardware-configuration.nix
+    ./modules/audio.nix
+    ./modules/nvidia.nix
+    ./modules/samba.nix
+    ./modules/tailscale.nix
+    ./modules/virtualisation.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  boot.kernelModules = [
-    "kvm-intel"
-    "nvidia"
-    "nvidia-drm"
-    "nvidia-modeset"
-    "nvidia-uvm"
-    "nvidiafb"
-  ];
-  boot.initrd.kernelModules = ["nvidia"];
-  boot.extraModulePackages = [config.boot.kernelPackages.nvidia_x11];
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
@@ -43,27 +36,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  programs.niri.enable = true;
-
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
-  hardware.nvidia = {
-    modesetting.enable = true;
-
-    nvidiaSettings = true;
-
-    powerManagement.enable = false;
-
-    powerManagement.finegrained = false;
-
-    #open source driver
-    open = true;
-
-    package = config.boot.kernelPackages.nvidiaPackages.production;
-  };
-
   services.xserver = {
     enable = true;
     autoRepeatDelay = 200;
@@ -73,11 +45,10 @@
       layout = "us";
       variant = "";
     };
-
-    videoDrivers = ["nvidia"];
   };
 
   services.displayManager.ly.enable = true;
+  programs.niri.enable = true;
 
   programs.fish.enable = true;
 
@@ -153,69 +124,6 @@
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
-
-  musnix.enable = true;
-
-  services.jack = {
-    jackd.enable = true;
-    alsa.enable = true;
-    loopback = {
-      enable = false;
-    };
-  };
-
-  services.samba = {
-    enable = true;
-    securityType = "user";
-    openFirewall = true;
-    settings = {
-      global = {
-        "workgroup" = "WORKGROUP";
-        "server string" = "smbnix";
-        "netbios name" = "smbnix";
-        "security" = "user";
-        #"use sendfile" = "yes";
-        #"max protocol" = "smb2";
-        # note: localhost is the ipv6 localhost ::1
-        "hosts allow" = "192.168.0. 127.0.0.1 localhost";
-        "hosts deny" = "0.0.0.0/0";
-        "guest account" = "nobody";
-        "map to guest" = "bad user";
-      };
-      "public" = {
-        "path" = "/mnt/Shares/Public";
-        "browseable" = "yes";
-        "read only" = "no";
-        "guest ok" = "yes";
-        "create mask" = "0644";
-        "directory mask" = "0755";
-        "force user" = "username";
-        "force group" = "groupname";
-      };
-      "private" = {
-        "path" = "/mnt/Shares/Private";
-        "browseable" = "yes";
-        "read only" = "no";
-        "guest ok" = "no";
-        "create mask" = "0644";
-        "directory mask" = "0755";
-        "force user" = "username";
-        "force group" = "groupname";
-      };
-    };
-  };
-
-  services.samba-wsdd = {
-    enable = true;
-    openFirewall = true;
-  };
-
-  services.tailscale.enable = true;
-  networking.nftables.enable = true;
-  networking.firewall.checkReversePath = "loose";
-
-  networking.firewall.enable = true;
-  networking.firewall.allowPing = true;
 
   nix.gc = {
     automatic = true;
