@@ -23,6 +23,7 @@ in {
   # emulation.enable = false;
 
   home.packages = with pkgs; [
+    aerospace
     dot
     p7zip
     zip

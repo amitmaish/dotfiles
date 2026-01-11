@@ -1,4 +1,1 @@
-vim.o.conceallevel = 2
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
-vim.o.expandtab = false
+/nix/store/q4v012mggy50hqk4dc00xchslkk28yp6-home-manager-files/.config/nvim/ftplugin/markdown.lua

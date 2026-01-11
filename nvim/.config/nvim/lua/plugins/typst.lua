@@ -1,6 +1,1 @@
-return {
-	"chomosuke/typst-preview.nvim",
-	ft = "typst",
-	version = "1.*",
-	opts = {},
-}
+/nix/store/q4v012mggy50hqk4dc00xchslkk28yp6-home-manager-files/.config/nvim/lua/plugins/typst.lua

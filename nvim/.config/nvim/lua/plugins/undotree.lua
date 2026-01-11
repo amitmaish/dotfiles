@@ -1,6 +1,1 @@
-return {
-	"https://github.com/mbbill/undotree",
-	keys = {
-		{ "<leader>U", vim.cmd.UndotreeToggle, desc = "UndotreeToggle" },
-	},
-}
+/nix/store/q4v012mggy50hqk4dc00xchslkk28yp6-home-manager-files/.config/nvim/lua/plugins/undotree.lua
