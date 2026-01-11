@@ -10,6 +10,11 @@
       default = true;
       description = "enables video game emulation";
     };
+    retroarch.enable = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "enables retroarch";
+    };
     cemu = {
       enable = lib.mkOption {
         type = lib.types.bool;
@@ -22,19 +27,19 @@
         description = "enables ukmm. has no effect if cemu is disabled";
       };
     };
-
-    retroarch.enable = lib.mkOption {
-      type = lib.types.bool;
-      default = true;
-      description = "enables retroarch";
-    };
   };
 
   config = lib.mkIf config.emulation.enable {
-    home.packages = with pkgs; [
-      cemu
-      retroarch
-      ukmm
-    ];
+    home.packages = with pkgs;
+      []
+      ++ lib.optionals config.retroarch.enable [
+        retroarch
+      ]
+      ++ lib.optionals config.cemu.enable [
+        cemu
+      ]
+      ++ lib.optionals (config.cemu.enable && config.cemu.ukmm) [
+        ukmm
+      ];
   };
 }
