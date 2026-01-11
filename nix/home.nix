@@ -20,6 +20,7 @@ in {
 
   home.packages = with pkgs; [
     dot
+    nh
     p7zip
     zip
   ];

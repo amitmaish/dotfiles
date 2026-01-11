@@ -17,5 +17,7 @@ writeShellApplication {
     nushell
   ];
 
+  runtimeEnv = {};
+
   text = builtins.readFile ./dot.sh;
 }
