@@ -18,11 +18,16 @@
       url = "github:musnix/musnix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-darwin = {
+      url = "github:nix-darwin/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
+    nix-darwin,
     home-manager,
     ...
   } @ inputs: {
@@ -42,6 +47,24 @@
           };
         }
         ./modules/noctalia.nix
+      ];
+    };
+
+    darwinConfigurations."amit-mbp" = nix-darwin.lib.darwinSystem {
+      specialArgs = {inherit inputs;};
+      system = "x86_64-darwin";
+      modules = [
+        ./hosts/amitmbp/configuration.nix
+        # home-manager.darwinModules.home-manager
+        # {
+        #   home-manager = {
+        #     extraSpecialArgs = {inherit inputs;};
+        #     useGlobalPkgs = true;
+        #     useUserPackages = true;
+        #     users.amit = import ./hosts/amitmbp/home.nix;
+        #     backupFileExtension = "backup";
+        #   };
+        # }
       ];
     };
   };

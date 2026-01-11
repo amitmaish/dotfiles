@@ -3,10 +3,13 @@
     ./emulation.nix
   ];
 
-  home.packages = with pkgs; [
-    lutris
-    steam
-    prismlauncher
-    protonup-ng
-  ];
+  home.packages = with pkgs;
+    [
+      prismlauncher
+    ]
+    ++ lib.optionals (!pkgs.stdenv.isDarwin) [
+      lutris
+      protonup-ng
+      steam
+    ];
 }

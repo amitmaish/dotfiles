@@ -3,25 +3,23 @@
   pkgs,
   ...
 }: let
-  dot = pkgs.callPackage ./apps/dot/dot.nix {
-    NAME = "amit-pc";
-    REBUILD_COMMAND = ''doppler run --command "nh os switch ~/dotfiles/nix -H amit-pc"'';
+  dot = pkgs.callPackage ../../apps/dot/dot.nix {
+    NAME = "amit-mbp";
+    REBUILD_COMMAND = ''nh darwin switch ~/dotfiles/nix -H amit-mbp'';
   };
 in {
   home.username = "amit";
-  home.homeDirectory = "/home/amit";
+
   home.stateVersion = "25.05";
 
   imports = [
-    ./modules/apps.nix
-    ./modules/art.nix
-    ./modules/cli.nix
-    ./modules/dev
-    ./modules/gaming
-    ./modules/music.nix
+    # ../../modules/apps.nix
+    # ../../modules/cli.nix
+    # ../../modules/dev
+    # ../../modules/gaming
   ];
 
-  blender.cuda = true;
+  emulation.enable = false;
 
   home.packages = with pkgs; [
     dot
@@ -72,22 +70,12 @@ in {
 
   home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
 
-  home.file.".config/winapps/winapps.conf".source = ../winapps/winapps.conf;
-
   xdg.configFile."bat" = {
     source = config.lib.file.mkOutOfStoreSymlink ../bat/.config/bat;
     recursive = true;
   };
   xdg.configFile."ghostty" = {
     source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
-    recursive = true;
-  };
-  xdg.configFile."niri" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../niri;
-    recursive = true;
-  };
-  xdg.configFile."noctalia" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../noctalia;
     recursive = true;
   };
   xdg.configFile."nvim" = {
@@ -99,21 +87,5 @@ in {
     defaultEditor = true;
   };
 
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "application/x-blender" = "blender";
-    };
-  };
-
   services.syncthing.enable = true;
-
-  services.udiskie = {
-    enable = true;
-    settings = {
-      program_options = {
-        file_manager = "${pkgs.kdePackages.dolphin}";
-      };
-    };
-  };
 }
