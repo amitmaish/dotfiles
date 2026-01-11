@@ -31,7 +31,6 @@
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        inputs.musnix.nixosModules.musnix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
@@ -42,10 +41,6 @@
             backupFileExtension = "backup";
           };
         }
-        # ({pkgs, ...}: {
-        #   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
-        #   environment.systemPackages = [pkgs.rust-bin.stable.latest.default];
-        # })
         ./modules/noctalia.nix
       ];
     };
