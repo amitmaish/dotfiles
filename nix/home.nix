@@ -13,8 +13,8 @@ in {
     ./modules/apps.nix
     ./modules/art.nix
     ./modules/cli.nix
-    ./modules/dev.nix
-    ./modules/gaming.nix
+    ./modules/dev
+    ./modules/gaming
     ./modules/music.nix
   ];
 

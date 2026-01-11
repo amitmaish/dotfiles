@@ -3,7 +3,9 @@
   pkgs,
   ...
 }: {
-  imports = [./gaming/emulation.nix];
+  imports = [
+    ./emulation.nix
+  ];
 
   home.packages = with pkgs; [
     lutris
