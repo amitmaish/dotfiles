@@ -35,7 +35,7 @@ if ! git diff --quiet "./nix/*"; then
 
 	current=$(nu -c "nixos-rebuild list-generations | detect columns | where {|item| \$item.Current == True} | \$in.Generation.0")
 
-	git commit -am "nix - gen $current" || (
+	git commit -am "nix - $NAME gen $current" || (
 		printf "\n%s" "commit failed"
 		reset 1
 	)

@@ -1,24 +1,23 @@
 {
   writeShellApplication,
   alejandra,
-  doppler,
   git,
   libnotify,
   nushell,
   REBUILD_COMMAND ? "sudo nixos-rebuild switch --flake ~/dotfiles/nix",
+  NAME ? "nix",
 }:
 writeShellApplication {
   name = "dot";
 
   runtimeInputs = [
     alejandra
-    doppler
     git
     libnotify
     nushell
   ];
 
-  runtimeEnv = {inherit REBUILD_COMMAND;};
+  runtimeEnv = {inherit NAME REBUILD_COMMAND;};
 
   excludeShellChecks = [
     "SC2089"
