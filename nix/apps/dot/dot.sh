@@ -33,7 +33,7 @@ if ! git diff --quiet "./nix/*"; then
 		cat nixos-switch.log | grep --color error && reset 1
 	)
 
-	current=$(nu -c "nixos-rebuild list-generations | detect columns | where {|item| \$item.Current == True} | \$in.Generation.0")
+	current=$CURRENT_COMMAND
 
 	git commit -am "nix - $NAME gen $current" || (
 		printf "\n%s" "commit failed"

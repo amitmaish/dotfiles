@@ -3,6 +3,7 @@
     [
       bat
       bat-extras.batman
+      delta
       eza
       ffmpeg
       fzf

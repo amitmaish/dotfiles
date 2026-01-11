@@ -55,16 +55,16 @@
       system = "x86_64-darwin";
       modules = [
         ./hosts/amitmbp/configuration.nix
-        # home-manager.darwinModules.home-manager
-        # {
-        #   home-manager = {
-        #     extraSpecialArgs = {inherit inputs;};
-        #     useGlobalPkgs = true;
-        #     useUserPackages = true;
-        #     users.amit = import ./hosts/amitmbp/home.nix;
-        #     backupFileExtension = "backup";
-        #   };
-        # }
+        home-manager.darwinModules.home-manager
+        {
+          home-manager = {
+            extraSpecialArgs = {inherit inputs;};
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.amit = import ./hosts/amitmbp/home.nix;
+            backupFileExtension = "backup";
+          };
+        }
       ];
     };
   };

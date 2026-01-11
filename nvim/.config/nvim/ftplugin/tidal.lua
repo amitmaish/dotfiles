@@ -1,1 +1,1 @@
-vim.cmd.LspStop()
+/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/ftplugin/tidal.lua

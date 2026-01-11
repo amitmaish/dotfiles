@@ -4,6 +4,10 @@
   ...
 }: {
   environment.systemPackages = [pkgs.vim];
+  environment.shells = with pkgs; [
+    fish
+    zsh
+  ];
 
   nix.package = pkgs.nix;
   nixpkgs = {

@@ -6,6 +6,7 @@
   dot = pkgs.callPackage ../../apps/dot/dot.nix {
     NAME = "amit-mbp";
     REBUILD_COMMAND = ''nh darwin switch ~/dotfiles/nix -H amit-mbp'';
+    CURRENT_COMMAND = ''darwin-rebuild --list-generations | grep "current" | awk '{print $1}' '';
   };
 in {
   home.username = "amit";
@@ -14,12 +15,12 @@ in {
 
   imports = [
     # ../../modules/apps.nix
-    # ../../modules/cli.nix
-    # ../../modules/dev
     # ../../modules/gaming
+    ../../modules/cli.nix
+    ../../modules/dev
   ];
 
-  emulation.enable = false;
+  # emulation.enable = false;
 
   home.packages = with pkgs; [
     dot
@@ -36,8 +37,13 @@ in {
 
   programs.git = {
     enable = true;
-    userEmail = "amit.maish1@gmail.com";
-    userName = "amit";
+    settings = {
+      user = {
+        email = "amit.maish1@gmail.com";
+        name = "amit";
+      };
+      init.defaultBranch = "main";
+    };
   };
 
   programs.fish = {
@@ -68,18 +74,18 @@ in {
     '';
   };
 
-  home.file.".config/starship.toml".source = ../starship/.config/starship.toml;
+  home.file.".config/starship.toml".source = ../../../starship/.config/starship.toml;
 
   xdg.configFile."bat" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../bat/.config/bat;
+    source = config.lib.file.mkOutOfStoreSymlink ../../../bat/.config/bat;
     recursive = true;
   };
   xdg.configFile."ghostty" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
+    source = config.lib.file.mkOutOfStoreSymlink ../../../ghostty/.config/ghostty;
     recursive = true;
   };
   xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../nvim/.config/nvim;
+    source = config.lib.file.mkOutOfStoreSymlink ../../../nvim/.config/nvim;
     recursive = true;
   };
   programs.neovim = {

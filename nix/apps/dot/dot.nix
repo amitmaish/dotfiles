@@ -5,6 +5,7 @@
   libnotify,
   nushell,
   REBUILD_COMMAND ? "sudo nixos-rebuild switch --flake ~/dotfiles/nix",
+  CURRENT_COMMAND ? ''nu -c "nixos-rebuild list-generations | detect columns | where {|item| \$item.Current == True} | \$in.Generation.0"'',
   NAME ? "nix",
 }:
 writeShellApplication {
@@ -17,9 +18,10 @@ writeShellApplication {
     nushell
   ];
 
-  runtimeEnv = {inherit NAME REBUILD_COMMAND;};
+  runtimeEnv = {inherit NAME REBUILD_COMMAND CURRENT_COMMAND;};
 
   excludeShellChecks = [
+    "SC2016"
     "SC2089"
     "SC2090"
   ];

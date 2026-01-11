@@ -1,4 +1,1 @@
-WK.add({
-	{ "<leader>t", group = "typst" },
-	{ "<leader>tp", "<cmd>TypstPreviewToggle<cr>", desc = "toggle typst preview" },
-})
+/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/ftplugin/typst.lua
