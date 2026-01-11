@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  dot = pkgs.callPackage ./apps/dot/dot.nix {inherit pkgs;};
+  dot = pkgs.callPackage ./apps/dot/dot.nix {};
 in {
   home.username = "amit";
   home.homeDirectory = "/home/amit";

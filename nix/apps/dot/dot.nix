@@ -1,8 +1,15 @@
-{pkgs, ...}:
-pkgs.writeShellApplication {
+{
+  writeShellApplication,
+  alejandra,
+  doppler,
+  git,
+  libnotify,
+  nushell,
+}:
+writeShellApplication {
   name = "dot";
 
-  runtimeInputs = with pkgs; [
+  runtimeInputs = [
     alejandra
     doppler
     git

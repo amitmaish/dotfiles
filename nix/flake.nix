@@ -24,7 +24,6 @@
     self,
     nixpkgs,
     home-manager,
-    rust-overlay,
     ...
   } @ inputs: {
     nixosConfigurations.amit = nixpkgs.lib.nixosSystem rec {
@@ -43,10 +42,10 @@
             backupFileExtension = "backup";
           };
         }
-        ({pkgs, ...}: {
-          nixpkgs.overlays = [rust-overlay.overlays.default];
-          environment.systemPackages = [pkgs.rust-bin.stable.latest.default];
-        })
+        # ({pkgs, ...}: {
+        #   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
+        #   environment.systemPackages = [pkgs.rust-bin.stable.latest.default];
+        # })
         ./modules/noctalia.nix
       ];
     };

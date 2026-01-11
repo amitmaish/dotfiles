@@ -71,8 +71,11 @@
 
   users.extraGroups.docker.members = ["amit"];
 
-  nixpkgs.config = {
-    allowUnfree = true;
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+    };
+    overlays = [inputs.rust-overlay.overlays.default];
   };
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [

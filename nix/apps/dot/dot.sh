@@ -29,8 +29,7 @@ if ! git diff --quiet "./nix/*"; then
 
 	printf "\n%s\n" "rebuilding nixos"
 
-	# shellcheck disable=SC2024
-	doppler run --command 'sudo -E nixos-rebuild switch --flake ~/dotfiles/nix#amit' &>nixos-switch.log || (
+	doppler run --command 'sudo -E nixos-rebuild switch --flake ~/dotfiles/nix#amit' 2>&1 | tee nixos-switch.log || (
 		cat nixos-switch.log | grep --color error && reset 1
 	)
 

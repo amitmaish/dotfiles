@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # rust-bin
     bacon
     cargo-generate
     cargo-leptos
@@ -8,6 +7,7 @@
     cargo-tauri
     cargo-workspaces
     leptosfmt
+    rust-bin.stable.latest.default
     trunk
   ];
 }
