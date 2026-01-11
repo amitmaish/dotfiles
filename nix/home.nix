@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  dot = pkgs.callPackage ./apps/dot/dot.nix {REBUILD_COMMAND = ''doppler run --command "nh os switch ~/dotfiles/nix -H amit"'';};
+  dot = pkgs.callPackage ./apps/dot/dot.nix {REBUILD_COMMAND = ''doppler run --command "nh os switch ~/dotfiles/nix -H nixpc"'';};
 in {
   home.username = "amit";
   home.homeDirectory = "/home/amit";

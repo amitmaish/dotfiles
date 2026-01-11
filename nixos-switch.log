@@ -1,64 +1,371 @@
-warning: $HOME ('/home/amit') is not owned by you, falling back to the one defined in the 'passwd' file ('/root')
-warning: Git tree '/home/amit/dotfiles' is dirty
-building the system configuration...
-warning: $HOME ('/home/amit') is not owned by you, falling back to the one defined in the 'passwd' file ('/root')
-warning: Git tree '/home/amit/dotfiles' is dirty
-evaluation warning: amit profile: The option `programs.git.userEmail' defined in `/nix/store/aqhcr0kv7d91rfm0ca77rbakjk5gkbq6-source/flake.nix' has been renamed to `programs.git.settings.user.email'.
-evaluation warning: amit profile: The option `programs.git.userName' defined in `/nix/store/aqhcr0kv7d91rfm0ca77rbakjk5gkbq6-source/flake.nix' has been renamed to `programs.git.settings.user.name'.
-evaluation warning: The option `services.samba.securityType' defined in `/nix/store/wfxfv6v1cvr04dhaak5li44ygc1na1xd-source/nix/modules/samba.nix' has been renamed to `services.samba.settings.global.security'.
-these 23 derivations will be built:
-  /nix/store/0n1bwr3rdiqagx0vr65g7k2dvrcgpzjd-hm_bat.drv
-  /nix/store/2rzig1ql0dni00g0dih0y5rzf5yjgxfd-hm_noctalia.drv
-  /nix/store/3kr2yqd2qf03z73xg1lxmb71f1h35l6f-hm_ghostty.drv
-  /nix/store/4rxk9yldh08ca9bk7c4kxldx1fmvnjyj-hm_niri.drv
-  /nix/store/xldzkslqzk2aj4b3jsxa92d2wlmiv46x-dot.drv
-  /nix/store/nhgwmhsdvx5gkd6hhcw69vvdjx4m0mrk-home-manager-path.drv
-  /nix/store/5qnppiwfqm82s73h3ip3rz091hgfgmig-user-environment.drv
-  /nix/store/j5ppb1i7l4dzj1jdvp3gbzxb8d0qji4m-unit-script-nixos-upgrade-start.drv
-  /nix/store/c9nk64mfygah4vl562c0w8pcif220xzq-unit-nixos-upgrade.service.drv
-  /nix/store/b0b897rf2mvmf79hrzq358lc890xdaav-dot-fish-completions.drv
-  /nix/store/f79pq02kpdp4856392a6aqwbsgkzn354-amit-fish-completions.drv
-  /nix/store/881cmh854xbic4fkqf44p49b70jk43yk-man-paths.drv
-  /nix/store/zij2g9s0w4b8jc5qb9vs413w5nhf9fy7-man-cache.drv
-  /nix/store/ky89w7237gyvc8dp6nsv3s5329i91lh2-hm_.manpath.drv
-  /nix/store/mimxirdzbmh4c336gk5y4j7r3qsmnccy-hm_fontconfigconf.d10hmfonts.conf.drv
-  /nix/store/zmpad0wzgmcjiz1cfyi01xdfgji1l6s2-hm_nvim.drv
-  /nix/store/hckh76jy2hd1g8np1wsla5mf1jpv8nla-home-manager-files.drv
-  /nix/store/qi8xcnf46rk7bkcxf40287ggf2056fl2-home-manager-generation.drv
-  /nix/store/q3gngpak4g1zagr5qgjki56b24g78c3w-unit-home-manager-amit.service.drv
-  /nix/store/7xi7shjx3k2liivvhvdw4vc3kyahc0c9-system-units.drv
-  /nix/store/kbpxpgza0c1g8x27pwqppcif7wxvx8bq-etc.drv
-  /nix/store/cs260kkn11dbq7ny3zydm91d0c12302s-activate.drv
-  /nix/store/xn5a2g9fdgp5ifz7lx4l9yq9dvakw61a-nixos-system-nixos-26.05.20260108.3497aa5.drv
-building '/nix/store/j5ppb1i7l4dzj1jdvp3gbzxb8d0qji4m-unit-script-nixos-upgrade-start.drv'...
-warning: $HOME ('/home/amit') is not owned by you, falling back to the one defined in the 'passwd' file ('/root')
-building '/nix/store/xldzkslqzk2aj4b3jsxa92d2wlmiv46x-dot.drv'...
-building '/nix/store/0n1bwr3rdiqagx0vr65g7k2dvrcgpzjd-hm_bat.drv'...
-building '/nix/store/3kr2yqd2qf03z73xg1lxmb71f1h35l6f-hm_ghostty.drv'...
-building '/nix/store/4rxk9yldh08ca9bk7c4kxldx1fmvnjyj-hm_niri.drv'...
-building '/nix/store/2rzig1ql0dni00g0dih0y5rzf5yjgxfd-hm_noctalia.drv'...
-building '/nix/store/zmpad0wzgmcjiz1cfyi01xdfgji1l6s2-hm_nvim.drv'...
-building '/nix/store/b0b897rf2mvmf79hrzq358lc890xdaav-dot-fish-completions.drv'...
-building '/nix/store/nhgwmhsdvx5gkd6hhcw69vvdjx4m0mrk-home-manager-path.drv'...
-building '/nix/store/881cmh854xbic4fkqf44p49b70jk43yk-man-paths.drv'...
-building '/nix/store/c9nk64mfygah4vl562c0w8pcif220xzq-unit-nixos-upgrade.service.drv'...
-building '/nix/store/f79pq02kpdp4856392a6aqwbsgkzn354-amit-fish-completions.drv'...
-building '/nix/store/mimxirdzbmh4c336gk5y4j7r3qsmnccy-hm_fontconfigconf.d10hmfonts.conf.drv'...
-building '/nix/store/5qnppiwfqm82s73h3ip3rz091hgfgmig-user-environment.drv'...
-building '/nix/store/zij2g9s0w4b8jc5qb9vs413w5nhf9fy7-man-cache.drv'...
-building '/nix/store/ky89w7237gyvc8dp6nsv3s5329i91lh2-hm_.manpath.drv'...
-building '/nix/store/hckh76jy2hd1g8np1wsla5mf1jpv8nla-home-manager-files.drv'...
-building '/nix/store/qi8xcnf46rk7bkcxf40287ggf2056fl2-home-manager-generation.drv'...
-building '/nix/store/q3gngpak4g1zagr5qgjki56b24g78c3w-unit-home-manager-amit.service.drv'...
-building '/nix/store/7xi7shjx3k2liivvhvdw4vc3kyahc0c9-system-units.drv'...
-building '/nix/store/kbpxpgza0c1g8x27pwqppcif7wxvx8bq-etc.drv'...
-building '/nix/store/cs260kkn11dbq7ny3zydm91d0c12302s-activate.drv'...
-building '/nix/store/xn5a2g9fdgp5ifz7lx4l9yq9dvakw61a-nixos-system-nixos-26.05.20260108.3497aa5.drv'...
-warning: $HOME ('/home/amit') is not owned by you, falling back to the one defined in the 'passwd' file ('/root')
+[32m>[39m Building NixOS configuration
+[?25l[?2026h[35;1mwarning:[0m Git tree '/home/amit/dotfiles' is dirty
+[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 0s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 1s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 2s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 3s[0m[?2026l[?2026h[1G[2K[1m⏱ 4s[0m[?2026l[?2026h[1G[2K[1m⏱ 4s[0m[?2026l[?2026h[1G[2K[1m⏱ 4s[0m[?2026l[?2026h[1G[2K[1m⏱ 4s[0m[?2026l[?2026h[1G[2K[1m⏱ 4s[0m[?2026l[?2026h[1G[2K[1m⏱ 5s[0m[?2026l[?2026h[1G[2K[1m⏱ 6s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 7s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 8s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 9s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 10s[0m[?2026l[?2026h[1G[2K[1m⏱ 11s[0m[?2026l[?2026h[1G[2K[1m⏱ 11s[0m[?2026l[?2026h[1G[2K[1m⏱ 11s[0m[?2026l[?2026h[1G[2K[1m⏱ 11s[0m[?2026l[?2026h[1G[2K[1m⏱ 11s[0m[?2026l[?2026h[1G[2K[1m⏱ 11s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[35;1mevaluation warning:[0m amit profile: The option `programs.git.userEmail' defined in `/nix/store/aqhcr0kv7d91rfm0ca77rbakjk5gkbq6-source/flake.nix' has been renamed to `programs.git.settings.user.email'.
+[35;1mevaluation warning:[0m amit profile: The option `programs.git.userName' defined in `/nix/store/aqhcr0kv7d91rfm0ca77rbakjk5gkbq6-source/flake.nix' has been renamed to `programs.git.settings.user.name'.
+[35;1mevaluation warning:[0m The option `services.samba.securityType' defined in `/nix/store/9zh2issq98lxgqamr7zim61p7nvlkahg-source/nix/modules/samba.nix' has been renamed to `services.samba.settings.global.security'.
+[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 12s[0m[?2026l[?2026h[1G[2K[1m⏱ 13s[0m[?2026l[?2026h[1G[2K[1m⏱ 13s[0m[?2026l[?2026h[1G[2K[1m⏱ 13s[0m[?2026l[?2026h[1G[2K[1m⏱ 13s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 14s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 15s[0m[?2026l[?2026h[1G[2K[1m⏱ 16s[0m[?2026l[?2026h[1G[2K[1m⏱ 16s[0m[?2026l[?2026h[1G[2Kthese 14 derivations will be built:
+  /nix/store/wavab9d2spwbcgnkvrghwgwhnpgszrnr-unit-script-nixos-upgrade-start.drv
+  /nix/store/da9a60ymajzq3qhxgqm5hv1whvivg712-unit-nixos-upgrade.service.drv
+  /nix/store/4dg88mr1cd72p3laqb7w52zfhqb9xpkz-hm_niri.drv
+  /nix/store/89g9ia5jajrzqyd5gxn5apsfi6j90sx6-hm_bat.drv
+  /nix/store/j3n1wr01s00pgxfi5kwaypj3jy9cab0f-hm_noctalia.drv
+  /nix/store/rp0hn938ca6z2ymmnmpk6vvl112p62kc-hm_nvim.drv
+  /nix/store/yp5sibhaai9yl7ff6785mpsga0fbrvf1-hm_ghostty.drv
+┏━ [1mDependency Graph[0m with 6 roots:
+┃ [34m┌─ [0m[34m⏸ unit-script-nixos-upgrade-start[0m
+┃ [34m⏸ unit-nixos-upgrade.service[0m
+┃ [34m⏸ hm_niri[0m
+┃ [34m⏸ hm_bat[0m
+┃ [34m⏸ hm_noctalia[0m
+┃ [34m⏸ hm_nvim[0m
+┃ [34m⏸ hm_ghostty[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ 0[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 16s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K  /nix/store/7nh63n479bxvm7ihdfsgnwingfdcdsig-home-manager-files.drv
+  /nix/store/an62fq9bwfywx454h3wicdmb8rzl9ryw-home-manager-generation.drv
+  /nix/store/fmslsj2lqzzq6i7srbz0hfy730jzjwbv-unit-home-manager-amit.service.drv
+  /nix/store/r2b3pkdnxk2xg7vxpsyd2rgch2gyz33k-system-units.drv
+  /nix/store/0f5cc5ps7hxd0ancj5axd8ipq2hjqmnf-etc.drv
+  /nix/store/qwv225gq88wxw1bz25mfinjdcwfmp9l5-activate.drv
+  /nix/store/46n6x8nqg0ckhnakm9b1f6q3g375m8d4-nixos-system-nixos-26.05.20260108.3497aa5.drv
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m            [34m┌─ [0m[34m⏸ hm_ghostty[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_nvim[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_noctalia[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_bat[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_niri[0m
+┃ [34m│  [0m         [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃ [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m┌─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[34m⏸ unit-script-nixos-upgrade-start[0m
+┃ [34m│  [0m   [34m├─ [0m[34m⏸ unit-nixos-upgrade.service[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ 0[0m │ [34m⏸ [1m14[0m[0m │ [1m⏱ 17s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m            [34m┌─ [0m[34m⏸ hm_ghostty[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_nvim[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_noctalia[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_bat[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_niri[0m
+┃ [34m│  [0m         [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃ [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m┌─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[34m⏸ unit-script-nixos-upgrade-start[0m
+┃ [34m│  [0m   [34m├─ [0m[34m⏸ unit-nixos-upgrade.service[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ 0[0m │ [34m⏸ [1m14[0m[0m │ [1m⏱ 17s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34munit-script-nixos-upgrade-start> [0mbuilding '/nix/store/wavab9d2spwbcgnkvrghwgwhnpgszrnr-unit-script-nixos-upgrade-start.drv'
+[0m[34mhm_bat> [0mbuilding '/nix/store/89g9ia5jajrzqyd5gxn5apsfi6j90sx6-hm_bat.drv'
+[0m[34mhm_ghostty> [0mbuilding '/nix/store/yp5sibhaai9yl7ff6785mpsga0fbrvf1-hm_ghostty.drv'
+[0m[34mhm_niri> [0mbuilding '/nix/store/4dg88mr1cd72p3laqb7w52zfhqb9xpkz-hm_niri.drv'
+[0m[34mhm_noctalia> [0mbuilding '/nix/store/j3n1wr01s00pgxfi5kwaypj3jy9cab0f-hm_noctalia.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m5 ⏵[0m
+┃ [34m│  [0m            [34m┌─ [0m[33m[1m⏵ hm_ghostty[0m[0m
+┃ [34m│  [0m            [34m├─ [0m[34m⏸ hm_nvim[0m
+┃ [34m│  [0m            [34m├─ [0m[33m[1m⏵ hm_noctalia[0m[0m
+┃ [34m│  [0m            [34m├─ [0m[33m[1m⏵ hm_bat[0m[0m
+┃ [34m│  [0m            [34m├─ [0m[33m[1m⏵ hm_niri[0m[0m
+┃ [34m│  [0m         [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃ [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m┌─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[33m[1m⏵ unit-script-nixos-upgrade-start[0m[0m
+┃ [34m│  [0m   [34m├─ [0m[34m⏸ unit-nixos-upgrade.service[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m5[0m[0m │ [32m✔ 0[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhm_nvim> [0mbuilding '/nix/store/rp0hn938ca6z2ymmnmpk6vvl112p62kc-hm_nvim.drv'
+[0m[34munit-nixos-upgrade.service> [0mbuilding '/nix/store/da9a60ymajzq3qhxgqm5hv1whvivg712-unit-nixos-upgrade.service.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m1 ⏵[0m
+┃ [34m│  [0m            [34m┌─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m         [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃ [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m┌─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[33m[1m⏵ unit-nixos-upgrade.service[0m[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-files> [0mbuilding '/nix/store/7nh63n479bxvm7ihdfsgnwingfdcdsig-home-manager-files.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m2 ⏵[0m
+┃ [34m│  [0m            [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m         [34m┌─ [0m[33m[1m⏵ home-manager-files[0m[0m
+┃ [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m┌─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[33m[1m⏵ unit-nixos-upgrade.service[0m[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m6[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m1 ⏵[0m
+┃ [34m│  [0m            [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m            [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m         [34m┌─ [0m[33m[1m⏵ home-manager-files[0m[0m
+┃ [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m┌─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m7[0m[0m │ [34m⏸ [1m6[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃ [34m│  [0m   [34m├─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m8[0m[0m │ [34m⏸ [1m6[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-generation> [0mbuilding '/nix/store/an62fq9bwfywx454h3wicdmb8rzl9ryw-home-manager-generation.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m1 ⏵[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[33m[1m⏵ home-manager-generation[0m[0m
+┃ [34m│  [0m   [34m├─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m8[0m[0m │ [34m⏸ [1m5[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[34m⏸ unit-home-manager-amit.service[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m9[0m[0m │ [34m⏸ [1m5[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34munit-home-manager-amit.service> [0mbuilding '/nix/store/fmslsj2lqzzq6i7srbz0hfy730jzjwbv-unit-home-manager-amit.service.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m1 ⏵[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[33m[1m⏵ unit-home-manager-amit.service[0m[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m9[0m[0m │ [34m⏸ [1m4[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃ [34m│  [0m[34m┌─ [0m[34m⏸ system-units[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m10[0m[0m │ [34m⏸ [1m4[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34msystem-units> [0mbuilding '/nix/store/r2b3pkdnxk2xg7vxpsyd2rgch2gyz33k-system-units.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m1 ⏵[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃ [34m│  [0m[34m┌─ [0m[33m[1m⏵ system-units[0m[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m10[0m[0m │ [34m⏸ [1m3[0m[0m │ [1m⏱ 18s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃ [34m│  [0m[34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m├─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m11[0m[0m │ [34m⏸ [1m3[0m[0m │ [1m⏱ 19s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34metc> [0mbuilding '/nix/store/0f5cc5ps7hxd0ancj5axd8ipq2hjqmnf-etc.drv'
+┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m[90m waiting for [0m[33m1 ⏵[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃ [34m│  [0m[34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m├─ [0m[33m[1m⏵ etc[0m[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m11[0m[0m │ [34m⏸ [1m2[0m[0m │ [1m⏱ 19s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃ [34m┌─ [0m[34m⏸ activate[0m
+┃ [34m│  [0m      [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃ [34m│  [0m   [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃ [34m│  [0m   [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃ [34m│  [0m   [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃ [34m│  [0m[34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m├─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m12[0m[0m │ [34m⏸ [1m2[0m[0m │ [1m⏱ 20s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mactivate> [0mbuilding '/nix/store/qwv225gq88wxw1bz25mfinjdcwfmp9l5-activate.drv'
+┏━ [1mDependency Graph[0m:
+┃             [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃          [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃          [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃          [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃          [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃          [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃       [34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃    [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m┌─ [0m[33m[1m⏵ activate[0m[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m12[0m[0m │ [34m⏸ [1m1[0m[0m │ [1m⏱ 20s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃             [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃          [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃          [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃          [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃          [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃          [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃       [34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃    [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ activate[0m [90m[0m
+┃ [34m⏸ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m13[0m[0m │ [34m⏸ [1m1[0m[0m │ [1m⏱ 20s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mnixos-system-nixos-26.05.20260108.3497aa> [0mbuilding '/nix/store/46n6x8nqg0ckhnakm9b1f6q3g375m8d4-nixos-system-nixos-26.05.20260108.3497aa5.drv'
+┏━ [1mDependency Graph[0m:
+┃             [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃          [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃          [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃          [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃          [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃          [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃       [34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃    [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ activate[0m [90m[0m
+┃ [33m[1m⏵ nixos-system-nixos-26.05.20260108.3497aa5[0m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m13[0m[0m │ [34m⏸ 0[0m │ [1m⏱ 20s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃             [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃          [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃          [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃          [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃          [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃          [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃       [34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃    [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ activate[0m [90m[0m
+┃ [32m✔ nixos-system-nixos-26.05.20260108.3497aa5[0m [90m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m14[0m[0m │ [34m⏸ 0[0m │ [1m⏱ 20s[0m[?2026l[?2026h[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃             [34m┌─ [0m[32m✔ unit-script-nixos-upgrade-start[0m [90m[0m
+┃          [34m┌─ [0m[32m✔ unit-nixos-upgrade.service[0m [90m[0m
+┃          [34m│  [0m      [34m┌─ [0m[32m✔ hm_bat[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_ghostty[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_niri[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_noctalia[0m [90m[0m
+┃          [34m│  [0m      [34m├─ [0m[32m✔ hm_nvim[0m [90m[0m
+┃          [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃          [34m│  [0m[34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃          [34m├─ [0m[32m✔ unit-home-manager-amit.service[0m [90m[0m
+┃       [34m┌─ [0m[32m✔ system-units[0m [90m[0m
+┃    [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ activate[0m [90m[0m
+┃ [32m✔ nixos-system-nixos-26.05.20260108.3497aa5[0m [90m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m14[0m[0m │ [34m⏸ 0[0m │ [1m[32mFinished at 18:45:27 after 20s[0m[0m[?2026l[?25h
+[32m>[39m Activating configuration
 activating the configuration...
 warning: not applying GID change of group ‘docker’ (991 -> 131) in /etc/group
-setting up /etc...
 reloading user units for amit...
 restarting sysinit-reactivation.target
 the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/x0ly06bbhk0vqg3mbjk9mg3qgc4krqw4-nixos-system-nixos-26.05.20260108.3497aa5
+[32m>[39m Adding configuration to bootloader

@@ -26,7 +26,7 @@
     home-manager,
     ...
   } @ inputs: {
-    nixosConfigurations.amit = nixpkgs.lib.nixosSystem rec {
+    nixosConfigurations.nixpc = nixpkgs.lib.nixosSystem rec {
       specialArgs = {inherit inputs system;};
       system = "x86_64-linux";
       modules = [
