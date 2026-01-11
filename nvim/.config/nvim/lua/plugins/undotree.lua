@@ -1,1 +1,6 @@
-/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/lua/plugins/undotree.lua
+return {
+	"https://github.com/mbbill/undotree",
+	keys = {
+		{ "<leader>U", vim.cmd.UndotreeToggle, desc = "UndotreeToggle" },
+	},
+}

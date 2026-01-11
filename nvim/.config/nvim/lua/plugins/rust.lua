@@ -1,1 +1,19 @@
-/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/lua/plugins/rust.lua
+return {
+	{
+		"mrcjkb/rustaceanvim",
+		lazy = false,
+	},
+	{
+		"saecki/crates.nvim",
+		tag = "stable",
+		---@type crates.UserConfig
+		opts = {
+			lsp = {
+				enabled = true,
+				actions = true,
+				completion = true,
+				hover = true,
+			},
+		},
+	},
+}

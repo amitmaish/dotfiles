@@ -1,1 +1,19 @@
-/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/lua/plugins/lsp.lua
+return {
+	{
+		"https://github.com/neovim/nvim-lspconfig",
+	},
+	{
+		"mason-org/mason.nvim",
+		---@type MasonSettings
+		opts = {
+			ui = { border = "rounded" },
+		},
+	},
+	{
+		"https://github.com/mfussenegger/nvim-dap",
+	},
+	{
+		"https://github.com/rcarriga/nvim-dap-ui",
+		dependencies = { "https://github.com/mfussenegger/nvim-dap" },
+	},
+}

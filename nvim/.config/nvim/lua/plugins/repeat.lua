@@ -1,1 +1,4 @@
-/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/lua/plugins/repeat.lua
+return {
+	"tpope/vim-repeat",
+	event = "VeryLazy",
+}

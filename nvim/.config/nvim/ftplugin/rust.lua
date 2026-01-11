@@ -1,1 +1,20 @@
-/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/ftplugin/rust.lua
+local bufnr = vim.api.nvim_get_current_buf()
+
+WK.add({
+	silent = true,
+	buffer = bufnr,
+	{
+		"<leader>ca",
+		function()
+			vim.cmd.RustLsp("codeAction")
+		end,
+		desc = "code action",
+	},
+	{
+		"K",
+		function()
+			vim.cmd.RustLsp({ "hover", "actions" })
+		end,
+		hidden = true,
+	},
+})

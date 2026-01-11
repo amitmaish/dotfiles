@@ -1,1 +1,3 @@
-/nix/store/qcgjcy69nssc5nbx4y2x2zwz2j464fia-home-manager-files/.config/nvim/lua/plugins/gitsigns.lua
+return {
+	"https://github.com/lewis6991/gitsigns.nvim",
+}
