@@ -52,6 +52,7 @@
   programs.niri.enable = true;
 
   programs.fish.enable = true;
+  programs.zsh.enable = true;
 
   users.users.amit = {
     isNormalUser = true;

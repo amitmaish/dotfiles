@@ -46,7 +46,7 @@ in {
       };
       init.defaultBranch = "main";
       core = {
-        pager = "${pkgs.delta}";
+        pager = "delta";
       };
     };
   };
