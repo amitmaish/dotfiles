@@ -5,12 +5,12 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    inputs.musnix.nixosModules.musnix
     ./modules/audio.nix
     ./modules/nvidia.nix
     ./modules/samba.nix
     ./modules/tailscale.nix
     ./modules/virtualisation.nix
+    inputs.musnix.nixosModules.musnix
   ];
 
   boot.loader.systemd-boot.enable = true;

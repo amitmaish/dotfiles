@@ -1,14 +1,18 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  fetchurl,
+  appimageTools,
+}: let
   pname = "hayase";
   version = "6.4.46";
 
-  src = pkgs.fetchurl {
+  src = fetchurl {
     url = "https://api.hayase.watch/files/linux-hayase-${version}-linux.AppImage";
     hash = "sha256-QvuxWtkcZbC94e7BcpTnFrhEZNItLJQQqUFODzJ83HA=";
   };
-  appimageContents = pkgs.appimageTools.extract {inherit pname version src;};
+  appimageContents = appimageTools.extract {inherit pname version src;};
 in
-  pkgs.appimageTools.wrapType2 {
+  appimageTools.wrapType2 {
     inherit pname version src;
     pkgs = pkgs;
     extraInstallCommands = ''

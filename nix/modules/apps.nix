@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  hayase = import ../apps/hayase.nix {inherit pkgs;};
+  hayase = pkgs.callPackage ../apps/hayase.nix {};
 in {
   home.packages = with pkgs; [
     anki
