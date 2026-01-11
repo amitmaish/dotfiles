@@ -20,10 +20,16 @@ in {
 
   home.packages = with pkgs; [
     dot
-    nh
     p7zip
     zip
   ];
+
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 7d";
+    flake = "~/dotfiles/nix";
+  };
 
   programs.git = {
     enable = true;
