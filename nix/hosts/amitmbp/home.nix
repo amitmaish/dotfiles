@@ -37,12 +37,16 @@ in {
 
   programs.git = {
     enable = true;
+    lfs.enable = true;
     settings = {
       user = {
         email = "amit.maish1@gmail.com";
         name = "amit";
       };
       init.defaultBranch = "main";
+      core = {
+        pager = "delta";
+      };
     };
   };
 
