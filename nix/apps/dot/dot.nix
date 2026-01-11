@@ -18,12 +18,12 @@ writeShellApplication {
     nushell
   ];
 
+  runtimeEnv = {inherit REBUILD_COMMAND;};
+
   excludeShellChecks = [
     "SC2089"
     "SC2090"
   ];
-
-  runtimeEnv = {inherit REBUILD_COMMAND;};
 
   text = builtins.readFile ./dot.sh;
 }
