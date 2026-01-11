@@ -38,6 +38,7 @@
       modules = [
         inputs.musnix.nixosModules.musnix
         ./configuration.nix
+        ./modules/virtualisation.nix
         home-manager.nixosModules.home-manager
         {
           home-manager = {
