@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  dot = pkgs.callPackage ./apps/dot/dot.nix {};
+  dot = pkgs.callPackage ./apps/dot/dot.nix {REBUILD_COMMAND = ''doppler run --command "sudo -E nixos-rebuild switch --flake ~/dotfiles/nix#amit"'';};
 in {
   home.username = "amit";
   home.homeDirectory = "/home/amit";
