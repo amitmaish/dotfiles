@@ -38,8 +38,13 @@ in {
 
   programs.git = {
     enable = true;
-    userEmail = "amit.maish1@gmail.com";
-    userName = "amit";
+    settings = {
+      user = {
+        email = "amit.maish1@gmail.com";
+        name = "amit";
+      };
+      init.defaultBranch = "main";
+    };
   };
 
   programs.fish = {
