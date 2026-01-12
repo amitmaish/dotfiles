@@ -1,1 +1,17 @@
-/nix/store/q4v012mggy50hqk4dc00xchslkk28yp6-home-manager-files/.config/nvim/lua/plugins/oil.lua
+return {
+	"stevearc/oil.nvim",
+	---@module 'oil'
+	---@type oil.SetupOpts
+	opts = {},
+	dependencies = { { "echasnovski/mini.icons", opts = {} } },
+	lazy = false,
+	keys = {
+		{
+			"<leader>o",
+			function()
+				vim.cmd("Oil")
+			end,
+			desc = "oil",
+		},
+	},
+}

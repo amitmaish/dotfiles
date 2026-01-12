@@ -23,11 +23,14 @@ in {
   # emulation.enable = false;
 
   home.packages = with pkgs; [
-    aerospace
     dot
     p7zip
     zip
   ];
+
+  programs.aerospace = {
+    enable = true;
+  };
 
   programs.nh = {
     enable = true;
