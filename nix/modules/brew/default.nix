@@ -25,7 +25,6 @@
       "praat"
       "qmk-toolbox"
       "retroarch"
-      "showmidi"
       "steinberg-activation-manager"
       "steinberg-download-assistant"
       "sublime-text"

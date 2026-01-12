@@ -84,6 +84,11 @@ in {
 
   home.file.".config/starship.toml".source = ../../../starship/.config/starship.toml;
 
+  home.file.".config/yazi" = {
+    source = ../../../yazi/.config/yazi;
+    recursive = true;
+  };
+
   xdg.configFile."bat" = {
     source = config.lib.file.mkOutOfStoreSymlink ../../../bat/.config/bat;
     recursive = true;
