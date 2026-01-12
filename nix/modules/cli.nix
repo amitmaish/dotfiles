@@ -18,6 +18,7 @@
       usbutils
       xclip
       yazi
+      yt-dlp
       zoxide
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
