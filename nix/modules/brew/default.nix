@@ -6,7 +6,6 @@
     ];
     casks = [
       "adobe-digital-editions"
-      "amethyst"
       "bibdesk"
       "dorico"
       "firefox"
