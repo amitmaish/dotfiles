@@ -3,12 +3,14 @@
     [
       bat
       bat-extras.batman
+      cmatrix
       delta
       eza
       ffmpeg
       fzf
       neofetch
       nushell
+      presenterm
       ripgrep
       starship
       syncthing
