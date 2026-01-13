@@ -6,9 +6,13 @@
   imports = [
     ../../modules/brew
   ];
-  environment.systemPackages = [pkgs.vim];
+  environment.systemPackages = with pkgs; [
+    vim
+  ];
   environment.shells = with pkgs; [
+    bash
     fish
+    nushell
     zsh
   ];
 
@@ -23,8 +27,9 @@
   # Necessary for using flakes on this system.
   nix.settings.experimental-features = "nix-command flakes";
 
-  programs.zsh.enable = true;
+  programs.bash.enable = true;
   programs.fish.enable = true;
+  programs.zsh.enable = true;
 
   system.stateVersion = 4;
   system.primaryUser = "amit";
