@@ -5,6 +5,7 @@
 }: {
   imports = [
     ../../modules/brew
+    ./system.nix
   ];
   environment.systemPackages = with pkgs; [
     vim
