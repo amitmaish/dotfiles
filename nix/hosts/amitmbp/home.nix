@@ -82,29 +82,16 @@ in {
     '';
   };
 
-  home.file.".config/starship.toml".source = ../../../starship/.config/starship.toml;
-
-  home.file.".config/yazi" = {
-    source = ../../../yazi/.config/yazi;
-    recursive = true;
-  };
-
-  xdg.configFile."bat" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../../../bat/.config/bat;
-    recursive = true;
-  };
-  xdg.configFile."ghostty" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../../../ghostty/.config/ghostty;
-    recursive = true;
-  };
-  xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../../../nvim/.config/nvim;
-    recursive = true;
-  };
   programs.neovim = {
     enable = true;
     defaultEditor = true;
   };
+
+  home.file.".config/bat".source = config.lib.file.mkOutOfStoreSymlink ../../../bat/.config/bat;
+  home.file.".config/ghostty".source = config.lib.file.mkOutOfStoreSymlink ../../../ghostty/.config/ghostty;
+  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ../../../nvim/.config/nvim;
+  home.file.".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink ../../../starship/.config/starship.toml;
+  home.file.".config/yazi".source = ../../../yazi/.config/yazi;
 
   services.syncthing.enable = true;
 }
