@@ -6,7 +6,7 @@
       "/Applications/Signal.app"
       "/Applications/Ghostty.app"
       "/Applications/Firefox.app"
-      "${pkgs.anki}/Applications/Anki.app"
+      "/Applications/Anki.app"
       "${pkgs.obsidian}/Applications/Obsidian.app"
       "/System/Applications/Calendar.app"
       "/Applications/Pianoteq 8"
