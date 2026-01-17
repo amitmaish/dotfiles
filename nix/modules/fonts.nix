@@ -1,10 +1,7 @@
-{
-  config,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     atkinson-hyperlegible
+    nerd-fonts.hack
     noto-fonts
     noto-fonts-cjk-sans
   ];
