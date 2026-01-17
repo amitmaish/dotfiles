@@ -98,7 +98,7 @@ in {
   services.syncthing.enable = true;
 
   services.jankyborders = {
-    enable = true;
+    enable = false;
     settings = {
       style = "round";
       width = 3.0;
