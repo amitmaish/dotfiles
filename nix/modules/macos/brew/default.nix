@@ -41,8 +41,6 @@
     masApps = {};
     onActivation = {
       cleanup = "zap";
-      autoUpdate = true;
-      upgrade = true;
     };
   };
 }
