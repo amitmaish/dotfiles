@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ../../modules/brew
+    ../../modules/macos
     ./system.nix
   ];
   environment.systemPackages = with pkgs; [
