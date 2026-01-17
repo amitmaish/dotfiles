@@ -15,12 +15,12 @@ in {
 
   imports = [
     ../../modules/apps.nix
-    # ../../modules/gaming
+    ../../modules/gaming
     ../../modules/cli.nix
     ../../modules/dev
   ];
 
-  # emulation.enable = false;
+  emulation.enable = false;
 
   home.packages = with pkgs; [
     dot
