@@ -1,3 +1,5 @@
+require("neoconf").setup({})
+
 vim.lsp.enable({
 	"asm_lsp",
 	"ast_grep",

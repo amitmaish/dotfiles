@@ -24,7 +24,7 @@ return {
 			nix = { "alejandra" },
 			python = { "ruff" },
 			ron = { "ronfmt" },
-			rust = { "rustfmt" },
+			rust = { lsp_format = "prefer" },
 			tex = { "tex-fmt" },
 			toml = { "taplo" },
 			typescript = { "prettier" },

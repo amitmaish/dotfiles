@@ -5,6 +5,7 @@
       bat-extras.batman
       cmatrix
       delta
+      dict
       eza
       ffmpeg
       fzf

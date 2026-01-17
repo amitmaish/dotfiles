@@ -9,6 +9,7 @@ in {
     [
       anki
       discord
+      qutebrowser
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       calibre
