@@ -96,4 +96,19 @@ in {
   home.file.".config/yazi".source = ../../../yazi/.config/yazi;
 
   services.syncthing.enable = true;
+
+  services.jankyborders = {
+    enable = true;
+    settings = {
+      style = "round";
+      width = 3;
+      hidpi = "on";
+      active_color = "0xffffd2e3";
+      inactive_color = "0x00000000";
+    };
+  };
+
+  programs.sketchybar = {
+    enable = true;
+  };
 }

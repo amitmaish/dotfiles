@@ -1,11 +1,1 @@
-#!/bin/bash
-
-options=(
-	style=round
-	width=3.0
-	hidpi=on
-	active_color=0xffffd2e3
-	inactive_color=0x00000000
-)
-
-borders "${options[@]}"
+/nix/store/5arzfnd1wvybwkd8i97kbsy2l0vafmsi-home-manager-files/.config/borders/bordersrc
