@@ -1,1 +1,5 @@
-/nix/store/qi8a9w3xbf0jbnngr935azn3ihvmcsjs-home-manager-files/.config/ghostty/config
+font-family = JetBrainsMono Nerd Font Mono
+
+theme = Catppuccin Mocha
+
+window-padding-color = extend
