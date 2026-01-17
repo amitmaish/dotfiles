@@ -18,6 +18,7 @@
       AppleICUForce24HourTime = true;
       AppleInterfaceStyle = "Dark";
       KeyRepeat = 2;
+      _HIHideMenuBar = false;
     };
   };
 }

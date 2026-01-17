@@ -107,8 +107,4 @@ in {
       inactive_color = "0x00000000";
     };
   };
-
-  programs.sketchybar = {
-    enable = true;
-  };
 }
