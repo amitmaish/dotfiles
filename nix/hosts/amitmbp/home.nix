@@ -48,10 +48,12 @@ in {
         name = "amit";
       };
       init.defaultBranch = "main";
-      core = {
-        pager = "delta";
-      };
     };
+  };
+
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
   };
 
   programs.fish = {
