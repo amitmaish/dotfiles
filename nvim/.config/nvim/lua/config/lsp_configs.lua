@@ -17,7 +17,7 @@ vim.lsp.enable({
 	"neocmake",
 	"nil_ls",
 	"qmlls",
-	"ron-lsp",
+	-- "ron-lsp",
 	"ruff",
 	"taplo",
 	"texlab",
