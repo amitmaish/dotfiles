@@ -4,5 +4,6 @@
     clang-tools
     cmake
     gcc
+    neocmakelsp
   ];
 }
