@@ -7,6 +7,7 @@
     cargo-tauri
     cargo-workspaces
     leptosfmt
+    ron-lsp
     rust-bin.stable.latest.default
     trunk
   ];

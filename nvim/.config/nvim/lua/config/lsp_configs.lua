@@ -17,7 +17,7 @@ vim.lsp.enable({
 	"neocmake",
 	"nil_ls",
 	"qmlls",
-	-- "ron-lsp",
+	"ron-lsp",
 	"ruff",
 	"taplo",
 	"texlab",
@@ -36,9 +36,6 @@ vim.lsp.config("arduino_language_server", {
 		"-cli-config",
 		vim.env.HOME .. ".arduinoIDE/arduino-cli.yaml",
 	},
-})
-vim.lsp.config("clangd", {
-	cmd = { "env", "clangd" },
 })
 vim.lsp.config("lua_ls", {
 	settings = {
