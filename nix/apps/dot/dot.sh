@@ -38,7 +38,7 @@ while getopts "fhNpPr" arg; do
 	P) git_push=true ;;
 	r)
 		eval "$REBUILD_COMMAND" 2>&1 || (
-			printf "\n%s%s%s\n" "$red" "rebuild failed!" "$reset_color" && reset 1
+			printf "\n%s\n" "${red}rebuild failed!${reset_color}" && reset 1
 		)
 		reset 0
 		;;
