@@ -2,8 +2,8 @@
 
 set -e
 
-red="\e[0;30m"
-reset_color="\e[0m"
+red=$(tput setaf 1)
+reset_color=$(tput setaf 9)
 
 force=false
 git_push=false
