@@ -24,8 +24,7 @@ in {
 
   home.packages = with pkgs; [
     dot
-    p7zip
-    zip
+    m-cli
   ];
 
   programs.aerospace = {

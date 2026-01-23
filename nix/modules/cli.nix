@@ -11,6 +11,7 @@
       fzf
       neofetch
       nushell
+      p7zip
       presenterm
       ripgrep
       starship
@@ -20,6 +21,7 @@
       xclip
       yazi
       yt-dlp
+      zip
       zoxide
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [

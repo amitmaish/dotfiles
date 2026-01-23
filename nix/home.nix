@@ -23,10 +23,8 @@ in {
 
   blender.cuda = true;
 
-  home.packages = with pkgs; [
+  home.packages = [
     dot
-    p7zip
-    zip
   ];
 
   programs.nh = {
