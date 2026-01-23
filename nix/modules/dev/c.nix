@@ -4,6 +4,7 @@
     clang-tools
     cmake
     gcc
+    gersemi
     neocmakelsp
   ];
 }
