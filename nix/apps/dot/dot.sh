@@ -2,7 +2,8 @@
 
 set -e
 
-red="\e[1;31m%s\e[0m\n"
+red="\e[31m"
+reset_color="\e[0m"
 
 force=false
 git_push=false
@@ -37,7 +38,7 @@ while getopts "fhNpPr" arg; do
 	P) git_push=true ;;
 	r)
 		eval "$REBUILD_COMMAND" 2>&1 || (
-			printf "\n%s%s\n" "$red" "rebuild failed!" && reset 1
+			printf "\n%s%s%s\n" "$red" "rebuild failed!" "$reset_color" && reset 1
 		)
 		reset 0
 		;;
