@@ -84,7 +84,7 @@ if [[ ($force == true) || (! $(git diff --quiet "./nix/*")) ]]; then
 	fi
 
 	if $notify; then
-		notify-send -e "nixos rebuild ok!" -a "dot" --icon=software-update-available
+		$NOTIFY_COMMAND
 	fi
 
 fi
