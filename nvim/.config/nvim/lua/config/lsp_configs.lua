@@ -37,6 +37,9 @@ vim.lsp.config("arduino_language_server", {
 		vim.env.HOME .. ".arduinoIDE/arduino-cli.yaml",
 	},
 })
+vim.lsp.config("clangd", {
+	cmd = { "env", "clangd" },
+})
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
