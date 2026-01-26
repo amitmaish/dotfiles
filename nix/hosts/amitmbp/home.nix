@@ -11,6 +11,8 @@
     CURRENT_COMMAND = ''darwin-rebuild --list-generations | grep "current" | awk '{print $1}' '';
     NOTIFY_COMMAND = ''terminal-notifier -group dot -title dot -message "rebuild successful!" '';
   };
+  configPath = "/Users/amit/dotfiles/";
+  mkMutableSymlink = path: config.lib.file.mkOutOfStoreSymlink (configPath + lib.strings.removePrefix (toString ../../../.) (toString path));
 in {
   home.username = "amit";
 
@@ -103,7 +105,8 @@ in {
   home.file.".config/yazi".source = config.lib.file.mkOutOfStoreSymlink ../../../yazi/.config/yazi;
 
   xdg.configFile = {
-    "nvim".source = config.lib.file.mkOutOfStoreSymlink (lib.strings.removePrefix (toString inputs.self) (toString ../../../nvim/.config/nvim));
+    # "nvim".source = config.lib.file.mkOutOfStoreSymlink (lib.strings.removePrefix (toString inputs.self) (toString ../../../nvim/.config/nvim));
+    "nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
   };
 
   services.syncthing.enable = true;
