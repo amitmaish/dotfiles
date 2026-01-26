@@ -9,6 +9,7 @@
       eza
       ffmpeg
       fzf
+      just
       neofetch
       nushell
       p7zip
