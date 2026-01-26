@@ -94,12 +94,9 @@ in {
 
   home.file.".config/bat".source = config.lib.file.mkOutOfStoreSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = config.lib.file.mkOutOfStoreSymlink ../../../ghostty/.config/ghostty;
+  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ../../../nvim/.config/nvim;
   home.file.".config/starship.toml".source = config.lib.file.mkOutOfStoreSymlink ../../../starship/.config/starship.toml;
   home.file.".config/yazi".source = config.lib.file.mkOutOfStoreSymlink ../../../yazi/.config/yazi;
-
-  xdg.configFile = {
-    "nvim".source = config.lib.file.mkOutOfStoreSymlink ../../../nvim/.config/nvim;
-  };
 
   services.syncthing.enable = true;
 
