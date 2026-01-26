@@ -98,6 +98,8 @@ in {
     defaultEditor = true;
   };
 
+  programs.neovide.enable = true;
+
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
