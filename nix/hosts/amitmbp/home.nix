@@ -105,7 +105,6 @@ in {
   home.file.".config/yazi".source = config.lib.file.mkOutOfStoreSymlink ../../../yazi/.config/yazi;
 
   xdg.configFile = {
-    # "nvim".source = config.lib.file.mkOutOfStoreSymlink (lib.strings.removePrefix (toString inputs.self) (toString ../../../nvim/.config/nvim));
     "nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
   };
 
