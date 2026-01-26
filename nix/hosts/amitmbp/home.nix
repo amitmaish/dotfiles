@@ -7,7 +7,7 @@
     NAME = "amit-mbp";
     REBUILD_COMMAND = ''nh darwin switch ~/dotfiles/nix -H amit-mbp'';
     CURRENT_COMMAND = ''darwin-rebuild --list-generations | grep "current" | awk '{print $1}' '';
-    NOTIFY_COMMAND = ''terminal-notifier -group dot -title dot -message "rebuild successful!"'';
+    NOTIFY_COMMAND = ''terminal-notifier -group dot -title dot -message "rebuild successful!" '';
   };
 in {
   home.username = "amit";
