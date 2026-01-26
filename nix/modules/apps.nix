@@ -7,6 +7,7 @@
 in {
   home.packages = with pkgs;
     [
+      anki
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       calibre
@@ -22,7 +23,6 @@ in {
       })
     ];
   programs = {
-    anki = {enable = true;};
     discord = {enable = true;};
     qutebrowser = {enable = true;};
   };
