@@ -50,7 +50,7 @@ while getopts "fhNpPr" arg; do
 	esac
 done
 
-$EDITOR
+eval "$EDITOR"
 
 if [[ $force == false ]]; then
 	if git diff --quiet; then
@@ -72,7 +72,7 @@ if [[ ($force == true) || (! $(git diff --quiet "./nix/*")) ]]; then
 		printf "\n%s%s\n" "$red" "rebuild failed!" && reset 1
 	)
 
-	current=$CURRENT_COMMAND
+	current=$(eval "$CURRENT_COMMAND")
 
 	git commit -am "nix - $NAME gen $current" || (
 		printf "\n%s" "commit failed"
