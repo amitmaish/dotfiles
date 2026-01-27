@@ -9,7 +9,6 @@ in {
     [
       anki
       neovide
-      qutebrowser
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       calibre

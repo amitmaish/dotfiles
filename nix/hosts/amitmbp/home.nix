@@ -105,7 +105,6 @@ in {
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
-  home.file.".qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
 
   services.syncthing.enable = true;
 
