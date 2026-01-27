@@ -84,7 +84,7 @@ if [[ ($force == true) || (! $(git diff --quiet "./nix/*")) ]]; then
 	fi
 
 	if $notify; then
-		$NOTIFY_COMMAND
+		eval "$NOTIFY_COMMAND"
 	fi
 
 fi
