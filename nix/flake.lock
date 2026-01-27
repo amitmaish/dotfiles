@@ -130,6 +130,48 @@
         "type": "github"
       }
     },
+    "pyproject-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "qbpm",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1753063596,
+        "narHash": "sha256-el1vFxDk6DR2hKGYnMfQHR7+K4aMiJDKQRMP3gdh+ZI=",
+        "owner": "nix-community",
+        "repo": "pyproject.nix",
+        "rev": "cac90713492f23be5f1072bae88406890b9c68f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "pyproject.nix",
+        "type": "github"
+      }
+    },
+    "qbpm": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "pyproject-nix": "pyproject-nix"
+      },
+      "locked": {
+        "lastModified": 1769220085,
+        "narHash": "sha256-a+n9DTYqCtLa5roP28bYuhpzpb8qC08Qvjt/D3ixrS4=",
+        "owner": "pvsr",
+        "repo": "qbpm",
+        "rev": "683cda6e6c541aeeffadd0a8dd66446303e95a0e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pvsr",
+        "repo": "qbpm",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
@@ -138,6 +180,7 @@
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
+        "qbpm": "qbpm",
         "rust-overlay": "rust-overlay"
       }
     },
