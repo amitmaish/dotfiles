@@ -10,6 +10,7 @@ c: ConfigContainer = c  # noqa: F821 pylint: disable=E0602,C0103
 config.load_autoconfig(True)
 
 c.backend = 'webengine'
+c.content.javascript.enabled = True
 
 if not os.path.exists(config.configdir / "theme.py"):
     theme = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py"
