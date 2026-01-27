@@ -7,10 +7,10 @@
 in {
   home.packages = with pkgs;
     [
-      anki
       neovide
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
+      anki
       calibre
       hayase
       pureref

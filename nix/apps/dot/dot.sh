@@ -60,7 +60,7 @@ fi
 
 if [[ ($force == true) || (! $(git diff --quiet "./nix/*")) ]]; then
 
-	alejandra "./nix/*" &>/dev/null || (
+	alejandra ./nix/* &>/dev/null || (
 		printf "\n%s%s" "$red" "formatting failed!" && reset 1
 	)
 
