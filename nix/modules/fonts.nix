@@ -1,9 +1,82 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    alegreya
+    aleo-fonts
+    alice
+    annotation-mono
+    antonio-font
+    ark-pixel-font
     atkinson-hyperlegible
+    azuki
+    beedii
+    besley
+    bodoni-moda
+    cardo
+    comfortaa
+    comic-mono
+    cooper
+    courier-prime
+    cozette
+    crimson
+    departure-mono
+    dinish
+    doulos-sil
+    drafting-mono
+    drafting-mono
+    eunomia
+    excalifont
+    fira
+    gentium
+    hyperscrypt-font
+    inconsolata
+    jost
+    junction-font
+    kanji-stroke-order-font
+    kirsch
+    lato
+    league-of-moveable-type
+    linja-sike
+    lora
+    maple-mono.NF
+    maple-mono.NF-CN
+    maple-mono.variable
+    martian-mono
+    medio
+    meslo-lg
+    monoid
+    moralerspace
+    nasin-nanpa
+    nerd-fonts.anonymice
     nerd-fonts.hack
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.monoid
+    nerd-fonts.mononoki
+    nerd-fonts.noto
+    nerd-fonts.roboto-mono
+    nerd-fonts.victor-mono
+    newcomputermodern
     noto-fonts
     noto-fonts-cjk-sans
+    ocr-a
+    open-dyslexic
+    open-fonts
+    orbitron
+    overpass
+    pecita
+    pixel-code
+    pretendard
+    pretendard-jp
+    quicksand
+    quinze
+    recursive
+    seshat
+    sn-pro
+    takao
+    tenderness
+    the-neue-black
+    theano
+    vegur
+    zpix-pixel-font
   ];
 
   fonts.fontconfig.enable = true;

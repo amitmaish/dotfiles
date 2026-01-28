@@ -20,9 +20,10 @@ in {
 
   imports = [
     ../../modules/apps.nix
-    ../../modules/gaming
     ../../modules/cli.nix
     ../../modules/dev
+    ../../modules/fonts.nix
+    ../../modules/gaming
   ];
 
   emulation.enable = false;
