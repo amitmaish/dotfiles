@@ -1,4 +1,9 @@
 {pkgs, ...}: {
+  launchd = {
+    daemons = {
+      "swiftbar" = {script = "SwiftBar";};
+    };
+  };
   system = {
     defaults = {
       dock = {

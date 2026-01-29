@@ -31,11 +31,13 @@ in {
   home.packages = with pkgs; [
     dot
     m-cli
+    swiftbar
     terminal-notifier
   ];
 
   programs.aerospace = {
     enable = true;
+    launchd.enable = true;
   };
 
   programs.firefox.enable = true;
@@ -105,6 +107,7 @@ in {
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
+  home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
 
   services.syncthing.enable = true;

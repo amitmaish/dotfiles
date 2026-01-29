@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # cherry			? broken
-    # dina-font		? broken
-    # spleen			? broken
+    # cherry			#? broken
+    # dina-font		#? broken
+    # spleen			#? broken
     alegreya
     aleo-fonts
     alice
@@ -85,6 +85,7 @@
     tipa
     uiua
     vegur
+    victor-mono
     xkcd-font
     zpix-pixel-font
   ];

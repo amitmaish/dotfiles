@@ -11,7 +11,6 @@
       "bibdesk"
       "dorico"
       "firefox"
-      "fontbase"
       "ghostty"
       "google-drive"
       "handbrake"
