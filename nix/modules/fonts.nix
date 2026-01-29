@@ -1,5 +1,8 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    # cherry			? broken
+    # dina-font		? broken
+    # spleen			? broken
     alegreya
     aleo-fonts
     alice
@@ -9,6 +12,7 @@
     atkinson-hyperlegible
     azuki
     beedii
+    beon
     besley
     bodoni-moda
     cardo
@@ -20,17 +24,20 @@
     crimson
     departure-mono
     dinish
+    dotcolon-fonts
     doulos-sil
-    drafting-mono
     drafting-mono
     eunomia
     excalifont
+    ferrum
     fira
     gentium
+    hachimarupop
     hyperscrypt-font
     inconsolata
     jost
     junction-font
+    junicode
     kanji-stroke-order-font
     kirsch
     lato
@@ -75,7 +82,10 @@
     tenderness
     the-neue-black
     theano
+    tipa
+    uiua
     vegur
+    xkcd-font
     zpix-pixel-font
   ];
 

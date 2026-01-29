@@ -8,6 +8,7 @@
       dict
       eza
       ffmpeg
+      fontconfig
       fzf
       just
       neofetch
@@ -17,6 +18,7 @@
       ripgrep
       starship
       syncthing
+      timg
       tlrc
       usbutils
       xclip
