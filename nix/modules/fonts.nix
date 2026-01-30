@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  system,
+  ...
+}: {
   home.packages = with pkgs; [
     # cherry			#? broken
     # dina-font		#? broken
@@ -88,6 +93,7 @@
     victor-mono
     xkcd-font
     zpix-pixel-font
+    inputs.tinix.packages.${system}.fonts
   ];
 
   fonts.fontconfig.enable = true;

@@ -17,6 +17,24 @@
         "type": "github"
       }
     },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1768135262,
+        "narHash": "sha256-PVvu7OqHBGWN16zSi6tEmPwwHQ4rLPU9Plvs8/1TUBY=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "80daad04eddbbf5a4d883996a73f3f542fa437ac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -110,6 +128,21 @@
         "type": "indirect"
       }
     },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1765674936,
+        "narHash": "sha256-k00uTP4JNfmejrCLJOwdObYC9jHRrr/5M/a/8L2EIdo=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "2075416fcb47225d9b68ac469a5c4801a9c4dd85",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
     "noctalia": {
       "inputs": {
         "nixpkgs": [
@@ -138,7 +171,8 @@
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
-        "rust-overlay": "rust-overlay"
+        "rust-overlay": "rust-overlay",
+        "tinix": "tinix"
       }
     },
     "rust-overlay": {
@@ -158,6 +192,27 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "tinix": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1769742965,
+        "narHash": "sha256-7XZgwlosEXjX2lPyIc4kYHf+WEM1wv0eqjncM3Tg8vU=",
+        "owner": "amitmaish",
+        "repo": "tinix",
+        "rev": "7e18c576225d984fbad626677e3c057f6a7aeaf0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "amitmaish",
+        "repo": "tinix",
         "type": "github"
       }
     }

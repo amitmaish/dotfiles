@@ -2,6 +2,10 @@
   description = "tiny";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    tinix = {
+      url = "github:amitmaish/tinix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -51,15 +55,15 @@
       ];
     };
 
-    darwinConfigurations."amit-mbp" = nix-darwin.lib.darwinSystem {
-      specialArgs = {inherit inputs;};
+    darwinConfigurations."amit-mbp" = nix-darwin.lib.darwinSystem rec {
+      specialArgs = {inherit inputs system;};
       system = "x86_64-darwin";
       modules = [
         ./hosts/amitmbp/configuration.nix
         home-manager.darwinModules.home-manager
         {
           home-manager = {
-            extraSpecialArgs = {inherit inputs;};
+            extraSpecialArgs = {inherit inputs system;};
             useGlobalPkgs = true;
             useUserPackages = true;
             users.amit = import ./hosts/amitmbp/home.nix;
