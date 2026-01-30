@@ -11,6 +11,7 @@
       fontconfig
       fzf
       just
+      mediainfo
       neofetch
       nushell
       p7zip
