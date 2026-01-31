@@ -6,6 +6,7 @@
       cmatrix
       delta
       dict
+      dmenu
       eza
       ffmpeg
       fontconfig

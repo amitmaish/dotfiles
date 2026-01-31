@@ -33,6 +33,7 @@ in {
     m-cli
     swiftbar
     terminal-notifier
+    xorg.xorgserver
   ];
 
   programs.aerospace = {
