@@ -81,26 +81,15 @@ in {
 
   home.file.".config/winapps/winapps.conf".source = ../winapps/winapps.conf;
 
-  xdg.configFile."bat" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../bat/.config/bat;
-    recursive = true;
+  xdg.configFile = {
+    "bat".source = config.lib.file.mkOutOfStoreSymlink ../bat/.config/bat;
+    "ghostty".source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
+    "niri".source = config.lib.file.mkOutOfStoreSymlink ../niri;
+    "noctalia".source = config.lib.file.mkOutOfStoreSymlink ../noctalia;
+    "nvim".source = config.lib.file.mkOutOfStoreSymlink ../nvim/.config/nvim;
+    "qutebrowser".source = config.lib.file.mkOutOfStoreSymlink ../qutebrowser;
   };
-  xdg.configFile."ghostty" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../ghostty/.config/ghostty;
-    recursive = true;
-  };
-  xdg.configFile."niri" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../niri;
-    recursive = true;
-  };
-  xdg.configFile."noctalia" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../noctalia;
-    recursive = true;
-  };
-  xdg.configFile."nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink ../nvim/.config/nvim;
-    recursive = true;
-  };
+
   programs.neovim = {
     enable = true;
     defaultEditor = true;
