@@ -101,7 +101,12 @@ in {
     defaultEditor = true;
   };
 
-  programs.neovide.enable = true;
+  programs.neovide = {
+    enable = true;
+    settings = {
+      frame = "transparent";
+    };
+  };
 
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
