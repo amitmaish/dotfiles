@@ -87,7 +87,7 @@ in {
     "niri".source = config.lib.file.mkOutOfStoreSymlink ../niri;
     "noctalia".source = config.lib.file.mkOutOfStoreSymlink ../noctalia;
     "nvim".source = config.lib.file.mkOutOfStoreSymlink ../nvim/.config/nvim;
-    "qutebrowser".source = config.lib.file.mkOutOfStoreSymlink "~/dotfiles/qutebrowser";
+    "qutebrowser".source = config.lib.file.mkOutOfStoreSymlink "/home/amit/dotfiles/qutebrowser";
   };
 
   programs.neovim = {
