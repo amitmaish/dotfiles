@@ -8,6 +8,7 @@ in {
   home.packages = with pkgs;
     [
       neovide
+      qutebrowser
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       anki
