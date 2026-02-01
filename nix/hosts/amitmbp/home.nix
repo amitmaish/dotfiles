@@ -33,6 +33,11 @@ in {
     swiftbar
     terminal-notifier
     xorg.xorgserver
+
+    (writeShellApplication {
+      name = "sclang";
+      text = ''/Applications/SuperCollider.app/Contents/MacOS/sclang '';
+    })
   ];
 
   programs.aerospace = {
