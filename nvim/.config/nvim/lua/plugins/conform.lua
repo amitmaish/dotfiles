@@ -21,6 +21,7 @@ return {
 			javascript = { "prettier", stop_after_first = true },
 			json = { "prettier" },
 			markdown = { "mdsf", "prettier" },
+			nickel = { lsp_format = "prefer" },
 			nix = { "alejandra" },
 			python = { "ruff" },
 			-- ron = { "ronfmt" },

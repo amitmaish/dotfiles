@@ -3,5 +3,6 @@
     cabal-install
     ghc
     haskell-language-server
+    haskellPackages.tidal
   ];
 }

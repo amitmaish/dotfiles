@@ -102,3 +102,9 @@ WK.add({
 	-- 	desc = "Pick diagnostics",
 	-- },
 })
+
+vim.filetype.add({
+	extension = {
+		ncl = "nickel",
+	},
+})

@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   imports = [
+    ./nickel.nix
     ./arduino.nix
     ./bash.nix
     ./c.nix
@@ -26,6 +27,7 @@
     lldb
     pkgconf
     ron-lsp
+    topiary
     tree
   ];
 }
