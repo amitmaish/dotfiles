@@ -48,6 +48,10 @@ vim.lsp.config("lua_ls", {
 		},
 	},
 })
+vim.lsp.config("nls", {
+	cmd = { "nls" },
+	filetypes = { "nickel" },
+})
 vim.lsp.config("ron-lsp", {
 	default_config = {
 		cmd = { vim.fn.expand("ron-lsp") },

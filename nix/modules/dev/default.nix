@@ -29,5 +29,6 @@
     ron-lsp
     topiary
     tree
+    tree-sitter
   ];
 }
