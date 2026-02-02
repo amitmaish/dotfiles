@@ -119,6 +119,7 @@ in {
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
+  home.file.".config/.tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
 
   services.syncthing.enable = true;
 

@@ -22,6 +22,7 @@
       syncthing
       timg
       tlrc
+      tmux
       usbutils
       xclip
       yazi
