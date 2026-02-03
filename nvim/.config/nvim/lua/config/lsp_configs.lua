@@ -1,9 +1,9 @@
 require("neoconf").setup({})
 
 vim.lsp.enable({
-	"asm_lsp",
-	-- "ast_grep",
 	"arduino_language_server",
+	-- "asm_lsp",
+	"ast_grep",
 	"bashls",
 	"biome",
 	"clangd",
@@ -20,6 +20,7 @@ vim.lsp.enable({
 	"qmlls",
 	-- "ron-lsp",
 	"ruff",
+	"rust-analyzer",
 	"taplo",
 	"texlab",
 	"tinymist",
