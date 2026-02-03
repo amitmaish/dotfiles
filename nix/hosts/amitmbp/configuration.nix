@@ -22,7 +22,10 @@
     config = {
       allowUnfree = true;
     };
-    overlays = [inputs.rust-overlay.overlays.default];
+    overlays = [
+      inputs.rust-overlay.overlays.default
+      inputs.tinix.overlays.default
+    ];
   };
 
   # Necessary for using flakes on this system.

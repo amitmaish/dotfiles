@@ -93,7 +93,7 @@
     victor-mono
     xkcd-font
     zpix-pixel-font
-    inputs.tinix.packages.${system}.fonts
+    tinix-fonts
   ];
 
   fonts.fontconfig.enable = true;

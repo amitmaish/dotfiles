@@ -77,7 +77,10 @@
     config = {
       allowUnfree = true;
     };
-    overlays = [inputs.rust-overlay.overlays.default];
+    overlays = [
+      inputs.rust-overlay.overlays.default
+      inputs.tinix.overlays.default
+    ];
   };
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [

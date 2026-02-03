@@ -2,12 +2,12 @@
   description = "tiny";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    tinix = {
-      url = "github:amitmaish/tinix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    tinix = {
+      url = "github:amitmaish/tinix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     rust-overlay = {
