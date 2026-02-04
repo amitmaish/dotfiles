@@ -2,6 +2,7 @@
   description = "tiny";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    flake-parts.url = "github:hercules-ci/flake-parts";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,56 +30,30 @@
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    nix-darwin,
-    home-manager,
-    ...
-  } @ inputs: {
-    nixosConfigurations.amit-pc = nixpkgs.lib.nixosSystem rec {
-      specialArgs = {inherit inputs system;};
-      system = "x86_64-linux";
-      modules = [
-        ./configuration.nix
-        home-manager.nixosModules.home-manager
-        {
-          home-manager = {
-            extraSpecialArgs = {inherit inputs;};
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.amit = import ./home.nix;
-            backupFileExtension = "backup";
-          };
-        }
-        ./modules/noctalia.nix
+  outputs = {flake-parts, ...} @ inputs:
+    flake-parts.lib.mkFlake {inherit inputs;}
+    {
+      imports = [
+        ./nix-darwin.nix
+        ./nixos.nix
       ];
-    };
-
-    darwinConfigurations."amit-mbp" = nix-darwin.lib.darwinSystem rec {
-      specialArgs = {inherit inputs system;};
-      system = "x86_64-darwin";
-      modules = [
-        ./hosts/amitmbp/configuration.nix
-        home-manager.darwinModules.home-manager
-        {
-          home-manager = {
-            extraSpecialArgs = {inherit inputs system;};
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.amit = import ./hosts/amitmbp/home.nix;
-            backupFileExtension = "backup";
-          };
-        }
-        inputs.nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            user = "amit";
-            autoMigrate = true;
-          };
-        }
+      systems = [
+        "x86_64-darwin"
+        "x86_64-linux"
       ];
+      perSystem = {
+        config,
+        pkgs,
+        system,
+        ...
+      }: {
+        _module.args.pkgs = import inputs.nixpkgs {
+          inherit system;
+          overlays = [
+            inputs.rust-overlay.overlays.default
+            inputs.tinix.overlays.default
+          ];
+        };
+      };
     };
-  };
 }
