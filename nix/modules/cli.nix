@@ -7,6 +7,7 @@
       delta
       dict
       dmenu
+      dua
       eza
       ffmpeg
       fontconfig
