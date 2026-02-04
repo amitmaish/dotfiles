@@ -13,6 +13,7 @@
       fontconfig
       fzf
       just
+      mdcat
       mediainfo
       neofetch
       nushell
