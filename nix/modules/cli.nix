@@ -22,6 +22,7 @@
       ripgrep
       starship
       syncthing
+      timewarrior
       timg
       tlrc
       tmux
@@ -29,6 +30,7 @@
       xclip
       yazi
       yt-dlp
+      zathura
       zip
       zoxide
     ]
