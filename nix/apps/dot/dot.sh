@@ -5,9 +5,9 @@ set -e
 red=$(tput setaf 1)
 reset_color=$(tput setaf 9)
 
-force=false
-git_push=false
-notify=true
+force="false"
+git_push="false"
+notify="true"
 
 reset() {
 	popd >/dev/null
@@ -33,11 +33,11 @@ show_help() {
 get_args() {
 	while getopts "fhNpPr" arg; do
 		case "$arg" in
-		f) force=true ;;
+		f) force="true" ;;
 		h) show_help ;;
-		N) notify=false ;;
+		N) notify="false" ;;
 		p) git pull ;;
-		P) git_push=true ;;
+		P) git_push="true" ;;
 		r) rebuild && reset 0 ;;
 		*)
 			echo "invalid flag: $arg"
@@ -57,12 +57,12 @@ main() {
 	eval "$EDITOR"
 
 	# exit if unchanged
-	if [[ ($force == false) && $(git diff --quiet) ]]; then
+	if [[ ($force == "false") && $(git diff --quiet) ]]; then
 		reset 0
 	fi
 
 	# check for nix changes
-	if [[ ($force == true) || (! $(git diff --quiet "./nix/*")) ]]; then
+	if [[ ($force == "true") || (! $(git diff --quiet "./nix/*")) ]]; then
 
 		alejandra ./nix/* &>/dev/null || (
 			printf "\n%s" "''${red}formatting failed!" && reset 1
