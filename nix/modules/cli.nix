@@ -12,8 +12,8 @@
       ffmpeg
       fontconfig
       fzf
+      glow
       just
-      mdcat
       mediainfo
       neofetch
       nushell
