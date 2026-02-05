@@ -71,6 +71,37 @@ in {
     enableGitIntegration = true;
   };
 
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableZshIntegration = true;
+  };
+
+  programs.fzf = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableZshIntegration = true;
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableZshIntegration = true;
+  };
+
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableZshIntegration = true;
+  };
+
   programs.fish = {
     enable = true;
     functions = {
@@ -90,13 +121,6 @@ in {
       ls = "eza";
       man = "batman";
     };
-    shellInit = ''
-      direnv hook fish | source
-      fzf --fish | source
-      zoxide init fish --cmd cd | source
-
-      starship init fish | source
-    '';
   };
 
   programs.nushell.enable = true;
