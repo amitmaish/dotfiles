@@ -57,12 +57,12 @@ main() {
 	eval "$EDITOR"
 
 	# exit if unchanged
-	if [[ ! $force ]] && [[ $(git diff --quiet) ]]; then
+	if [[ $force = false ]] && [[ $(git diff --quiet) ]]; then
 		reset 0
 	fi
 
 	# check for nix changes
-	if [[ $force ]] || [[ (! $(git diff --quiet "./nix/*")) ]]; then
+	if [[ $force = true ]] || [[ (! $(git diff --quiet "./nix/*")) ]]; then
 
 		alejandra ./nix/* &>/dev/null || (
 			printf "\n%s" "''${red}formatting failed!" && reset 1
@@ -81,7 +81,7 @@ main() {
 			reset 1
 		)
 
-		if [[ $git_push == true ]]; then
+		if [[ $git_push = true ]]; then
 			git push
 		fi
 
