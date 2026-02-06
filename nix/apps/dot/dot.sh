@@ -57,7 +57,8 @@ main() {
 	eval "$EDITOR"
 
 	# exit if unchanged
-	echo "$force"
+	git diff --quiet
+	echo "diff: $?"
 	if [[ ($force == "false") && $(git diff --quiet) ]]; then
 		reset 0
 	fi
