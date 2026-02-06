@@ -57,14 +57,15 @@ main() {
 	eval "$EDITOR"
 
 	# exit if unchanged
-	git diff --quiet
-	echo "diff: $?"
 	if [[ ($force == "false") && $(git diff --quiet) ]]; then
 		reset 0
 	fi
+	echo "changed"
 
 	# check for nix changes
 	if [[ ($force == "true") || (! $(git diff --quiet "./nix/*")) ]]; then
+
+		echo "nix changed"
 
 		alejandra ./nix/* &>/dev/null || (
 			printf "\n%s" "''${red}formatting failed!" && reset 1
