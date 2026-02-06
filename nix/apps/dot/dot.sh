@@ -70,8 +70,6 @@ main() {
 
 		git diff -U0 nix/*
 
-		printf "\n%s\n" "rebuilding config"
-
 		rebuild
 
 		current=$(eval "${CURRENT_COMMAND}")
