@@ -3,6 +3,7 @@
     [
       bat
       bat-extras.batman
+      btop
       cmatrix
       delta
       dict
