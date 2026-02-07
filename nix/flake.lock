@@ -237,11 +237,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770140021,
-        "narHash": "sha256-b0YCChSYCodpvx80y/1o1ZGSZQzXFqfLQ6O8dx/649k=",
+        "lastModified": 1770488092,
+        "narHash": "sha256-qRxjZBeE51SgoMDOYDFqZBh+FyBzuE0reGEUy41jJ1o=",
         "owner": "amitmaish",
         "repo": "tinix",
-        "rev": "af04157e166e84f46ea02dc86e03215aa2f664a0",
+        "rev": "5dcb8182b56bf54e29a430d98cf1ebbb8fca5b63",
         "type": "github"
       },
       "original": {
