@@ -1,10 +1,6 @@
-{
-  pkgs,
-  inputs,
-  system,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
+    monocraft
     # cherry			#? broken
     # dina-font		#? broken
     # spleen			#? broken
