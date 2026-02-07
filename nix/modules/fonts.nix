@@ -55,6 +55,7 @@
     martian-mono
     medio
     meslo-lg
+    minecraftia
     monoid
     moralerspace
     nasin-nanpa
@@ -87,13 +88,13 @@
     tenderness
     the-neue-black
     theano
+    tinix-fonts
     tipa
     uiua
     vegur
     victor-mono
     xkcd-font
     zpix-pixel-font
-    tinix-fonts
   ];
 
   fonts.fontconfig.enable = true;
