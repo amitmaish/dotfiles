@@ -7,6 +7,8 @@
       cmatrix
       delta
       dict
+      dictdDBs.wiktionary
+      dictdDBs.wordnet
       dmenu
       dua
       eza
