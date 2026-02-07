@@ -1,9 +1,5 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    monocraft
-    # cherry			#? broken
-    # dina-font		#? broken
-    # spleen			#? broken
     alegreya
     aleo-fonts
     alice
@@ -52,6 +48,7 @@
     medio
     meslo-lg
     minecraftia
+    monocraft
     monoid
     moralerspace
     nasin-nanpa
