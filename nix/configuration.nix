@@ -119,6 +119,14 @@
   services.openssh.enable = true;
   services.udisks2.enable = true;
 
+  services.dictd = {
+    enable = true;
+    DBs = with pkgs.dictdDBs; [
+      wiktionary
+      wordnet
+    ];
+  };
+
   system.stateVersion = "25.05";
 
   system.autoUpgrade = {

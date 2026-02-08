@@ -102,14 +102,6 @@ in {
     };
   };
 
-  services.dictd = {
-    enable = true;
-    DBs = with pkgs.dictdDBs; [
-      wiktionary
-      wordnet
-    ];
-  };
-
   services.syncthing.enable = true;
 
   services.udiskie = {
