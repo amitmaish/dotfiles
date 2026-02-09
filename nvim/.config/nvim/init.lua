@@ -21,6 +21,7 @@ vim.o.showmode = false
 vim.g.mapleader = " "
 
 WK = require("which-key")
+---@Snacks
 Snacks = require("snacks")
 
 Snacks.toggle
@@ -35,6 +36,19 @@ Snacks.toggle
 		end,
 	})
 	:map("<leader>uf")
+
+Snacks.toggle
+	.new({
+		id = "image preview",
+		name = "image preview",
+		get = function()
+			return Snacks.image.config.enabled
+		end,
+		set = function(state)
+			Snacks.image.config.enabled = state
+		end,
+	})
+	:map("<leader>uI")
 
 NavWrap = false
 UpdateNavWrap = function()

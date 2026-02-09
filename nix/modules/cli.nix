@@ -10,6 +10,7 @@
       dmenu
       dua
       eza
+      fd
       ffmpeg
       fontconfig
       fzf
@@ -21,6 +22,7 @@
       p7zip
       presenterm
       ripgrep
+      skim
       starship
       syncthing
       timewarrior
