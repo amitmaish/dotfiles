@@ -1,10 +1,9 @@
-#!/Users/bin/env bash
+#!/usr/bin/env bash
 
 DIRS=(
-	"$HOME/documents/work"
-	"$HOME/documents/projects"
-	"$HOME/documents"
-	"$HOME/documents/notes"
+	"$HOME/dev"
+	"$HOME/Documents/calarts"
+	"$HOME/Documents"
 	"$HOME"
 )
 
