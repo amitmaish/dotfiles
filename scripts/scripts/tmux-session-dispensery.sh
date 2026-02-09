@@ -2,6 +2,9 @@
 
 DIRS=(
 	"$HOME/dev"
+	"$HOME/dev/dsp"
+	"$HOME/dev/explore"
+	"$HOME/dev/learn"
 	"$HOME/Documents/calarts"
 	"$HOME/Documents"
 	"$HOME"
