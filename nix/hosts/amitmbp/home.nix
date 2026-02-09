@@ -138,13 +138,14 @@ in {
     };
   };
 
+  home.file.".config/.tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
+  home.file.".config/scripts".source = mkMutableSymlink ../../../scripts;
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
-  home.file.".config/.tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
 
   services.syncthing.enable = true;
 
