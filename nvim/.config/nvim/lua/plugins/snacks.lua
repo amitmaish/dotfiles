@@ -8,7 +8,7 @@ return {
 		dashboard = { enabled = false },
 		explorer = { enabled = false },
 		image = {
-			enabled = true,
+			enabled = false,
 			convert = {
 				magick = {
 					vector = { "-background", "-none", "-density", 256, "{src}[{page}]" },
