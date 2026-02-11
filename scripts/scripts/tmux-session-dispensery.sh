@@ -4,7 +4,8 @@ DIRS=(
 	"$HOME/dev"
 	"$HOME/dev/dsp"
 	"$HOME/dev/explore"
-	"$HOME/dev/learn"
+	"$HOME/dev/learn/languages/"
+	"$HOME/dev/learn/languages/zig/"
 	"$HOME/Documents/calarts"
 	"$HOME/Documents"
 	"$HOME"
@@ -13,7 +14,7 @@ DIRS=(
 if [[ $# -eq 1 ]]; then
 	selected=$1
 else
-	selected=$(fd . "${DIRS[@]}" --type=dir --max-depth=3 --full-path --base-directory "$HOME" |
+	selected=$(fd . "${DIRS[@]}" --type=dir --max-depth=1 --full-path --base-directory "$HOME" |
 		sed "s|^$HOME/||" |
 		sk --margin 10% --color="bw")
 
