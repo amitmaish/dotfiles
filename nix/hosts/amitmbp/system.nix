@@ -26,6 +26,9 @@
         NSAutomaticSpellingCorrectionEnabled = false;
         _HIHideMenuBar = false;
       };
+      WindowManager = {
+        StandardHideDesktopIcons = true;
+      };
     };
     keyboard = {
       enableKeyMapping = true;
