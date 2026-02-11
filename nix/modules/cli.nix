@@ -22,6 +22,7 @@
       p7zip
       presenterm
       ripgrep
+      sesh
       skim
       starship
       syncthing
