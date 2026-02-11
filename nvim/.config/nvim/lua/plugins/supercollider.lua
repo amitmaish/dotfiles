@@ -68,7 +68,7 @@ return {
 
 					local bootfile = Bootfile(vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1])
 					---@diagnostic disable-next-line: param-type-mismatch
-					scnvim.send(ReadFile(bootfile))
+					scnvim.send('"' .. bootfile .. '".load()')
 				end,
 			})
 		end
