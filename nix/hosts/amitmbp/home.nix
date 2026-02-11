@@ -121,6 +121,7 @@ in {
       cat = "bat";
       ls = "eza";
       man = "batman";
+      s = "sesh connect ~/";
     };
   };
 
