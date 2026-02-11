@@ -32,6 +32,7 @@
       "tailscale-app"
       "thunderbird"
       "tiled"
+      "transmission"
       "virtualbox"
       "vlc"
       "whatsapp"

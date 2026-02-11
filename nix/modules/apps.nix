@@ -17,6 +17,7 @@ in {
       pureref
       signal-desktop
       thunderbird
+      transmission_4
       vlc
       zapzap
 
