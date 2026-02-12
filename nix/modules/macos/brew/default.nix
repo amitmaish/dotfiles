@@ -14,7 +14,6 @@
       "google-drive"
       "handbrake-app"
       "inkscape"
-      "jordanbaird-ice"
       "kitty"
       "midi-monitor"
       "neovide-app"
