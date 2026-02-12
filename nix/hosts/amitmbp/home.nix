@@ -57,6 +57,9 @@ in {
   programs.ghostty = {
     enable = true;
     package = pkgs.ghostty-bin;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableZshIntegration = true;
   };
 
   programs.git = {
