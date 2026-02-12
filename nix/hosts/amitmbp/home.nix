@@ -43,14 +43,6 @@ in {
   programs.aerospace = {
     enable = true;
     launchd.enable = true;
-    settings = {
-      gaps = {
-        outer.left = 4;
-        outer.bottom = 4;
-        outer.top = 4;
-        outer.right = 4;
-      };
-    };
   };
 
   programs.firefox.enable = true;
@@ -177,6 +169,7 @@ in {
   };
 
   home.file.".config/.tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
+  home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace/.config/aerospace;
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
