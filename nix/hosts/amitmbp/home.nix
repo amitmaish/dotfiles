@@ -43,6 +43,14 @@ in {
   programs.aerospace = {
     enable = true;
     launchd.enable = true;
+    settings = {
+      gaps = {
+        outer.left = 4;
+        outer.bottom = 4;
+        outer.top = 4;
+        outer.right = 4;
+      };
+    };
   };
 
   programs.firefox.enable = true;
