@@ -11,7 +11,7 @@
       "bibdesk"
       "dorico"
       "firefox"
-      "ghostty"
+      # "ghostty"
       "google-drive"
       "handbrake-app"
       "inkscape"

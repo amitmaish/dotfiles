@@ -54,6 +54,11 @@ in {
     flake = "~/dotfiles/nix";
   };
 
+  programs.ghostty = {
+    enable = true;
+    package = pkgs.ghostty-bin;
+  };
+
   programs.git = {
     enable = true;
     lfs.enable = true;
