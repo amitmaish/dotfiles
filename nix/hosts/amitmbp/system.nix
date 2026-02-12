@@ -6,7 +6,7 @@
         persistent-apps = [
           "/System/Applications/Messages.app"
           "/Applications/Signal.app"
-          "/Applications/Ghostty.app"
+          "${pkgs.ghostty-bin}/Applications/Ghostty.app"
           "/Applications/Firefox.app"
           "/Applications/Anki.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
