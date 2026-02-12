@@ -14,7 +14,9 @@ in {
     ../common/home.nix
   ];
 
+  blender.enable = false;
   emulation.enable = false;
+  music.enable = false;
 
   home.packages = with pkgs; [
     dot

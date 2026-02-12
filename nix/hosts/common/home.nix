@@ -1,7 +1,6 @@
 {
   config,
   lib,
-  pkgs,
   ...
 }: let
   configPath = "/Users/amit/dotfiles/";
@@ -9,10 +8,12 @@
 in {
   imports = [
     ../../modules/apps.nix
+    ../../modules/art.nix
     ../../modules/cli.nix
     ../../modules/dev
     ../../modules/fonts.nix
     ../../modules/gaming
+    ../../modules/music.nix
   ];
 
   programs.nh = {
@@ -135,9 +136,13 @@ in {
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace/.config/aerospace;
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
+  home.file.".config/niri".source = mkMutableSymlink ../../../niri;
+  home.file.".config/noctalia".source = ../../../noctalia;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
+  home.file.".config/qutebrowser".source = ../../../qutebrowser;
   home.file.".config/scripts".source = mkMutableSymlink ../../../scripts/scripts;
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
+  home.file.".config/winapps/winapps.conf".source = mkMutableSymlink ../../../winapps/winapps.conf;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
 }
