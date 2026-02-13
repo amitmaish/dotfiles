@@ -35,6 +35,7 @@
       tlrc
       tmux
       usbutils
+      wget
       xclip
       yazi
       yt-dlp
