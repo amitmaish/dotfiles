@@ -3,6 +3,7 @@
     darwinConfigurations."amit-mbp" = inputs.nix-darwin.lib.darwinSystem rec {
       specialArgs = {inherit inputs system;};
       system = "x86_64-darwin";
+      configPath = "/Users/amit/dotfiles/";
       modules = [
         ./hosts/amitmbp/configuration.nix
         inputs.home-manager.darwinModules.home-manager

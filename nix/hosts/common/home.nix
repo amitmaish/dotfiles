@@ -1,9 +1,13 @@
 {
   config,
   lib,
+  pkgs,
   ...
 }: let
-  configPath = "/Users/amit/dotfiles/";
+  configPath =
+    if pkgs.stdenv.isDarwin
+    then "/Users/amit/dotfiles/"
+    else "/home/amit/dotfiles/";
   mkMutableSymlink = path: config.lib.file.mkOutOfStoreSymlink (configPath + lib.strings.removePrefix (toString ../../../.) (toString path));
 in {
   imports = [
