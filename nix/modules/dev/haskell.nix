@@ -4,5 +4,6 @@
     ghc
     haskell-language-server
     haskellPackages.tidal
+    ormolu
   ];
 }

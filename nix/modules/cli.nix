@@ -15,9 +15,12 @@
       ffmpeg
       fontconfig
       fzf
+      ghostscript
       glow
+      imagemagick
       just
       mediainfo
+      mermaid-cli
       neofetch
       nushell
       p7zip

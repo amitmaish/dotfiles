@@ -20,15 +20,22 @@
 
   home.packages = with pkgs; [
     asm-lsp
+    asmfmt
+    ast-grep
     direnv
     doppler
     gh
+    kdePackages.qtdeclarative
+    kdlfmt
     lazygit
     lldb
+    marksman
+    mdsf
     pkgconf
     ron-lsp
     topiary
     tree
     tree-sitter
+    vscode-langservers-extracted
   ];
 }
