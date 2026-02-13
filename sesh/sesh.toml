@@ -1,3 +1,6 @@
 [[session]]
 name = "dot"
 path = "~/dotfiles"
+
+[default_session]
+preview_command = "eza --all --git --icons --color=always {}"
