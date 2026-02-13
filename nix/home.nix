@@ -16,6 +16,7 @@ in {
 
   home.packages = [
     dot
+    pkgs.cowsay
   ];
 
   xdg.mimeApps = {
