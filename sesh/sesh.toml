@@ -2,5 +2,10 @@
 name = "dot"
 path = "~/dotfiles"
 
+[[session]]
+name = "iamb"
+path = "~/"
+startup_command = "iamb"
+
 [default_session]
 preview_command = "eza --all --git --icons --color=always {}"
