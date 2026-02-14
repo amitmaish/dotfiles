@@ -27,7 +27,7 @@ in {
 
     (writeShellApplication {
       name = "sclang";
-      text = ''/Applications/SuperCollider.app/Contents/MacOS/sclang '';
+      text = ''/Applications/SuperCollider.app/Contents/MacOS/sclang "$@" '';
     })
   ];
 

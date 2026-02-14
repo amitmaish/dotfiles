@@ -56,7 +56,7 @@ return {
 				},
 			},
 			documentation = {
-				cmd = "/usr/local/bin/pandoc",
+				cmd = "pandoc",
 			},
 		})
 
