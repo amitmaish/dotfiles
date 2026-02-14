@@ -17,6 +17,7 @@
       "kitty"
       "midi-monitor"
       "neovide-app"
+      "nheko"
       "obs"
       "openemu"
       "parsec"
