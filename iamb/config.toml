@@ -3,3 +3,6 @@ user_id = "@tinymoat:matrix.org"
 
 [settings]
 username_display = "displayname"
+
+[macros.normal]
+"gc" = ":chats<Enter>"
