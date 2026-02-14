@@ -117,7 +117,7 @@ in {
     };
     shellAliases = {
       cat = "bat";
-      iamb = "iamb -c $HOME/.config/iamb";
+      iamb = "iamb -C $HOME/.config";
       ls = "eza";
       man = "batman";
     };
