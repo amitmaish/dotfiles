@@ -1,2 +1,4 @@
 [profiles.tiny]
 user_id = "@tinymoat:matrix.org"
+
+username_display = "displayname"

@@ -140,9 +140,9 @@ in {
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace/.config/aerospace;
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
+  home.file.".config/iamb".source = ../../../iamb;
   home.file.".config/niri".source = mkMutableSymlink ../../../niri;
   home.file.".config/noctalia".source = ../../../noctalia;
-  home.file.".config/iamb".source = ../../../iamb;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
   home.file.".config/qutebrowser".source = ../../../qutebrowser;
   home.file.".config/scripts".source = mkMutableSymlink ../../../scripts/scripts;
