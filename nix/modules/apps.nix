@@ -13,6 +13,7 @@ in {
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
       anki
       calibre
+      fluffychat
       hayase
       pureref
       signal-desktop
