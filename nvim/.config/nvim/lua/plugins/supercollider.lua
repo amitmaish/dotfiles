@@ -6,17 +6,30 @@ local function Bootfile(default)
 	return default
 end
 
----@param file string
----@return string?
-local function ReadFile(file)
-	if file == nil then
-		vim.notify("provide a file to the ReadFile function", vim.log.levels.ERROR)
+local function send_whole_file_raw(opts)
+	local scnvim = require("scnvim")
+
+	-- Read the file directly from disk to get raw content
+	local filename = opts.args ~= "" and opts.args or vim.api.nvim_buf_get_name(0)
+
+	local file = io.open(filename, "r")
+	if not file then
+		vim.notify("Could not read file: " .. filename, vim.log.levels.ERROR)
 		return
 	end
-	local f = assert(io.open(file, "r"), "bootfile not found")
-	local content = f:read("a")
-	return content
+
+	local code = file:read("*a")
+	file:close()
+
+	-- Send the raw file content
+	scnvim.send(code)
 end
+
+-- Create command with optional file argument
+vim.api.nvim_create_user_command("SCNvimSendFile", send_whole_file_raw, {
+	nargs = "?", -- Optional argument
+	complete = "file", -- File path completion
+})
 
 return {
 	"davidgranstrom/scnvim",
@@ -67,8 +80,7 @@ return {
 					scnvim.start()
 
 					local bootfile = Bootfile(vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1])
-					---@diagnostic disable-next-line: param-type-mismatch
-					scnvim.send(ReadFile(bootfile))
+					vim.cmd("SCNvimSendFile " .. bootfile)
 				end,
 			})
 		end
