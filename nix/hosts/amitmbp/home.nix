@@ -23,7 +23,7 @@ in {
     m-cli
     swiftbar
     terminal-notifier
-    xorg.xorgserver
+    xorg-server
 
     (writeShellApplication {
       name = "sclang";

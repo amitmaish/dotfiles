@@ -17,6 +17,7 @@
       fzf
       ghostscript
       glow
+      iamb
       imagemagick
       just
       mediainfo
