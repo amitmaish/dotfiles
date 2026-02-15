@@ -36,8 +36,6 @@ in {
     launchd.enable = true;
   };
 
-  programs.firefox.enable = true;
-
   programs.ghostty.package = pkgs.ghostty-bin;
 
   services.syncthing.enable = true;
