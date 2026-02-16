@@ -3,6 +3,7 @@
     enable = true;
     brews = [
       "mas"
+      "transmission-cli"
     ];
     casks = [
       "adobe-digital-editions"
