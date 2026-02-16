@@ -19,7 +19,7 @@
       finder.FXPreferredViewStyle = "clmv";
       loginwindow.GuestEnabled = false;
       NSGlobalDomain = {
-        AppleICUForce24HourTime = true;
+        AppleICUForce24HourTime = false;
         AppleInterfaceStyle = "Dark";
         KeyRepeat = 2;
         NSAutomaticCapitalizationEnabled = false;
