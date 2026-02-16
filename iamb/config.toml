@@ -6,3 +6,5 @@ username_display = "displayname"
 
 [macros.normal]
 "gc" = ":chats<Enter>"
+"gd" = ":dms<Enter>"
+"gs" = ":spaces<Enter>"
