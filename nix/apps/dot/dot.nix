@@ -5,7 +5,7 @@
   libnotify,
   writeShellApplication,
   REBUILD_COMMAND ? "sudo nixos-rebuild switch --flake ~/dotfiles/nix",
-  CURRENT_COMMAND ? ''nu -c "nixos-rebuild list-generations | detect columns | where {|item| \$item.Current == True} | \$in.Generation.0"'',
+  CURRENT_COMMAND ? ''nixos-rebuild list-generations | grep True | awk '{print $1}' '',
   NAME ? "nix",
   NOTIFY_COMMAND ? ''notify-send -e "nixos rebuild ok!" -a "dot" --icon=software-update-available '',
 }:

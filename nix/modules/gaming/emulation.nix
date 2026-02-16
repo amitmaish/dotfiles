@@ -33,7 +33,7 @@
     home.packages = with pkgs;
       []
       ++ lib.optionals config.retroarch.enable [
-        retroarch
+        retroarch-full
       ]
       ++ lib.optionals config.cemu.enable [
         cemu

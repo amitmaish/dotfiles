@@ -19,7 +19,7 @@
     powerManagement.finegrained = false;
 
     #open source driver
-    open = true;
+    open = false;
 
     package = config.boot.kernelPackages.nvidiaPackages.production;
   };
