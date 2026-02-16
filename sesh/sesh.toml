@@ -3,6 +3,10 @@ name = "dot"
 path = "~/dotfiles"
 
 [[session]]
+name = "explore"
+path = "~/dev/explore"
+
+[[session]]
 name = "iamb"
 path = "~/"
 startup_command = "iamb"
