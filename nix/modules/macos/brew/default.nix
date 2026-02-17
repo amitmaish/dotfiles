@@ -7,7 +7,6 @@
     ];
     casks = [
       "adobe-digital-editions"
-      "anki"
       "arduino-ide"
       "bibdesk"
       "dorico"
@@ -17,7 +16,6 @@
       "inkscape"
       "kitty"
       "midi-monitor"
-      "neovide-app"
       "obs"
       "openemu"
       "parsec"

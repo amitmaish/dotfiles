@@ -7,6 +7,7 @@
 in {
   home.packages = with pkgs;
     [
+      anki
       neovide
       qutebrowser
     ]
@@ -14,7 +15,6 @@ in {
       vlc-bin
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
-      anki
       calibre
       fluffychat
       hayase
