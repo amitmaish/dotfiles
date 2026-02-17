@@ -27,6 +27,7 @@
       p7zip
       presenterm
       ripgrep
+      rustmission
       sesh
       skim
       starship
