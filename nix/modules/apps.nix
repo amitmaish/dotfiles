@@ -10,7 +10,10 @@ in {
       neovide
       qutebrowser
     ]
-    ++ lib.optionals (!pkgs.stdenv.isDarwin) [
+    ++ lib.optionals (pkgs.stdenv.isDarwin) [
+      vlc-bin
+    ]
+    ++ lib.optionals (pkgs.stdenv.isLinux) [
       anki
       calibre
       fluffychat

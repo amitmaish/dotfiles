@@ -31,7 +31,6 @@
       "thunderbird"
       "tiled"
       "transmission"
-      "vlc"
       "whatsapp"
       "zoom"
       "zotero"
