@@ -36,6 +36,7 @@
       timg
       tlrc
       tmux
+      tokei
       usbutils
       wget
       xclip
