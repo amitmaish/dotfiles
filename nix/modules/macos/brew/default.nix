@@ -33,7 +33,9 @@
       "zoom"
       "zotero"
     ];
-    masApps = {};
+    masApps = {
+      forScore = 363738376;
+    };
     onActivation = {
       cleanup = "zap";
     };
