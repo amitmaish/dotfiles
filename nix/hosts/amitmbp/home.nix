@@ -19,6 +19,7 @@ in {
   music.enable = false;
 
   home.packages = with pkgs; [
+    airdrop-cli
     dot
     m-cli
     swiftbar
