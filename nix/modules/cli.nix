@@ -22,6 +22,7 @@
       just
       mediainfo
       mermaid-cli
+      ncspot
       neofetch
       nushell
       p7zip

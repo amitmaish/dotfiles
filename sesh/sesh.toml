@@ -11,5 +11,10 @@ name = "iamb"
 path = "~/"
 startup_command = "iamb"
 
+[[session]]
+name = "spotify"
+path = "~/"
+startup_command = "ncspot"
+
 [default_session]
 preview_command = "eza --all --git --icons --color=always {}"
