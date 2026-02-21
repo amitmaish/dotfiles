@@ -27,13 +27,6 @@ in {
     flake = "~/dotfiles/nix";
   };
 
-  programs.ghostty = {
-    enable = true;
-    enableBashIntegration = true;
-    enableFishIntegration = true;
-    enableZshIntegration = true;
-  };
-
   programs.git = {
     enable = true;
     lfs.enable = true;
@@ -128,13 +121,6 @@ in {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
-  };
-
-  programs.neovide = {
-    enable = true;
-    settings = {
-      frame = "transparent";
-    };
   };
 
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace/.config/aerospace;

@@ -8,7 +8,6 @@ in {
   home.packages = with pkgs;
     [
       anki
-      neovide
       qutebrowser
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
@@ -29,8 +28,21 @@ in {
         removeWarningPopup = true;
       })
     ];
+
   programs = {
     discord = {enable = true;};
     firefox = {enable = true;};
+    ghostty = {
+      enable = true;
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableZshIntegration = true;
+    };
+    neovide = {
+      enable = true;
+      settings = {
+        frame = "transparent";
+      };
+    };
   };
 }
