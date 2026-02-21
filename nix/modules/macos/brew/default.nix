@@ -9,6 +9,7 @@
       "adobe-digital-editions"
       "arduino-ide"
       "bibdesk"
+      "dmenu-mac"
       "dorico"
       "google-drive"
       "handbrake-app"

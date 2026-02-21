@@ -26,6 +26,7 @@
       neofetch
       nushell
       p7zip
+      pass
       presenterm
       ripgrep
       rustmission
