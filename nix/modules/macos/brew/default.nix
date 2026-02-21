@@ -10,7 +10,6 @@
       "arduino-ide"
       "bibdesk"
       "dorico"
-      "firefox"
       "google-drive"
       "handbrake-app"
       "inkscape"
