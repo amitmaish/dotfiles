@@ -7,7 +7,6 @@
 in {
   home.packages = with pkgs;
     [
-      anki
       qutebrowser
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
@@ -30,8 +29,9 @@ in {
     ];
 
   programs = {
-    discord = {enable = true;};
-    firefox = {enable = true;};
+    anki.enable = true;
+    discord.enable = true;
+    firefox.enable = true;
     ghostty = {
       enable = true;
       enableBashIntegration = true;
