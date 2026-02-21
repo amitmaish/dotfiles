@@ -39,6 +39,10 @@ in {
 
   programs.ghostty.package = pkgs.ghostty-bin;
 
+  programs.fish.shellAliases = {
+    dmenu = "dmenu-mac";
+  };
+
   programs.firefox.package = pkgs.firefox-bin;
 
   services.syncthing.enable = true;
