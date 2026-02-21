@@ -8,7 +8,6 @@
       cmatrix
       delta
       dict
-      dmenu
       dua
       eza
       fd
@@ -48,7 +47,8 @@
       zip
       zoxide
     ]
-    ++ lib.optionals (!pkgs.stdenv.isDarwin) [
+    ++ lib.optionals (pkgs.stdenv.isLinux) [
+      dmenu
       quickshell
     ];
 }
