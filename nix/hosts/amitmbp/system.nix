@@ -7,7 +7,7 @@
           "/System/Applications/Messages.app"
           "/Applications/Signal.app"
           "${pkgs.ghostty-bin}/Applications/Ghostty.app"
-          "/Applications/Firefox.app"
+          "${pkgs.firefox-bin}/Applications/Firefox.app"
           "/Applications/Anki.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
           "/System/Applications/Calendar.app"

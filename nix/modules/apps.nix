@@ -31,5 +31,6 @@ in {
     ];
   programs = {
     discord = {enable = true;};
+    firefox = {enable = true;};
   };
 }

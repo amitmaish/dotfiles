@@ -92,8 +92,6 @@
     binfmt = true;
   };
 
-  programs.firefox.enable = true;
-
   environment.systemPackages = with pkgs; [
     alacritty
     cudatoolkit

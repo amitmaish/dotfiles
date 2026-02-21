@@ -39,10 +39,7 @@ in {
 
   programs.ghostty.package = pkgs.ghostty-bin;
 
-  programs.firefox = {
-    enable = true;
-    package = pkgs.firefox-bin;
-  };
+  programs.firefox.package = pkgs.firefox-bin;
 
   services.syncthing.enable = true;
 
