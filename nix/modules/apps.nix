@@ -10,9 +10,11 @@ in {
       qutebrowser
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
+      anki-bin
       vlc-bin
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
+      anki
       calibre
       fluffychat
       hayase
@@ -29,7 +31,6 @@ in {
     ];
 
   programs = {
-    anki.enable = true;
     discord.enable = true;
     firefox.enable = true;
     ghostty = {
