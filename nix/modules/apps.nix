@@ -8,7 +8,9 @@ in {
   home.packages = with pkgs;
     [
       kitty
-      qutebrowser
+      (qutebrowser.overrideAttrs (final: prev: {
+        buildInputs = prev.buildInputs ++ [pkgs.pass];
+      }))
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
