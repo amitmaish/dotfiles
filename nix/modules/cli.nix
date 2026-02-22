@@ -17,6 +17,7 @@
       fzf
       ghostscript
       glow
+      gnupg
       iamb
       imagemagick
       just
