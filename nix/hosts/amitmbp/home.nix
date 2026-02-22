@@ -27,6 +27,10 @@ in {
     xorg-server
 
     (writeShellApplication {
+      name = "dmenu";
+      text = ''dmenu-mac "$@"'';
+    })
+    (writeShellApplication {
       name = "sclang";
       text = ''/Applications/SuperCollider.app/Contents/MacOS/sclang "$@" '';
     })
@@ -38,10 +42,6 @@ in {
   };
 
   programs.ghostty.package = pkgs.ghostty-bin;
-
-  programs.fish.shellAliases = {
-    dmenu = "dmenu-mac";
-  };
 
   programs.firefox.package = pkgs.firefox-bin;
 
