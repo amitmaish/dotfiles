@@ -21,3 +21,5 @@ if not os.path.exists(config.configdir / "theme.py"):
 if os.path.exists(config.configdir / "theme.py"):
     import theme
     theme.setup(c, 'mocha', True)
+
+config.bind('<z><l>', r'spawn --userscript pass.sh --username-target secret --username-pattern \'username: (.*)\' -d dmenu')
