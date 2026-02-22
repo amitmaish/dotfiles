@@ -22,5 +22,5 @@ if os.path.exists(config.configdir / "theme.py"):
     import theme
     theme.setup(c, 'mocha', True)
 
-config.bind('<z><l>', r'spawn --userscript pass.sh --username-target secret --username-pattern \'username: (.*)\'')
-config.bind('<z><u>', r'spawn --userscript pass.sh --unfiltered --username-target secret --username-pattern \'username: (.*)\'')
+config.bind('<z><l>', r'spawn --userscript pass.sh --d dmenu --username-target secret --username-pattern \'username: (.*)\'')
+config.bind('<z><u>', r'spawn --userscript pass.sh --d dmenu --unfiltered --username-target secret --username-pattern \'username: (.*)\'')
