@@ -12,6 +12,7 @@
       eza
       fd
       ffmpeg
+      firefox_decrypt
       fontconfig
       fzf
       ghostscript
