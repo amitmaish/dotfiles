@@ -127,7 +127,7 @@ in {
   home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
   home.file.".config/iamb".source = mkMutableSymlink ../../../iamb;
-  # home.file.".config/kitty".source = mkMutableSymlink ../../../kitty/.config/kitty;
+  home.file.".config/kitty".source = mkMutableSymlink ../../../kitty/.config/kitty;
   home.file.".config/niri".source = mkMutableSymlink ../../../niri;
   home.file.".config/noctalia".source = mkMutableSymlink ../../../noctalia;
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
