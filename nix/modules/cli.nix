@@ -52,5 +52,6 @@
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       dmenu
       quickshell
+      rofi
     ];
 }

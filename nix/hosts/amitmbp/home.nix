@@ -31,6 +31,10 @@ in {
       text = ''dmenu-mac "$@"'';
     })
     (writeShellApplication {
+      name = "rofi";
+      text = ''dmenu-mac "$@"'';
+    })
+    (writeShellApplication {
       name = "sclang";
       text = ''/Applications/SuperCollider.app/Contents/MacOS/sclang "$@" '';
     })
