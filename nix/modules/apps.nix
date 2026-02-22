@@ -39,6 +39,14 @@ in {
       enableFishIntegration = true;
       enableZshIntegration = true;
     };
+    kitty = {
+      enable = true;
+      shellIntegration = {
+        enableBashIntegration = true;
+        enableFishIntegration = true;
+        enableZshIntegration = true;
+      };
+    };
     neovide = {
       enable = true;
       settings = {

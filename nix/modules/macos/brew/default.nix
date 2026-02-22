@@ -14,7 +14,6 @@
       "google-drive"
       "handbrake-app"
       "inkscape"
-      "kitty"
       "midi-monitor"
       "obs"
       "openemu"
