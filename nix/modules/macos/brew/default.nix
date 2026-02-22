@@ -30,7 +30,6 @@
       "transmission"
       "whatsapp"
       "zoom"
-      "zotero"
     ];
     masApps = {
       forScore = 363738376;

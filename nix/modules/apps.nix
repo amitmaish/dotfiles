@@ -7,7 +7,9 @@
 in {
   home.packages = with pkgs;
     [
+      kitty
       qutebrowser
+      zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       anki-bin
@@ -38,14 +40,6 @@ in {
       enableBashIntegration = true;
       enableFishIntegration = true;
       enableZshIntegration = true;
-    };
-    kitty = {
-      enable = true;
-      shellIntegration = {
-        enableBashIntegration = true;
-        enableFishIntegration = true;
-        enableZshIntegration = true;
-      };
     };
     neovide = {
       enable = true;
