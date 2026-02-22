@@ -12,7 +12,7 @@
       eza
       fd
       ffmpeg
-      firefox_decrypt
+      (firefox_decrypt.override {nss = nss_latest;})
       fontconfig
       fzf
       ghostscript
