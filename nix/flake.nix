@@ -2,6 +2,10 @@
   description = "tiny";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     flake-parts.url = "github:hercules-ci/flake-parts";
     home-manager = {
       url = "github:nix-community/home-manager";
