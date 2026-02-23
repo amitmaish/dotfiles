@@ -8,7 +8,7 @@
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager = {
-            extraSpecialArgs = {inherit inputs;};
+            extraSpecialArgs = {inherit inputs system;};
             useGlobalPkgs = true;
             useUserPackages = true;
             users.amit = import ./home.nix;
