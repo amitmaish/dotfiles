@@ -23,4 +23,6 @@ if os.path.exists(config.configdir / "theme.py"):
     theme.setup(c, 'mocha', True)
 
 config.bind('<z><l>', 'spawn --userscript pass.sh --d dmenu')
-config.bind('<z><u>', 'spawn --userscript pass.sh --d dmenu --unfiltered')
+config.bind('<z><u><l>', 'spawn --userscript pass.sh --d dmenu --username-only')
+config.bind('<z><p><l>', 'spawn --userscript pass.sh --d dmenu --password-only')
+config.bind('<z><f>', 'spawn --userscript pass.sh --d dmenu --unfiltered')
