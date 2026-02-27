@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs;
     [
+      (firefox_decrypt.override {nss = nss_latest;})
       asciiquarium
       bat
       bat-extras.batman
@@ -12,7 +13,6 @@
       eza
       fd
       ffmpeg
-      (firefox_decrypt.override {nss = nss_latest;})
       fontconfig
       fzf
       ghostscript
@@ -27,6 +27,7 @@
       neofetch
       nushell
       p7zip
+      parted
       pass
       presenterm
       ripgrep
