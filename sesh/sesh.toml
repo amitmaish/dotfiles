@@ -16,5 +16,10 @@ name = "spotify"
 path = "~/"
 startup_command = "ncspot"
 
+[[session]]
+name = "nethack"
+path = "~/"
+startup_command = "nethack"
+
 [default_session]
 preview_command = "eza --all --git --icons --color=always {}"

@@ -5,6 +5,7 @@
 
   home.packages = with pkgs;
     [
+      nethack
       prismlauncher
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
