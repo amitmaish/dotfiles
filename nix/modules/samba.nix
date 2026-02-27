@@ -15,6 +15,7 @@
 
         share = {
           "path" = "/home/amit/share";
+          "read only" = "no";
           "writable" = "yes";
           "comment" = "no comment";
           "browseable" = "yes";
