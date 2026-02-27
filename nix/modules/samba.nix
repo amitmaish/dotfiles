@@ -13,10 +13,10 @@
           "security" = "user";
         };
 
-        testshare = {
+        share = {
           "path" = "/home/amit/share";
           "writable" = "yes";
-          "comment" = "Hello World!";
+          "comment" = "no comment";
           "browseable" = "yes";
         };
       };
