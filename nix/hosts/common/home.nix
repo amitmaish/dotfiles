@@ -133,6 +133,7 @@ in {
   home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
   home.file.".config/scripts".source = mkMutableSymlink ../../../scripts/scripts;
   home.file.".config/sesh".source = mkMutableSymlink ../../../sesh;
+  home.file.".nethackrc".source = mkMutableSymlink ../../../nethack/.nethackrc;
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
   home.file.".config/winapps/winapps.conf".source = mkMutableSymlink ../../../winapps/winapps.conf;
