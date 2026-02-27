@@ -20,6 +20,7 @@ in {
       calibre
       fluffychat
       hayase
+      nautilus
       pureref
       signal-desktop
       thunderbird
