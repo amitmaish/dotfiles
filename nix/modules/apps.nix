@@ -19,6 +19,7 @@ in {
       anki
       calibre
       fluffychat
+      gparted
       hayase
       nautilus
       pureref
