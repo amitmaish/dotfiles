@@ -21,7 +21,7 @@
           "browseable" = "yes";
         };
         local = {
-          "path" = "/home/amit/share-local";
+          "path" = "/home/amit/share_local";
           "read only" = "no";
           "writable" = "yes";
           "comment" = "no comment";
