@@ -20,6 +20,13 @@
           "comment" = "no comment";
           "browseable" = "yes";
         };
+        local = {
+          "path" = "/home/amit/share-local";
+          "read only" = "no";
+          "writable" = "yes";
+          "comment" = "no comment";
+          "browseable" = "yes";
+        };
       };
     };
     samba-wsdd = {
