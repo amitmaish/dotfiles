@@ -9,6 +9,7 @@
     ./modules/nvidia.nix
     ./modules/samba.nix
     ./modules/tailscale.nix
+    ./modules/transmission.nix
     ./modules/virtualisation.nix
     inputs.musnix.nixosModules.musnix
   ];
