@@ -27,7 +27,6 @@
       neofetch
       nushell
       p7zip
-      parted
       pass
       presenterm
       ripgrep
@@ -52,6 +51,7 @@
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       dmenu
+      parted
       quickshell
       rofi
     ];
