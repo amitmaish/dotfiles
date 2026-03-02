@@ -14,6 +14,7 @@
       eza
       fd
       ffmpeg
+      figlet
       fontconfig
       fzf
       ghostscript
