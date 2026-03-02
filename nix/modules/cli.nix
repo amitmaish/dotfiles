@@ -7,6 +7,7 @@
       bat-extras.batman
       btop
       cmatrix
+      dbus
       delta
       dict
       dua
