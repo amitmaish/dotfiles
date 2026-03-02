@@ -55,6 +55,6 @@
       parted
       quickshell
       rofi
-      wine
+      wineWowPackages.stable
     ];
 }
