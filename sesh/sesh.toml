@@ -25,6 +25,8 @@ startup_command = "ncspot"
 name = "nethack"
 path = "~/"
 startup_command = "nethack"
+preview_command = "figlet nethack\n@"
+# preview_command = ''' bash -c 'eval " figlet nethack; figlet -f colossal @ " ' '''
 
 [default_session]
 preview_command = "eza --all --git --icons --color=always {}"
