@@ -31,7 +31,9 @@
 
   config = lib.mkIf config.emulation.enable {
     home.packages = with pkgs;
-      []
+      [
+        azahar
+      ]
       ++ lib.optionals config.retroarch.enable [
         retroarch-full
       ]

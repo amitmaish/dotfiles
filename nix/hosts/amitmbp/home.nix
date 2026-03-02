@@ -15,8 +15,10 @@ in {
   ];
 
   blender.enable = false;
-  emulation.enable = false;
+  cemu.enable = false;
+  emulation.enable = true;
   music.enable = false;
+  retroarch.enable = false;
 
   home.packages = with pkgs; [
     airdrop-cli
