@@ -7,6 +7,11 @@ name = "explore"
 path = "~/dev/explore"
 
 [[session]]
+name = "btop"
+path = "~/"
+startup_command = "btop"
+
+[[session]]
 name = "iamb"
 path = "~/"
 startup_command = "iamb"
