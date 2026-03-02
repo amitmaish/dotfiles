@@ -39,6 +39,7 @@
     kirsch
     lato
     league-of-moveable-type
+    linja-pi-pu-lukin
     linja-sike
     lora
     maple-mono.NF
@@ -52,6 +53,7 @@
     monoid
     moralerspace
     nasin-nanpa
+    nasin-nanpa-helvetica
     nerd-fonts.anonymice
     nerd-fonts.hack
     nerd-fonts.jetbrains-mono
