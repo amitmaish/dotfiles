@@ -55,5 +55,6 @@
       parted
       quickshell
       rofi
+      wine
     ];
 }
