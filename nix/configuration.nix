@@ -93,6 +93,12 @@
     binfmt = true;
   };
 
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = with pkgs; pinentry-all;
+    enableSSHSupport = true;
+  };
+
   environment.systemPackages = with pkgs; [
     alacritty
     cudatoolkit
