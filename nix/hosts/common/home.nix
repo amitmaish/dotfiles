@@ -138,6 +138,6 @@ in {
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
   home.file.".config/winapps/winapps.conf".source = mkMutableSymlink ../../../winapps/winapps.conf;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
-  home.file.".qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
+  home.file.".config/qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
   home.file.".tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
 }
