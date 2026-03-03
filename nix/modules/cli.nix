@@ -30,6 +30,7 @@
       nushell
       p7zip
       pass
+      pinentry-tty
       presenterm
       ripgrep
       rustmission
