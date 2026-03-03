@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs;
     [
+      mupdf
       (firefox_decrypt.override {nss = nss_latest;})
       asciiquarium
       bat
@@ -20,6 +21,7 @@
       ghostscript
       glow
       gnupg
+      hygg
       iamb
       imagemagick
       just
