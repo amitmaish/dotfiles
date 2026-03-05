@@ -21,7 +21,6 @@
       ghostscript
       glow
       gnupg
-      hygg
       iamb
       imagemagick
       just
@@ -56,6 +55,7 @@
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       dmenu
+      hygg
       parted
       quickshell
       rofi
