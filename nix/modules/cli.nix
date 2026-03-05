@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs;
     [
-      mupdf
       (firefox_decrypt.override {nss = nss_latest;})
       asciiquarium
       bat
@@ -13,6 +12,7 @@
       dict
       dua
       eza
+      fastfetch
       fd
       ffmpeg
       figlet
@@ -26,8 +26,8 @@
       just
       mediainfo
       mermaid-cli
+      mupdf
       ncspot
-      neofetch
       nushell
       p7zip
       pass
