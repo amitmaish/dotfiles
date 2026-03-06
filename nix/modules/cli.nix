@@ -21,9 +21,11 @@
       ghostscript
       glow
       gnupg
+      hyfetch
       iamb
       imagemagick
       just
+      macchina
       mediainfo
       mermaid-cli
       mupdf
