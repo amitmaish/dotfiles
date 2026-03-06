@@ -22,6 +22,7 @@
       glow
       gnupg
       hyfetch
+      hyperfine
       iamb
       imagemagick
       just
