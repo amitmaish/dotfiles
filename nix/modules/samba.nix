@@ -2,7 +2,7 @@
   services = {
     samba = {
       enable = true;
-      package = pkgs.samba4Full;
+      package = pkgs.samba4;
       openFirewall = true;
 
       settings = {
