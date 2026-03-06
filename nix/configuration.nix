@@ -10,7 +10,7 @@
     ./modules/samba.nix
     ./modules/tailscale.nix
     ./modules/transmission.nix
-    ./modules/virtualisation.nix
+    # ./modules/virtualisation.nix # broken
     inputs.musnix.nixosModules.musnix
   ];
 
