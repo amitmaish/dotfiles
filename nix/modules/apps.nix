@@ -9,6 +9,7 @@ in {
     [
       kitty
       qutebrowser
+      rapidraw
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
