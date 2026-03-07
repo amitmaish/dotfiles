@@ -29,6 +29,7 @@
       macchina
       mediainfo
       mermaid-cli
+      mpc
       mpd
       mupdf
       ncspot
@@ -38,6 +39,7 @@
       pinentry-tty
       presenterm
       ripgrep
+      rmpc
       rustmission
       sesh
       skim
