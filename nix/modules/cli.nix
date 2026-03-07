@@ -29,6 +29,7 @@
       macchina
       mediainfo
       mermaid-cli
+      mpd
       mupdf
       ncspot
       nushell
