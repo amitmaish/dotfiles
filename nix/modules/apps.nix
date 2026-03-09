@@ -9,7 +9,6 @@ in {
     [
       kitty
       qutebrowser
-      rapidraw
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
@@ -24,6 +23,7 @@ in {
       hayase
       nautilus
       pureref
+      rapidraw
       signal-desktop
       thunderbird
       transmission_4
