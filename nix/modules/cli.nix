@@ -32,7 +32,6 @@
       mpc
       mpd
       mupdf
-      ncspot
       nushell
       p7zip
       pass

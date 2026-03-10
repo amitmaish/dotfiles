@@ -17,11 +17,6 @@ path = "~/"
 startup_command = "iamb"
 
 [[session]]
-name = "spotify"
-path = "~/"
-startup_command = "ncspot"
-
-[[session]]
 name = "nethack"
 path = "~/"
 startup_command = "nethack"
