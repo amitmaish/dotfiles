@@ -41,6 +41,7 @@
       rmpc
       rustmission
       sesh
+      sioyek
       skim
       starship
       syncthing
