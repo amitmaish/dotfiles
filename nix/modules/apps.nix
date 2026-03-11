@@ -25,6 +25,7 @@ in {
       pureref
       rapidraw
       signal-desktop
+      themix-gui
       thunderbird
       transmission_4
       vlc
