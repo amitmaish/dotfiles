@@ -43,6 +43,7 @@
       sesh
       sioyek
       skim
+      speedtest-rs
       starship
       syncthing
       timewarrior
