@@ -33,6 +33,7 @@
       mpd
       mupdf
       nushell
+      oxipng
       p7zip
       pass
       pinentry-tty
