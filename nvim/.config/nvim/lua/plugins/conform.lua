@@ -20,6 +20,7 @@ return {
 			lua = { "stylua" },
 			javascript = { "prettier", stop_after_first = true },
 			json = { "prettier" },
+			just = { lsp_format = "prefer" },
 			markdown = { "mdsf", "prettier" },
 			nickel = { lsp_format = "prefer" },
 			nix = { "alejandra" },

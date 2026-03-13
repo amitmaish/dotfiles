@@ -2,7 +2,6 @@ require("neoconf").setup({})
 
 vim.lsp.enable({
 	"arduino_language_server",
-	-- "asm_lsp",
 	"ast_grep",
 	"bashls",
 	"biome",
@@ -12,13 +11,13 @@ vim.lsp.enable({
 	"hls",
 	"html",
 	"jsonls",
+	"just",
 	"lua_ls",
 	"marksman",
 	"neocmake",
 	"nil_ls",
 	"nls",
 	"qmlls",
-	-- "ron-lsp",
 	"ruff",
 	"rust-analyzer",
 	"taplo",
@@ -27,6 +26,8 @@ vim.lsp.enable({
 	"vtsls",
 	"yamlls",
 	"zls",
+	-- "asm_lsp",
+	-- "ron-lsp",
 })
 vim.lsp.config("arduino_language_server", {
 	cmd = {

@@ -5,14 +5,15 @@
   ...
 }: {
   imports = [
-    ./nickel.nix
     ./arduino.nix
     ./bash.nix
     ./c.nix
     ./go.nix
     ./haskell.nix
     ./js.nix
+    ./just.nix
     ./lua.nix
+    ./nickel.nix
     ./nix.nix
     ./python.nix
     ./rust.nix
