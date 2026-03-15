@@ -1,9 +1,13 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    cabal-install
-    ghc
-    haskell-language-server
-    haskellPackages.tidal
-    ormolu
-  ];
+  home.packages = with pkgs;
+    [
+      (ghc.withPackages (hsPkgs:
+        with haskellPackages; [
+          tidal
+        ]))
+    ]
+    ++ [
+      haskell-language-server
+      ormolu
+    ];
 }
