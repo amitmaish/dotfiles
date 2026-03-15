@@ -2,9 +2,7 @@
   pkgs,
   lib,
   ...
-}: let
-  hayase = pkgs.callPackage ../apps/hayase.nix {};
-in {
+}: {
   home.packages = with pkgs;
     [
       kitty
@@ -20,7 +18,6 @@ in {
       calibre
       fluffychat
       gparted
-      hayase
       nautilus
       pureref
       rapidraw
