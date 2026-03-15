@@ -30,7 +30,6 @@
     direnv
     doppler
     gh
-    git-credential-manager
     gnumake
     inputs.tree-sitter.packages.${system}.default
     kdePackages.qtdeclarative
