@@ -1,5 +1,12 @@
 require("neoconf").setup({})
 
+---@param prog string
+---@return string
+local function which(prog)
+	local temp_prog = vim.fn.system("which " .. prog)
+	return string.sub(temp_prog, 1, -3)
+end
+
 vim.lsp.enable({
 	"arduino_language_server",
 	"ast_grep",
@@ -29,13 +36,6 @@ vim.lsp.enable({
 	-- "asm_lsp",
 	-- "ron-lsp",
 })
-
----@param prog string
----@return string
-local function which(prog)
-	local temp_prog = vim.fn.system("which " .. prog)
-	return string.sub(temp_prog, 1, -3)
-end
 
 vim.lsp.config("arduino_language_server", {
 	cmd = {
