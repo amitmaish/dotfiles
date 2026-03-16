@@ -27,6 +27,7 @@
   home.packages = with pkgs; [
     asm-lsp
     asmfmt
+    ast-grep
     direnv
     doppler
     gh
