@@ -9,6 +9,7 @@ end
 
 vim.lsp.enable({
 	"arduino_language_server",
+	"asm_lsp",
 	"ast_grep",
 	"bashls",
 	"biome",
@@ -33,8 +34,6 @@ vim.lsp.enable({
 	"vtsls",
 	"yamlls",
 	"zls",
-	-- "asm_lsp",
-	-- "ron-lsp",
 })
 
 vim.lsp.config("arduino_language_server", {
@@ -61,17 +60,6 @@ vim.lsp.config("lua_ls", {
 vim.lsp.config("nls", {
 	cmd = { "nls" },
 	filetypes = { "nickel" },
-})
-vim.lsp.config("ron-lsp", {
-	default_config = {
-		cmd = { vim.fn.expand("ron-lsp") },
-		filetypes = { "ron" },
-		root_dir = function(fname)
-			local util = require("lspconfig.util")
-			return util.root_pattern("Cargo.toml", ".git")(fname) or vim.loop.cwd()
-		end,
-		settings = {},
-	},
 })
 vim.lsp.config("tinymist", {
 	on_attach = function(client, bufnr)
