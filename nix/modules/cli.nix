@@ -35,6 +35,7 @@
       nushell
       oxipng
       p7zip
+      pandoc
       pass
       pinentry-tty
       presenterm

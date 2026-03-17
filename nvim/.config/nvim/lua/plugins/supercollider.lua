@@ -1,3 +1,10 @@
+---@param prog string
+---@return string
+local function which(prog)
+	local temp_prog = vim.fn.system("which " .. prog)
+	return string.sub(temp_prog, 1, -3)
+end
+
 ---@param default string?
 local function Bootfile(default)
 	if vim.env.SC_BOOTFILE then
@@ -69,7 +76,7 @@ return {
 				},
 			},
 			documentation = {
-				cmd = "pandoc",
+				cmd = which("pandoc"),
 			},
 		})
 
