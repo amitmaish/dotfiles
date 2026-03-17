@@ -54,6 +54,7 @@
       tmux
       tokei
       usbutils
+      websocat
       wget
       xclip
       yazi

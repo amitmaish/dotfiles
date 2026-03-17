@@ -1,3 +1,4 @@
+--- utility function for my nvim
 local M = {}
 
 --- returns the output of the `which` command

@@ -1,11 +1,10 @@
-local which = require("config_utils").which
-
 return {
 	"davidgranstrom/scnvim",
 	lazy = false,
 	pin = true,
 	config = function()
 		local scnvim = require("scnvim")
+		local which = require("config_utils").which
 
 		local map = scnvim.map
 		local map_expr = scnvim.map_expr
