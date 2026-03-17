@@ -6,7 +6,7 @@ local M = {}
 ---@return string
 function M.which(prog)
 	local temp_prog = vim.fn.system("which " .. prog)
-	return string.sub(temp_prog, 1, -3)
+	return string.sub(temp_prog, 1, -2)
 end
 
 return M
