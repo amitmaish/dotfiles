@@ -26,3 +26,7 @@ Snacks.toggle({
 		vim.cmd.LspRestart()
 	end,
 }):map("<leader>cn")
+
+WK.add({
+	{ "<leader>so", ":so<CR>", desc = "source file" },
+})

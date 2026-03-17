@@ -56,18 +56,18 @@ UpdateNavWrap = function()
 		{
 			mode = { "n", "v" },
 			hidden = true,
-			cond = NavWrap,
-			{ "j", "gj" },
-			{ "k", "gk" },
-			{ "H", "g^" },
-			{ "L", "g$" },
-		},
-		{
-			mode = { "n", "v" },
-			hidden = true,
-			cond = not NavWrap,
-			{ "H", "^" },
-			{ "L", "$" },
+			{
+				cond = NavWrap,
+				{ "j", "gj" },
+				{ "k", "gk" },
+				{ "H", "g^" },
+				{ "L", "g$" },
+			},
+			{
+				cond = not NavWrap,
+				{ "H", "^" },
+				{ "L", "$" },
+			},
 		},
 	})
 end
@@ -91,17 +91,21 @@ Snacks.toggle
 	:map("<leader>uw")
 
 WK.add({
-	{ "jk", "<esc>", mode = { "i" }, hidden = true },
-	{ "JK", "", mode = { "t" }, hidden = true },
+	{
+		hidden = true,
+		{ "jk", "<esc>", mode = { "i" } },
+		{ "JK", "", mode = { "t" } },
+	},
 	{ "<leader>qq", ":qa<cr>", desc = "quit" },
 	{ "<leader>qQ", ":qa!<cr>", desc = "quit without saving" },
 
-	{ "<c-h>", "<c-w>h", hidden = true },
-	{ "<c-j>", "<c-w>j", hidden = true },
-	{ "<c-k>", "<c-w>k", hidden = true },
-	{ "<c-l>", "<c-w>l", hidden = true },
-
-	{ "<leader>so", ":so<CR>", desc = "source file" },
+	{
+		hidden = true,
+		{ "<c-h>", "<c-w>h" },
+		{ "<c-j>", "<c-w>j" },
+		{ "<c-k>", "<c-w>k" },
+		{ "<c-l>", "<c-w>l" },
+	},
 
 	{
 		"gd",

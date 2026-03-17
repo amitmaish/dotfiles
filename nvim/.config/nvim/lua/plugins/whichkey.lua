@@ -13,10 +13,11 @@ return {
 			{ "<leader>g", group = "go" },
 			{ "<leader>p", group = "pick" },
 			{ "<leader>q", group = "quit" },
+			{ "<leader>u", group = "ui" },
 			{ "gr", group = "lsp" },
 			{ "gs", group = "surround" },
-			{ "z", group = "fold" },
 			{ "q", group = "quit" },
+			{ "z", group = "fold" },
 		},
 	},
 	keys = {
