@@ -1,11 +1,6 @@
 require("neoconf").setup({})
 
----@param prog string
----@return string
-local function which(prog)
-	local temp_prog = vim.fn.system("which " .. prog)
-	return string.sub(temp_prog, 1, -3)
-end
+local which = require("config_utils").which
 
 vim.lsp.enable({
 	"arduino_language_server",
@@ -58,7 +53,7 @@ vim.lsp.config("lua_ls", {
 	},
 })
 vim.lsp.config("nls", {
-	cmd = { "nls" },
+	cmd = { which("nls") },
 	filetypes = { "nickel" },
 })
 vim.lsp.config("tinymist", {

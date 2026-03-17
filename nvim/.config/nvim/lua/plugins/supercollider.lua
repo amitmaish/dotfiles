@@ -1,9 +1,4 @@
----@param prog string
----@return string
-local function which(prog)
-	local temp_prog = vim.fn.system("which " .. prog)
-	return string.sub(temp_prog, 1, -3)
-end
+local which = require("config_utils").which
 
 return {
 	"davidgranstrom/scnvim",
