@@ -12,7 +12,6 @@ return {
 			{ "<leader>c", group = "code" },
 			{ "<leader>g", group = "go" },
 			{ "<leader>p", group = "pick" },
-			{ "<leader>t", group = "tidal" },
 			{ "<leader>q", group = "quit" },
 			{ "gr", group = "lsp" },
 			{ "gs", group = "surround" },
