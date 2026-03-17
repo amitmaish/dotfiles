@@ -123,21 +123,21 @@ in {
     defaultEditor = true;
   };
 
-  home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace/.config/aerospace;
-  home.file.".config/bat".source = mkMutableSymlink ../../../bat/.config/bat;
-  home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty/.config/ghostty;
+  home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;
+  home.file.".config/bat".source = mkMutableSymlink ../../../bat;
+  home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty;
   home.file.".config/iamb".source = mkMutableSymlink ../../../iamb;
-  home.file.".config/kitty".source = mkMutableSymlink ../../../kitty/.config/kitty;
+  home.file.".config/kitty".source = mkMutableSymlink ../../../kitty;
   home.file.".config/niri".source = mkMutableSymlink ../../../niri;
   home.file.".config/noctalia".source = mkMutableSymlink ../../../noctalia;
-  home.file.".config/nvim".source = mkMutableSymlink ../../../nvim/.config/nvim;
+  home.file.".config/nvim".source = mkMutableSymlink ../../../nvim;
   home.file.".config/qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
   home.file.".config/scripts".source = mkMutableSymlink ../../../scripts/scripts;
   home.file.".config/sesh".source = mkMutableSymlink ../../../sesh;
-  home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/.config/starship.toml;
+  home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/starship.toml;
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
   home.file.".config/winapps/winapps.conf".source = mkMutableSymlink ../../../winapps/winapps.conf;
-  home.file.".config/yazi".source = mkMutableSymlink ../../../yazi/.config/yazi;
+  home.file.".config/yazi".source = mkMutableSymlink ../../../yazi;
   home.file.".nethackrc".source = mkMutableSymlink ../../../nethack/.nethackrc;
   home.file.".qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
   home.file.".tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
