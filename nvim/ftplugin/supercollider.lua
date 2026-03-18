@@ -1,11 +1,3 @@
----@param default string?
-local function Bootfile(default)
-	if vim.env.SC_BOOTFILE then
-		return vim.env.SC_BOOTFILE
-	end
-	return default
-end
-
 local function send_whole_file_raw(opts)
 	local scnvim = require("scnvim")
 
@@ -30,18 +22,6 @@ vim.api.nvim_create_user_command("SCNvimSendFile", send_whole_file_raw, {
 	nargs = "?", -- Optional argument
 	complete = "file", -- File path completion
 })
-
-if vim.env.SC_NOAUTOSTART == nil then
-	vim.api.nvim_create_autocmd("User", {
-		pattern = "TidalLaunch",
-		callback = function()
-			require("scnvim").start()
-
-			local bootfile = Bootfile(vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1])
-			vim.cmd("SCNvimSendFile " .. bootfile)
-		end,
-	})
-end
 
 require("luasnip").add_snippets("supercollider", require("scnvim/utils").get_snippets())
 

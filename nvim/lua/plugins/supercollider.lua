@@ -1,3 +1,30 @@
+local function send_whole_file_raw(opts)
+	local scnvim = require("scnvim")
+
+	-- Read the file directly from disk to get raw content
+	local filename = opts.args ~= "" and opts.args or vim.api.nvim_buf_get_name(0)
+
+	local file = io.open(filename, "r")
+	if not file then
+		vim.notify("Could not read file: " .. filename, vim.log.levels.ERROR)
+		return
+	end
+
+	local code = file:read("*a")
+	file:close()
+
+	-- Send the raw file content
+	scnvim.send(code)
+end
+
+---@param default string?
+local function Bootfile(default)
+	if vim.env.SC_BOOTFILE then
+		return vim.env.SC_BOOTFILE
+	end
+	return default
+end
+
 return {
 	"davidgranstrom/scnvim",
 	lazy = false,
@@ -54,5 +81,17 @@ return {
 				keymaps = true,
 			},
 		})
+
+		if vim.env.SC_NOAUTOSTART == nil then
+			vim.api.nvim_create_autocmd("User", {
+				pattern = "TidalLaunch",
+				callback = function()
+					scnvim.start()
+
+					local bootfile = Bootfile(vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1])
+					send_whole_file_raw(bootfile)
+				end,
+			})
+		end
 	end,
 }
