@@ -1,6 +1,7 @@
 vim.cmd.LspStop()
 
-vim.bo.expandtab = true
+vim.o.expandtab = true
+vim.o.tabstop = 4
 
 WK.add({
 	{ "<leader>t", group = "tidal" },
