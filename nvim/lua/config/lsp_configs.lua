@@ -26,6 +26,7 @@ vim.lsp.enable({
 	"taplo",
 	"texlab",
 	"tinymist",
+	"ty",
 	"vtsls",
 	"yamlls",
 	"zls",
