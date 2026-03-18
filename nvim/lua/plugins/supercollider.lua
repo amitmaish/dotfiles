@@ -17,6 +17,12 @@ local function send_whole_file_raw(opts)
 	scnvim.send(code)
 end
 
+-- Create command with optional file argument
+vim.api.nvim_create_user_command("SCNvimSendFile", send_whole_file_raw, {
+	nargs = "?", -- Optional argument
+	complete = "file", -- File path completion
+})
+
 ---@param default string?
 local function Bootfile(default)
 	if vim.env.SC_BOOTFILE then
@@ -89,7 +95,7 @@ return {
 					scnvim.start()
 
 					local bootfile = Bootfile(vim.api.nvim_get_runtime_file("bootfiles/BootSuperDirt.scd", false)[1])
-					send_whole_file_raw(bootfile)
+					vim.cmd("SCNvimSendFile " .. bootfile)
 				end,
 			})
 		end
