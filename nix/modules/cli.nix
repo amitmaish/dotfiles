@@ -21,6 +21,7 @@
       ghostscript
       glow
       gnupg
+      hledger
       hyfetch
       hyperfine
       iamb
