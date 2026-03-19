@@ -24,6 +24,7 @@ in {
     airdrop-cli
     dot
     m-cli
+    raycast
     swiftbar
     terminal-notifier
     xorg-server
