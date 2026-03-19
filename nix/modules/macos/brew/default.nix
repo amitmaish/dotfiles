@@ -11,7 +11,6 @@
       "bibdesk"
       "dmenu-mac"
       "dorico"
-      # "google-drive"
       "handbrake-app"
       "inkscape"
       "midi-monitor"
@@ -21,15 +20,18 @@
       "plugdata"
       "praat"
       "qmk-toolbox"
-      # "retroarch"
       "steinberg-activation-manager"
       "steinberg-download-assistant"
+      "steinberg-library-manager"
+      "steinberg-mediabay"
       "tailscale-app"
       "thunderbird"
       "tiled"
       "transmission"
       "whatsapp"
       "zoom"
+      # "google-drive"
+      # "retroarch"
     ];
     masApps = {
       forScore = 363738376;
