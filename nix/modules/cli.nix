@@ -22,6 +22,7 @@
       glow
       gnupg
       hledger
+      hledger-ui
       hyfetch
       hyperfine
       iamb
