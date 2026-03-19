@@ -1,0 +1,38 @@
+{pkgs, ...}: {
+  system = {
+    defaults = {
+      dock = {
+        autohide = true;
+        persistent-apps = [
+          "/System/Applications/Messages.app"
+          "/Applications/Signal.app"
+          "${pkgs.ghostty-bin}/Applications/Ghostty.app"
+          "${pkgs.firefox-bin}/Applications/Firefox.app"
+          "/Applications/Anki.app"
+          "${pkgs.obsidian}/Applications/Obsidian.app"
+          "/System/Applications/Calendar.app"
+          "/Applications/Pianoteq 8/Pianoteq 8.app"
+          "/Applications/Dorico 6.app"
+        ];
+        static-only = true;
+      };
+      finder.FXPreferredViewStyle = "clmv";
+      loginwindow.GuestEnabled = false;
+      NSGlobalDomain = {
+        AppleICUForce24HourTime = false;
+        AppleInterfaceStyle = "Dark";
+        KeyRepeat = 2;
+        NSAutomaticCapitalizationEnabled = false;
+        NSAutomaticSpellingCorrectionEnabled = false;
+        _HIHideMenuBar = false;
+      };
+      WindowManager = {
+        StandardHideDesktopIcons = true;
+      };
+    };
+    keyboard = {
+      enableKeyMapping = true;
+      remapCapsLockToEscape = true;
+    };
+  };
+}
