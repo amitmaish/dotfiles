@@ -14,7 +14,7 @@ in {
     ../common/home.nix
   ];
 
-  blender.enable = true;
+  blender.enable = false;
   cemu.enable = false;
   emulation.enable = true;
   music.enable = false;

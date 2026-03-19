@@ -46,4 +46,6 @@
     name = "amit";
     home = "/Users/amit";
   };
+
+  services.tailscale.enable = true;
 }

@@ -11,7 +11,7 @@
             extraSpecialArgs = {inherit inputs system;};
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.amit = import ./hosts/amitmbp/home.nix;
+            users.amit = import ./hosts/tinybook/home.nix;
             backupFileExtension = "backup";
           };
         }
