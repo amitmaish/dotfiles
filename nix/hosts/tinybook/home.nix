@@ -4,7 +4,7 @@
   ...
 }: let
   dot = pkgs.callPackage ../../apps/dot/dot.nix {
-    NAME = "amit-mbp";
+    NAME = "tinybook";
     REBUILD_COMMAND = ''nh darwin switch ~/dotfiles/nix -H tinybook'';
     CURRENT_COMMAND = ''sudo darwin-rebuild --list-generations | grep "current" | awk '{print $1}' '';
     NOTIFY_COMMAND = ''terminal-notifier -group dot -title dot -message "rebuild successful!" '';
