@@ -22,7 +22,7 @@ in {
   blender.enable = false;
   cemu.enable = false;
   emulation.enable = true;
-  music.enable = false;
+  music.enable = true;
   retroarch.enable = false;
 
   home.packages = with pkgs; [

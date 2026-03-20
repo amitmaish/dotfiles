@@ -15,11 +15,14 @@
   };
 
   config = lib.mkIf config.music.enable {
-    home.packages = with pkgs; [
-      plugdata
-      reaper
-      supercollider
-      surge-xt
-    ];
+    home.packages = with pkgs;
+      [
+        reaper
+      ]
+      ++ lib.optionals (pkgs.stdenv.isLinux) [
+        plugdata
+        supercollider
+        surge-xt
+      ];
   };
 }
