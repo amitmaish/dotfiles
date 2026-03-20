@@ -24,6 +24,7 @@
       "steinberg-download-assistant"
       "steinberg-library-manager"
       "steinberg-mediabay"
+      "supercollider"
       "tailscale-app"
       "thunderbird"
       "tiled"
