@@ -41,7 +41,7 @@ in {
 
   programs.delta = {
     enable = true;
-    enableGitIntegration = true;
+    # enableGitIntegration = true;
   };
 
   programs.direnv = {
