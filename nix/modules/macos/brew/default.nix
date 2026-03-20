@@ -20,6 +20,7 @@
       "plugdata"
       "praat"
       "qmk-toolbox"
+      "signal"
       "steinberg-activation-manager"
       "steinberg-download-assistant"
       "steinberg-library-manager"
