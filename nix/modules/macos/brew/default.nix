@@ -25,6 +25,7 @@
       "steinberg-library-manager"
       "steinberg-mediabay"
       "supercollider"
+      "surge-xt"
       "tailscale-app"
       "thunderbird"
       "tiled"
