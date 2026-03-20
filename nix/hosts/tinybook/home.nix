@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  inputs,
+  ...
+}: let
   dot = pkgs.callPackage ../../apps/dot/dot.nix {
     NAME = "amit-mbp";
     REBUILD_COMMAND = ''nh darwin switch ~/dotfiles/nix -H tinybook'';
@@ -12,6 +16,7 @@ in {
 
   imports = [
     ../common/home.nix
+    inputs.mac-app-util.homeManagerModules.default
   ];
 
   blender.enable = false;

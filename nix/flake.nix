@@ -36,6 +36,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
+    mac-app-util.url = "github:hraban/mac-app-util";
   };
 
   outputs = {flake-parts, ...} @ inputs:

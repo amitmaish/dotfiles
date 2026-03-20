@@ -49,6 +49,7 @@
             autoMigrate = true;
           };
         }
+        inputs.mac-app-util.darwinModules.default
       ];
     };
   };
