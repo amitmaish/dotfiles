@@ -6,7 +6,9 @@
   home.packages = with pkgs;
     [
       kitty
+      obsidian
       qutebrowser
+      rapidraw
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
@@ -20,7 +22,6 @@
       gparted
       nautilus
       pureref
-      rapidraw
       signal-desktop
       themix-gui
       thunderbird
