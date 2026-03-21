@@ -11,6 +11,8 @@
       "bibdesk"
       "dmenu-mac"
       "dorico"
+      "focusrite-control"
+      "focusrite-control-2"
       "handbrake-app"
       "inkscape"
       "midi-monitor"
