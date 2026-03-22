@@ -468,8 +468,7 @@
         "noctalia": "noctalia",
         "nur": "nur",
         "rust-overlay": "rust-overlay",
-        "tinix": "tinix",
-        "tree-sitter": "tree-sitter"
+        "tinix": "tinix"
       }
     },
     "rust-overlay": {
@@ -555,27 +554,6 @@
       "original": {
         "owner": "amitmaish",
         "repo": "tinix",
-        "type": "github"
-      }
-    },
-    "tree-sitter": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1773505401,
-        "narHash": "sha256-O3c2djKhM+vIYunthDApi9sw/gFH/FBME1uR4N+9MFM=",
-        "owner": "tree-sitter",
-        "repo": "tree-sitter",
-        "rev": "6f2e8a6cf4d7025e2b2a7227d270640273100138",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tree-sitter",
-        "ref": "release-0.26",
-        "repo": "tree-sitter",
         "type": "github"
       }
     },

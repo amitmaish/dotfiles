@@ -32,7 +32,6 @@
     doppler
     gh
     gnumake
-    inputs.tree-sitter.packages.${system}.default
     kdePackages.qtdeclarative
     kdlfmt
     lazygit
