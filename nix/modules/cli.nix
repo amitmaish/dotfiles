@@ -50,6 +50,7 @@
       speedtest-rs
       starship
       syncthing
+      television
       timewarrior
       timg
       tlrc
