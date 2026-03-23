@@ -15,6 +15,7 @@
     ./lua.nix
     ./nickel.nix
     ./nix.nix
+    ./nu.nix
     ./python.nix
     ./rust.nix
     ./tex.nix

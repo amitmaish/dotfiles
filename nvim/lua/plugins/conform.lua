@@ -25,6 +25,7 @@ return {
 			markdown = { "mdsf", "prettier" },
 			nickel = { lsp_format = "prefer" },
 			nix = { "alejandra" },
+			nu = { "nufmt" },
 			python = { "ruff" },
 			rust = { lsp_format = "prefer" },
 			tex = { "tex-fmt" },
