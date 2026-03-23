@@ -8,6 +8,7 @@
     casks = [
       "adobe-digital-editions"
       "arduino-ide"
+      "audio-hijack"
       "bibdesk"
       "dmenu-mac"
       "dorico"
@@ -15,6 +16,7 @@
       "focusrite-control-2"
       "handbrake-app"
       "inkscape"
+      "loopback"
       "midi-monitor"
       "obs"
       "openemu"
@@ -39,7 +41,12 @@
       # "retroarch"
     ];
     masApps = {
+      compressor = 424390742;
+      final_cut = 424389933;
       forScore = 363738376;
+      logic = 634148309;
+      mainstage = 634159523;
+      motion = 434290957;
     };
     onActivation = {
       cleanup = "zap";
