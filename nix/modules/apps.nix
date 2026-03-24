@@ -5,10 +5,10 @@
 }: {
   home.packages = with pkgs;
     [
+      # rapidraw
       kitty
       obsidian
       qutebrowser
-      rapidraw
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [

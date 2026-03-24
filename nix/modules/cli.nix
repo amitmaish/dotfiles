@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs;
     [
-      (firefox_decrypt.override {nss = nss_latest;})
       asciiquarium
       bat
       bat-extras.batman
@@ -25,7 +24,6 @@
       hledger-ui
       hyfetch
       hyperfine
-      iamb
       imagemagick
       just
       macchina
