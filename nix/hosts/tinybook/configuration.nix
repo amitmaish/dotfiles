@@ -10,7 +10,6 @@
   ];
   environment.systemPackages = with pkgs; [
     vim
-    xquartz
   ];
   environment.shells = with pkgs; [
     bash

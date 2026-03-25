@@ -36,6 +36,7 @@
       "tiled"
       "transmission"
       "whatsapp"
+      "xquartz"
       "zoom"
       # "google-drive"
       # "retroarch"
