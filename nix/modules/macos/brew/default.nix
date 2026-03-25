@@ -3,7 +3,6 @@
     enable = true;
     brews = [
       "mas"
-      "ngspice"
       "transmission-cli"
     ];
     casks = [
