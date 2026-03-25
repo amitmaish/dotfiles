@@ -35,7 +35,7 @@
         azahar
       ]
       ++ lib.optionals config.retroarch.enable [
-        retroarch-full
+        retroarch
       ]
       ++ lib.optionals config.cemu.enable [
         cemu

@@ -9,7 +9,6 @@
       prismlauncher
     ]
     ++ lib.optionals (!pkgs.stdenv.isDarwin) [
-      lutris
       protonup-ng
       steam
     ];

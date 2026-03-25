@@ -111,7 +111,6 @@
     unzip
     vim
     wget
-    winboat
     xwayland-satellite
   ];
 
