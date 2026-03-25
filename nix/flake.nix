@@ -38,10 +38,7 @@
         ./nix-darwin.nix
         ./nixos.nix
       ];
-      systems = [
-        "x86_64-darwin"
-        "x86_64-linux"
-      ];
+      systems = inputs.nixpkgs.lib.platforms.unix;
       perSystem = {
         config,
         pkgs,
