@@ -9,6 +9,7 @@
     CURRENT_COMMAND = ''sudo darwin-rebuild --list-generations | grep "current" | awk '{print $1}' '';
     NOTIFY_COMMAND = ''terminal-notifier -group dot -title dot -message "rebuild successful!" '';
   };
+  timeme = pkgs.callPackage ../../apps/timeme/timeme.nix {};
 in {
   home.username = "amit";
 
@@ -31,6 +32,7 @@ in {
     m-cli
     swiftbar
     terminal-notifier
+    timeme
     xorg-server
 
     (writeShellApplication {
