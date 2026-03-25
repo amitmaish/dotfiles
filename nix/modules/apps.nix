@@ -7,7 +7,6 @@
     [
       # rapidraw
       kitty
-      ngspice
       obsidian
       qutebrowser
       zotero
