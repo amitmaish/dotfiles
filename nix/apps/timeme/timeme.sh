@@ -3,7 +3,6 @@
 timew "$@" >/dev/null
 
 [ "$(timew get dom.active)" -eq 1 ] || {
-	echo "clearing tmux"
 	tmux set -g status-right ""
 	exit 0
 }

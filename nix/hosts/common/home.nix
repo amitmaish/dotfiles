@@ -9,6 +9,7 @@
     then "/Users/amit/dotfiles/"
     else "/home/amit/dotfiles/";
   mkMutableSymlink = path: config.lib.file.mkOutOfStoreSymlink (configPath + lib.strings.removePrefix (toString ../../../.) (toString path));
+  timeme = pkgs.callPackage ../../apps/timeme/timeme.nix {};
 in {
   imports = [
     ../../modules/apps.nix
@@ -18,6 +19,10 @@ in {
     ../../modules/fonts.nix
     ../../modules/gaming
     ../../modules/music.nix
+  ];
+
+  home.packages = [
+    timeme
   ];
 
   programs.nh = {
