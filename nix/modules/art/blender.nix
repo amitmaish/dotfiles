@@ -3,16 +3,18 @@
   lib,
   config,
   ...
-}: {
+}: let
+  bool = lib.types.bool;
+in {
   options = {
     blender = {
       enable = lib.mkOption {
-        type = lib.types.bool;
+        type = bool;
         default = true;
         description = "installs blender";
       };
       cuda = lib.mkOption {
-        type = lib.types.bool;
+        type = bool;
         default = false;
         description = "installs with gpu support";
       };

@@ -13,7 +13,7 @@
 in {
   imports = [
     ../../modules/apps.nix
-    ../../modules/art.nix
+    ../../modules/art
     ../../modules/cli.nix
     ../../modules/dev
     ../../modules/fonts.nix
