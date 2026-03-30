@@ -7,9 +7,9 @@ name = "explore"
 path = "~/dev/explore"
 
 [[session]]
-name = "btop"
+name = "porsmo"
 path = "~/"
-startup_command = "btop"
+startup_command = "porsmo"
 
 [[session]]
 name = "iamb"
