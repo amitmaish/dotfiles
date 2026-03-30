@@ -43,6 +43,7 @@ in {
       mpc
       mpd
       mupdf
+      ngspice
       nushell
       oxipng
       p7zip
