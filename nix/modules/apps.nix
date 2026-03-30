@@ -18,7 +18,6 @@
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
       anki
-      blender
       calibre
       fluffychat
       gparted

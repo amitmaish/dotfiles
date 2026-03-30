@@ -1,4 +1,15 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  porsmo = pkgs.porsmo.overrideAttrs (
+    _:
+      with pkgs; {
+        buildInputs =
+          []
+          ++ lib.optionals (stdenv.isLinux) [
+            alsa-lib
+          ];
+      }
+  );
+in {
   home.packages = with pkgs;
     [
       asciiquarium
@@ -38,6 +49,7 @@
       pandoc
       pass
       pinentry-tty
+      porsmo
       presenterm
       ripgrep
       rmpc

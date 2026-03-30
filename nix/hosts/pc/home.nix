@@ -12,7 +12,7 @@ in {
     ../common/home.nix
   ];
 
-  blender.enable = false;
+  blender.enable = true;
   blender.cuda = true;
 
   home.packages = [
