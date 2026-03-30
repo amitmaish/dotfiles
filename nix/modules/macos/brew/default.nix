@@ -10,7 +10,6 @@
       "arduino-ide"
       "audio-hijack"
       "bibdesk"
-      "blender"
       "dmenu-mac"
       "dorico"
       "focusrite-control"

@@ -20,10 +20,15 @@
   };
 
   config = lib.mkIf config.blender.enable {
-    home.packages = with pkgs; [
-      (blender.override {
-        cudaSupport = config.blender.cuda;
-      })
-    ];
+    home.packages = with pkgs;
+      []
+      ++ lib.optionals (pkgs.stdenv.isLinux) [
+        (blender.override {
+          cudaSupport = config.blender.cuda;
+        })
+      ]
+      ++ lib.optionals (pkgs.stdenv.isDarwin) [
+        blender-bin
+      ];
   };
 }

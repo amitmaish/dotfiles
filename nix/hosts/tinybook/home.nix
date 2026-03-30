@@ -19,7 +19,7 @@ in {
     inputs.mac-app-util.homeManagerModules.default
   ];
 
-  blender.enable = false;
+  blender.enable = true;
   cemu.enable = false;
   emulation.enable = true;
   music.enable = true;
