@@ -25,6 +25,7 @@
       "praat"
       "qmk-toolbox"
       "signal"
+      "steam"
       "steinberg-activation-manager"
       "steinberg-download-assistant"
       "steinberg-library-manager"
