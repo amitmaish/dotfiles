@@ -21,10 +21,7 @@ in {
 
   blender.enable = true;
   colmap.enable = true;
-  cemu = {
-    enable = true;
-    ukmm = false;
-  };
+  cemu.enable = true;
   emulation.enable = true;
   music.enable = true;
   retroarch.enable = false;

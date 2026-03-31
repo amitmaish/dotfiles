@@ -8,6 +8,10 @@
     if pkgs.stdenv.isDarwin
     then pkgs.cemu-bin
     else pkgs.cemu;
+  ukmm =
+    if pkgs.stdenv.isDarwin
+    then pkgs.ukmm-bin
+    else pkgs.ukmm;
 in {
   options = {
     emulation.enable = lib.mkOption {
