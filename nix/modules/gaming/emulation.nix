@@ -3,7 +3,12 @@
   lib,
   config,
   ...
-}: {
+}: let
+  cemu =
+    if pkgs.stdenv.isDarwin
+    then pkgs.cemu-bin
+    else pkgs.cemu;
+in {
   options = {
     emulation.enable = lib.mkOption {
       type = lib.types.bool;
