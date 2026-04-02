@@ -26,10 +26,6 @@
       transmission_4
       vlc
       zapzap
-
-      (bottles.override {
-        removeWarningPopup = true;
-      })
     ];
 
   programs = {
