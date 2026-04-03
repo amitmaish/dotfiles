@@ -32,6 +32,13 @@ vim.lsp.enable({
 	"zls",
 })
 
+vim.lsp.config("*", {
+	before_init = function(_, config)
+		local codesettings = require("codesettings")
+		codesettings.with_local_settings(config.name, config)
+	end,
+})
+
 vim.lsp.config("arduino_language_server", {
 	cmd = {
 		"arduino-language-server",

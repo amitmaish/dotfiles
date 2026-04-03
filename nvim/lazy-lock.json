@@ -4,6 +4,7 @@
   "blink.cmp": { "branch": "main", "commit": "451168851e8e2466bc97ee3e026c3dcb9141ce07" },
   "catppuccin": { "branch": "main", "commit": "16408d203973da7e43fab87c6f9d3bf7fa98fa8b" },
   "clangd_extensions.nvim": { "branch": "main", "commit": "9ac242ec71609eeeb5b5baff6ea6d3a1cb015b64" },
+  "codesettings.nvim": { "branch": "master", "commit": "3ec73eec63c24b16c5226d8f24a47ce153b12a3a" },
   "colorswatch.vim": { "branch": "main", "commit": "2e3f847fc0e493de8b119d3c8560e47ceeff595c" },
   "conform.nvim": { "branch": "master", "commit": "086a40dc7ed8242c03be9f47fbcee68699cc2395" },
   "crates.nvim": { "branch": "main", "commit": "afcd1cc3eeceb5783676fc8464389b9216a29d05" },
