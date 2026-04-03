@@ -17,6 +17,7 @@ vim.o.spell = true
 vim.o.spellcapcheck = ""
 vim.o.linebreak = true
 vim.o.showmode = false
+vim.o.exrc = true
 
 vim.g.mapleader = " "
 
