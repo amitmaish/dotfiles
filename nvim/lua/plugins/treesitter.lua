@@ -21,18 +21,4 @@ return {
 			enable = true,
 		},
 	},
-	config = function(opts)
-		require("nvim-treesitter").setup(opts)
-		vim.api.nvim_create_autocmd("User", {
-			pattern = "TSUpdate",
-			callback = function()
-				require("nvim-treesitter.parsers").tidal = {
-					install_info = {
-						url = "https://github.com/tree-sitter/tree-sitter-haskell",
-						queries = "queries", -- also install queries from given directory
-					},
-				}
-			end,
-		})
-	end,
 }
