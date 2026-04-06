@@ -3,6 +3,7 @@
     [
       (ghc.withPackages (hsPkgs:
         with haskellPackages; [
+          stack
           tidal
         ]))
     ]
