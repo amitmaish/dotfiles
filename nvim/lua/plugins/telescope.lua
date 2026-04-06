@@ -2,6 +2,7 @@ return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"JoseConseco/telescope_sessions_picker.nvim",
 		"davidgranstrom/telescope-scdoc.nvim",
 	},
@@ -48,13 +49,6 @@ return {
 			"<leader>pp",
 			require("telescope.builtin").builtin,
 			desc = "telescope builtins",
-		},
-		{
-			"<leader>ps",
-			function()
-				vim.cmd.Telescope("sessions_picker")
-			end,
-			desc = "telescope sessions",
 		},
 		{
 			"<leader>pc",
