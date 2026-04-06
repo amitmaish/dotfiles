@@ -43,6 +43,7 @@
     ron-lsp
     topiary
     tree
+    tree-sitter
     vscode-langservers-extracted
   ];
 }
