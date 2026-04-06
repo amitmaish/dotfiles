@@ -3,6 +3,7 @@
     [
       (ghc.withPackages (hsPkgs:
         with haskellPackages; [
+          cabal-install
           stack
           tidal
         ]))
