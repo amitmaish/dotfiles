@@ -33,6 +33,7 @@
     doppler
     gh
     gnumake
+    inputs.tree-sitter.packages.${system}.default
     kdePackages.qtdeclarative
     kdlfmt
     lazygit
@@ -43,7 +44,6 @@
     ron-lsp
     topiary
     tree
-    tree-sitter
     vscode-langservers-extracted
   ];
 }

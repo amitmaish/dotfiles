@@ -11,6 +11,10 @@
       url = "github:amitmaish/tinix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    tree-sitter = {
+      url = "github:tree-sitter/tree-sitter/release-0.26";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
