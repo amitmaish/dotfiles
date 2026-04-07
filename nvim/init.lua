@@ -1,7 +1,8 @@
 require("config.init_pack")
-require("config.lsp_configs")
 require("digraphs")
 require("neovide")
+
+vim.g.mapleader = " "
 
 vim.o.number = true
 vim.o.relativenumber = true
@@ -18,8 +19,6 @@ vim.o.spellcapcheck = ""
 vim.o.linebreak = true
 vim.o.showmode = false
 vim.o.exrc = true
-
-vim.g.mapleader = " "
 
 Snacks.toggle
 	.new({
@@ -125,9 +124,7 @@ vim.filetype.add({
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-
 	pattern = "*",
-
 	callback = function()
 		local filetype = vim.bo.filetype
 
