@@ -16,7 +16,6 @@ vim.lsp.enable({
 	"clangd",
 	"cssls",
 	"gopls",
-	"hls",
 	"html",
 	"jsonls",
 	"just",
@@ -54,10 +53,6 @@ vim.lsp.config("lua_ls", {
 			hint = { enable = true },
 		},
 	},
-})
-vim.lsp.config("hls", {
-	cmd = { which("haskell-language-server-wrapper") },
-	filetypes = { "haskell", "lhaskell", "cabal" },
 })
 vim.lsp.config("nls", {
 	cmd = { which("nls") },

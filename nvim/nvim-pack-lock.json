@@ -58,6 +58,11 @@
       "rev": "697c00291db857ca0af00ec154e5bd514a79191f",
       "src": "https://github.com/morhetz/gruvbox"
     },
+    "haskell-tools.nvim": {
+      "rev": "17c04c9f7a52ee5b6fa4869166b8fcb74a21df70",
+      "src": "https://github.com/mrcjkb/haskell-tools.nvim",
+      "version": "8.0.0 - 9.0.0"
+    },
     "hybrid.nvim": {
       "rev": "bd52073c4b2e357be0c5ad0d3bd0d07ca48773f7",
       "src": "https://github.com/HoNamDuong/hybrid.nvim"
