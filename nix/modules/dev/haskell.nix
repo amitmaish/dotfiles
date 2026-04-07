@@ -8,8 +8,8 @@
           tidal
         ]))
     ]
-    ++ [
+    ++ (with haskellPackages; [
       haskell-language-server
       ormolu
-    ];
+    ]);
 }
