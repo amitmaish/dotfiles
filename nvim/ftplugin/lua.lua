@@ -23,7 +23,7 @@ Snacks.toggle({
 			},
 		})
 
-		vim.cmd.LspRestart()
+		vim.cmd.lsp("restart")
 	end,
 }):map("<leader>cn")
 
