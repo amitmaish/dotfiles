@@ -22,10 +22,6 @@
       "rev": "872893cb061044a4cc7ced59c0f2fe2d70db4382",
       "src": "https://github.com/p00f/clangd_extensions.nvim"
     },
-    "codesettings.nvim": {
-      "rev": "c971f86675c6ab8c02e9d6961eadef2b9bbf827d",
-      "src": "https://github.com/mrjones2014/codesettings.nvim"
-    },
     "colorswatch.vim": {
       "rev": "2e3f847fc0e493de8b119d3c8560e47ceeff595c",
       "src": "https://github.com/cocopon/colorswatch.vim"
@@ -183,7 +179,7 @@
       "src": "https://github.com/davidgranstrom/telescope-scdoc.nvim"
     },
     "telescope.nvim": {
-      "rev": "cfb85dcf7f822b79224e9e6aef9e8c794211b20b",
+      "rev": "7ef4d6dccb78ee71e552bbd866176762ad328afa",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "telescope_sessions_picker.nvim": {
