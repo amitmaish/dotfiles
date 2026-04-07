@@ -26,7 +26,6 @@ vim.lsp.enable({
 	"nls",
 	"qmlls",
 	"ruff",
-	"rust-analyzer",
 	"taplo",
 	"texlab",
 	"tinymist",
