@@ -1,5 +1,3 @@
-require("neoconf").setup({})
-
 local which = require("config_utils").which
 
 vim.lsp.enable({
