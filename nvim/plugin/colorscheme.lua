@@ -1,5 +1,6 @@
 vim.pack.add({
 	"https://github.com/rktjmp/lush.nvim",
+	"https://github.com/norcalli/nvim-colorizer.lua",
 	{
 		src = "https://github.com/catppuccin/nvim",
 		name = "catppuccin",
