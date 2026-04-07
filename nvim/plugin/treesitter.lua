@@ -35,9 +35,6 @@ require("nvim-treesitter").setup({
 	incremental_selection = {
 		enable = false,
 	},
-	markdown = {
-		enable = true,
-	},
 })
 
 require("nvim-treesitter-textobjects").setup({
