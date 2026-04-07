@@ -1,3 +1,8 @@
+require("config.init_pack")
+require("config.lsp_configs")
+require("digraphs")
+require("neovide")
+
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
@@ -15,41 +20,6 @@ vim.o.showmode = false
 vim.o.exrc = true
 
 vim.g.mapleader = " "
-
-vim.pack.add({
-	"https://github.com/folke/which-key.nvim",
-	"https://github.com/folke/snacks.nvim",
-})
-
-WK = require("which-key")
-WK.setup({
-	preset = "helix",
-	delay = function(ctx)
-		return ctx.plugin and 0 or 200
-	end,
-	spec = {
-		{ "<leader>", group = "leader" },
-		{ "<leader>c", group = "code" },
-		{ "<leader>g", group = "go" },
-		{ "<leader>p", group = "pick" },
-		{ "<leader>q", group = "quit" },
-		{ "<leader>u", group = "ui" },
-		{ "gr", group = "lsp" },
-		{ "gs", group = "surround" },
-		{ "q", group = "quit" },
-		{ "z", group = "fold" },
-		{
-			"<leader>?",
-			function()
-				require("which-key").show({ global = false })
-			end,
-			desc = "Buffer Local Keymaps (which-key)",
-		},
-	},
-})
-
----@Snacks
-Snacks = require("snacks")
 
 Snacks.toggle
 	.new({
@@ -153,7 +123,3 @@ vim.filetype.add({
 		ncl = "nickel",
 	},
 })
-
-require("config.lsp_configs")
-require("digraphs")
-require("neovide")
