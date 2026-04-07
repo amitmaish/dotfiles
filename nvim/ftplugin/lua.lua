@@ -1,4 +1,4 @@
-Nvim_runtime = true
+Nvim_runtime = false
 
 Snacks.toggle({
 	name = "nvim runtime",
