@@ -48,6 +48,10 @@ vim.lsp.config("lua_ls", {
 		},
 	},
 })
+vim.lsp.config("hls", {
+	cmd = { which("haskell-language-server-wrapper") },
+	filetypes = { "haskell", "lhaskell", "cabal" },
+})
 vim.lsp.config("nls", {
 	cmd = { which("nls") },
 	filetypes = { "nickel" },
