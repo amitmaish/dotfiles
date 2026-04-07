@@ -21,8 +21,9 @@ in {
     ../../modules/music.nix
   ];
 
-  home.packages = [
+  home.packages = with pkgs; [
     timeme
+    uutils-coreutils-noprefix
   ];
 
   programs.nh = {
