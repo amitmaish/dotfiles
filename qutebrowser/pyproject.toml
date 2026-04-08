@@ -1,0 +1,4 @@
+[dependency-groups]
+dev = [
+    "qutebrowser>=3.7.0",
+]
