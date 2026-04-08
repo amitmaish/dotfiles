@@ -7,9 +7,9 @@ name = "explore"
 path = "~/dev/explore"
 
 [[session]]
-name = "porsmo"
+name = "time"
 path = "~/"
-startup_command = "porsmo"
+startup_command = "tmux clock-mode"
 
 [[session]]
 name = "iamb"
