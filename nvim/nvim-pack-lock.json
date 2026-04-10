@@ -22,6 +22,10 @@
       "rev": "872893cb061044a4cc7ced59c0f2fe2d70db4382",
       "src": "https://github.com/p00f/clangd_extensions.nvim"
     },
+    "codesettings.nvim": {
+      "rev": "c971f86675c6ab8c02e9d6961eadef2b9bbf827d",
+      "src": "https://github.com/mrjones2014/codesettings.nvim"
+    },
     "colorswatch.vim": {
       "rev": "2e3f847fc0e493de8b119d3c8560e47ceeff595c",
       "src": "https://github.com/cocopon/colorswatch.vim"

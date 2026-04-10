@@ -6,7 +6,7 @@
 in {
   home.username = "amit";
   home.homeDirectory = "/home/amit";
-  home.stateVersion = "25.05";
+  home.stateVersion = "26.05";
 
   imports = [
     ../common/home.nix
