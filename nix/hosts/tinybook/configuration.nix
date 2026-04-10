@@ -17,6 +17,7 @@
     nushell
     zsh
   ];
+  environment.darwinConfig = "~/dotfiles/nix/flake.nix";
 
   nix.package = pkgs.nix;
   nixpkgs = {
@@ -36,7 +37,7 @@
   programs.fish.enable = true;
   programs.zsh.enable = true;
 
-  system.stateVersion = 4;
+  system.stateVersion = 6;
   system.primaryUser = "amit";
   ids.gids.nixbld = 350;
 
