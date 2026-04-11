@@ -1,3 +1,5 @@
+vim.pack.add({ "https://github.com/davidgranstrom/scnvim" })
+
 local function send_whole_file_raw(opts)
 	local scnvim = require("scnvim")
 
@@ -30,8 +32,6 @@ local function Bootfile(default)
 	end
 	return default
 end
-
-vim.pack.add({ "https://github.com/davidgranstrom/scnvim" })
 
 local scnvim = require("scnvim")
 local which = require("config_utils").which
