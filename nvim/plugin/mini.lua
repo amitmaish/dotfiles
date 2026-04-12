@@ -21,6 +21,7 @@ require("mini.pairs").setup({
 		["'"] = false,
 	},
 })
+require("mini.pick").setup()
 require("mini.sessions").setup()
 require("mini.statusline").setup({
 	content = {
