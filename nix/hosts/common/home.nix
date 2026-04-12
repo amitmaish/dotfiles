@@ -144,7 +144,6 @@ in {
   home.file.".config/sesh".source = mkMutableSymlink ../../../sesh;
   home.file.".config/starship.toml".source = mkMutableSymlink ../../../starship/starship.toml;
   home.file.".config/swiftbar".source = mkMutableSymlink ../../../swiftbar;
-  home.file.".config/winapps/winapps.conf".source = mkMutableSymlink ../../../winapps/winapps.conf;
   home.file.".config/yazi".source = mkMutableSymlink ../../../yazi;
   home.file.".nethackrc".source = mkMutableSymlink ../../../nethack/.nethackrc;
   home.file.".qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
