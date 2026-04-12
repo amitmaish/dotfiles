@@ -22,10 +22,6 @@
       "rev": "872893cb061044a4cc7ced59c0f2fe2d70db4382",
       "src": "https://github.com/p00f/clangd_extensions.nvim"
     },
-    "codesettings.nvim": {
-      "rev": "98a616ad93e32e0531d6d649d152facc90afad2f",
-      "src": "https://github.com/mrjones2014/codesettings.nvim"
-    },
     "colorswatch.vim": {
       "rev": "2e3f847fc0e493de8b119d3c8560e47ceeff595c",
       "src": "https://github.com/cocopon/colorswatch.vim"
@@ -39,7 +35,7 @@
       "src": "https://github.com/saecki/crates.nvim"
     },
     "cyberdream.nvim": {
-      "rev": "3def90c9eded09e5aae818983f14b5fe52b2034a",
+      "rev": "39f69ebcd8de69c741bb7a65353aa37dd0680ad1",
       "src": "https://github.com/scottmckendry/cyberdream.nvim"
     },
     "fidget.nvim": {
@@ -100,12 +96,8 @@
       "src": "https://github.com/echasnovski/mini.icons"
     },
     "mini.nvim": {
-      "rev": "69b7433355664cf76898eb86a12a019f39bd86d1",
+      "rev": "c67822c53e8e282fe863343e88aa0a8ca3534059",
       "src": "https://github.com/nvim-mini/mini.nvim"
-    },
-    "neoconf.nvim": {
-      "rev": "e03057aa0b99381204521bafa4e0dfa84012f434",
-      "src": "https://github.com/folke/neoconf.nvim"
     },
     "neovim": {
       "rev": "9504524e5ed0e326534698f637f9d038ba4cd0ee",
@@ -132,7 +124,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "cb5bc0b2b35a6d513e3298d285db81453e791f4f",
+      "rev": "8a9378a822719346a0288fa004dab302ca3c0a8f",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -160,7 +152,7 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "rustaceanvim": {
-      "rev": "3eca3979c37a55f39119631bbd8a472ea622fc0c",
+      "rev": "b9fea85bd55010b10c79bbe4707ce3ddb7638e42",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "sakura.nvim": {
