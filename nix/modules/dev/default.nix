@@ -36,7 +36,6 @@
     inputs.tree-sitter.packages.${system}.default
     kdePackages.qtdeclarative
     kdlfmt
-    lazygit
     lldb
     marksman
     mdsf
@@ -46,4 +45,15 @@
     tree
     vscode-langservers-extracted
   ];
+
+  programs.gitui.enable = true;
+
+  programs.lazygit = {
+    enable = true;
+
+    enableBashIntegration = true;
+    enableFishIntegration = true;
+    enableNushellIntegration = true;
+    enableZshIntegration = true;
+  };
 }
