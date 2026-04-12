@@ -122,6 +122,8 @@ in {
     };
   };
 
+  programs.man.package = pkgs.man;
+
   programs.nushell.enable = true;
 
   programs.neovim = {
