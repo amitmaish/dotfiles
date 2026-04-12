@@ -27,7 +27,6 @@ in {
       ffmpeg
       figlet
       fontconfig
-      fzf
       ghostscript
       glow
       gnupg
@@ -56,7 +55,6 @@ in {
       rmpc
       rustmission
       sesh
-      sioyek
       skim
       speedtest-rs
       starship

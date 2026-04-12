@@ -29,7 +29,6 @@
     asm-lsp
     asmfmt
     ast-grep
-    direnv
     doppler
     gh
     gnumake

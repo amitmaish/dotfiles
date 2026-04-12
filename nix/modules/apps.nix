@@ -6,7 +6,6 @@
   home.packages = with pkgs;
     [
       kitty
-      obsidian
       qutebrowser
       zotero
     ]
@@ -43,5 +42,7 @@
         frame = "transparent";
       };
     };
+    obsidian.enable = true;
+    sioyek.enable = true;
   };
 }
