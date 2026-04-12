@@ -10,6 +10,7 @@
       "arduino-ide"
       "audio-hijack"
       "bibdesk"
+      "calibre"
       "dmenu-mac"
       "dorico"
       "focusrite-control"
