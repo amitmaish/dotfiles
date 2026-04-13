@@ -147,10 +147,6 @@
       "rev": "a7ba74849a00546a311f8c146320b433900393e7",
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
     },
-    "plenary.nvim": {
-      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
-      "src": "https://github.com/nvim-lua/plenary.nvim"
-    },
     "rustaceanvim": {
       "rev": "b9fea85bd55010b10c79bbe4707ce3ddb7638e42",
       "src": "https://github.com/mrcjkb/rustaceanvim"
@@ -170,22 +166,6 @@
     "spaceduck": {
       "rev": "350491f19343b24fa85809242089caa02d4dadce",
       "src": "https://github.com/pineapplegiant/spaceduck"
-    },
-    "telescope-fzf-native.nvim": {
-      "rev": "6fea601bd2b694c6f2ae08a6c6fab14930c60e2c",
-      "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
-    },
-    "telescope-scdoc.nvim": {
-      "rev": "e5e13a782829655ca2079705cf4a48d6d9ac6369",
-      "src": "https://github.com/davidgranstrom/telescope-scdoc.nvim"
-    },
-    "telescope.nvim": {
-      "rev": "f7c673b8e46e8f233ff581d3624a517d33a7e264",
-      "src": "https://github.com/nvim-telescope/telescope.nvim"
-    },
-    "telescope_sessions_picker.nvim": {
-      "rev": "ebe77f5a2e9f57173178d0a838060c90f117a9ae",
-      "src": "https://github.com/JoseConseco/telescope_sessions_picker.nvim"
     },
     "terracotta.nvim": {
       "rev": "b3ebaedc6546c33cebc3910d3aa4963c09a8bc8b",

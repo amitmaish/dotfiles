@@ -66,3 +66,27 @@ require("mini.surround").setup({
 		suffix_next = "n", -- Suffix to search with "next" method
 	},
 })
+
+vim.keymap.set("n", "<leader> ", function()
+	require("mini.pick").builtin.files()
+end, { desc = "pick files" })
+
+vim.keymap.set("n", "<leader>pf", function()
+	require("mini.pick").builtin.files({ tool = "git" })
+end, { desc = "pick git files" })
+
+vim.keymap.set("n", "<leader>ph", function()
+	require("mini.pick").builtin.help()
+end, { desc = "pick help tags" })
+
+vim.keymap.set("n", "<leader>pg", function()
+	require("mini.pick").builtin.grep_live()
+end, { desc = "live grep" })
+
+vim.keymap.set("n", "<leader>pb", function()
+	require("mini.pick").builtin.buffers()
+end, { desc = "pick buffers" })
+
+vim.keymap.set("n", "<leader>pc", function()
+	require("mini.extra").pickers.colorschemes()
+end, { desc = "pick colorscheme" })
