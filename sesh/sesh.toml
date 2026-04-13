@@ -9,7 +9,6 @@ path = "~/dev/explore"
 [[session]]
 name = "time"
 path = "~/"
-startup_command = "tmux clock-mode"
 
 [[session]]
 name = "iamb"
