@@ -34,7 +34,9 @@ local win_config = function()
 	}
 end
 require("mini.pick").setup({
-	options = { content_from_bottom = true },
+	options = {
+		content_from_bottom = true,
+	},
 	window = { config = win_config },
 })
 require("mini.sessions").setup()

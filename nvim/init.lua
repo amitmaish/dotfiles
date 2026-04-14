@@ -19,6 +19,8 @@ vim.o.spellcapcheck = ""
 vim.o.linebreak = true
 vim.o.showmode = false
 vim.o.exrc = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 Snacks.toggle
 	.new({
