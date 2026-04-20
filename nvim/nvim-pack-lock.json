@@ -19,7 +19,7 @@
       "src": "https://github.com/catppuccin/nvim"
     },
     "clangd_extensions.nvim": {
-      "rev": "872893cb061044a4cc7ced59c0f2fe2d70db4382",
+      "rev": "78c2ecd659d54972be17aa6ba2deac3c53223b80",
       "src": "https://github.com/p00f/clangd_extensions.nvim"
     },
     "colorswatch.vim": {
@@ -31,7 +31,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "crates.nvim": {
-      "rev": "0f536967abd097d9a4275087483f15d012418740",
+      "rev": "694357861ec9ebf12475ddcdd04ea45a0923c32d",
       "src": "https://github.com/saecki/crates.nvim"
     },
     "cyberdream.nvim": {
@@ -80,7 +80,7 @@
       "src": "https://github.com/rebelot/kanagawa.nvim"
     },
     "koda.nvim": {
-      "rev": "18a21bcef1b6746d1aaeaae2d1ca54b46f6aa8fe",
+      "rev": "4668e307f2f3a1e38bd627b14d13368ebf5b8d9f",
       "src": "https://github.com/oskarnurm/koda.nvim"
     },
     "lush.nvim": {
@@ -92,11 +92,11 @@
       "src": "https://github.com/chentoast/marks.nvim"
     },
     "mini.icons": {
-      "rev": "7fdae2443a0e2910015ca39ad74b50524ee682d3",
+      "rev": "bac6317300e205335df425296570d84322730067",
       "src": "https://github.com/echasnovski/mini.icons"
     },
     "mini.nvim": {
-      "rev": "c67822c53e8e282fe863343e88aa0a8ca3534059",
+      "rev": "418ef4930ddabe80f449c6f1323f8b6abb172d1c",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neovim": {
@@ -124,7 +124,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "8a9378a822719346a0288fa004dab302ca3c0a8f",
+      "rev": "4b7fbaa239c5db6b36f424a4521ca9f1a401be33",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -148,7 +148,7 @@
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
     },
     "rustaceanvim": {
-      "rev": "b9fea85bd55010b10c79bbe4707ce3ddb7638e42",
+      "rev": "69c5a32d332d3b359c51a3a5eb5dc2d2b5a90e30",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "sakura.nvim": {
@@ -156,7 +156,7 @@
       "src": "https://github.com/anAcc22/sakura.nvim"
     },
     "scnvim": {
-      "rev": "b5beb7f0c6b8143291efcada93dfa25464f32b71",
+      "rev": "7e0ff9ed57c58dfde0341d1e695fe54a0904e2d8",
       "src": "https://github.com/davidgranstrom/scnvim"
     },
     "snacks.nvim": {
@@ -172,7 +172,7 @@
       "src": "https://github.com/Pearljak/terracotta.nvim"
     },
     "tidal.nvim": {
-      "rev": "bcc9679a1932cfa2f75a38ddf3af18ed344da1fe",
+      "rev": "16e5e691be258621a141f187dd9b754e9e00d5fd",
       "src": "https://github.com/thgrund/tidal.nvim"
     },
     "tokyonight.nvim": {
@@ -189,7 +189,7 @@
       "src": "https://github.com/vague-theme/vague.nvim"
     },
     "vim": {
-      "rev": "84fbc42bdd11639157f358b65e01338d88c69be3",
+      "rev": "07b144414730cc4cf4405ab840bf46c5fa12704b",
       "src": "https://github.com/dracula/vim"
     },
     "vim-cyberpunk": {
