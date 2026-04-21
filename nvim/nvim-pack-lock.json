@@ -51,7 +51,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "gitsigns.nvim": {
-      "rev": "8d82c240f190fc33723d48c308ccc1ed8baad69d",
+      "rev": "6d808f99bd63303646794406e270bd553ad7792e",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "gruvbox": {
@@ -76,7 +76,7 @@
       "src": "https://github.com/thesimonho/kanagawa-paper.nvim"
     },
     "kanagawa.nvim": {
-      "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
+      "rev": "8ad3b4cdcc804b332c32db8f9743667e1bb82b99",
       "src": "https://github.com/rebelot/kanagawa.nvim"
     },
     "koda.nvim": {
@@ -96,7 +96,7 @@
       "src": "https://github.com/echasnovski/mini.icons"
     },
     "mini.nvim": {
-      "rev": "418ef4930ddabe80f449c6f1323f8b6abb172d1c",
+      "rev": "d76247d6e3ffa222784be5b156770e37c665f67e",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neovim": {
@@ -124,7 +124,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "4b7fbaa239c5db6b36f424a4521ca9f1a401be33",
+      "rev": "e05fb8c3bd61d909dacff24f77f23beb644daf54",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -148,7 +148,7 @@
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
     },
     "rustaceanvim": {
-      "rev": "69c5a32d332d3b359c51a3a5eb5dc2d2b5a90e30",
+      "rev": "c9eeb10fc3ca48cc1c75b79b420de67433629ba5",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "sakura.nvim": {
@@ -156,7 +156,7 @@
       "src": "https://github.com/anAcc22/sakura.nvim"
     },
     "scnvim": {
-      "rev": "7e0ff9ed57c58dfde0341d1e695fe54a0904e2d8",
+      "rev": "ec347b24168ac922de4dcddc181efd2fcdcfa0d0",
       "src": "https://github.com/davidgranstrom/scnvim"
     },
     "snacks.nvim": {
@@ -185,7 +185,7 @@
       "version": "1.0.0 - 2.0.0"
     },
     "vague.nvim": {
-      "rev": "8751181a1aa431b4e8983b0a183afef5cbc08381",
+      "rev": "fd58046b9d64259d9785e4aeb6d6f494c6943cad",
       "src": "https://github.com/vague-theme/vague.nvim"
     },
     "vim": {

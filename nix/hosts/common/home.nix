@@ -4,10 +4,7 @@
   pkgs,
   ...
 }: let
-  configPath =
-    if pkgs.stdenv.isDarwin
-    then "/Users/amit/dotfiles/"
-    else "/home/amit/dotfiles/";
+  configPath = "${config.home.homeDirectory}/dotfiles/";
   mkMutableSymlink = path: config.lib.file.mkOutOfStoreSymlink (configPath + lib.strings.removePrefix (toString ../../../.) (toString path));
   timeme = pkgs.callPackage ../../apps/timeme/timeme.nix {};
 in {
@@ -22,6 +19,7 @@ in {
   ];
 
   home.packages = with pkgs; [
+    neovim
     timeme
     uutils-coreutils-noprefix
   ];
@@ -30,7 +28,7 @@ in {
     enable = true;
     clean.enable = true;
     clean.extraArgs = "--keep-since 7d";
-    flake = "~/dotfiles/nix";
+    flake = "${configPath}nix";
   };
 
   programs.git = {
@@ -127,8 +125,12 @@ in {
   programs.nushell.enable = true;
 
   programs.neovim = {
-    enable = true;
+    enable = false;
     defaultEditor = true;
+    withNodeJs=true;
+    withPerl=true;
+    withPython3=true;
+    withRuby=true;
   };
 
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;

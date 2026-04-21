@@ -3,6 +3,5 @@
     go
     gofumpt
     gopls
-    gotools
   ];
 }
