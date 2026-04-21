@@ -20,7 +20,7 @@ in {
   ];
 
   blender.enable = true;
-  colmap.enable = true;
+  colmap.enable = false;
   cemu.enable = true;
   emulation.enable = true;
   music.enable = true;
