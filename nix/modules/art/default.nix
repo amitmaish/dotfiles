@@ -2,13 +2,10 @@
   imports = [
     ./blender.nix
     ./colmap.nix
+    ./pureref.nix
   ];
 
-  home.packages = with pkgs;
-    [
-      rapidraw
-    ]
-    ++ lib.optionals (pkgs.stdenv.isLinux) [
-      pureref
-    ];
+  home.packages = with pkgs; [
+    rapidraw
+  ];
 }

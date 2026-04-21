@@ -127,10 +127,10 @@ in {
   programs.neovim = {
     enable = false;
     defaultEditor = true;
-    withNodeJs=true;
-    withPerl=true;
-    withPython3=true;
-    withRuby=true;
+    withNodeJs = true;
+    withPerl = true;
+    withPython3 = true;
+    withRuby = true;
   };
 
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;
