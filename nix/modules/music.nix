@@ -17,6 +17,8 @@
   config = lib.mkIf config.music.enable {
     home.packages = with pkgs;
       [
+        audacity
+        musescore
         reaper
       ]
       ++ lib.optionals (pkgs.stdenv.isLinux) [
