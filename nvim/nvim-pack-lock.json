@@ -96,7 +96,7 @@
       "src": "https://github.com/echasnovski/mini.icons"
     },
     "mini.nvim": {
-      "rev": "d76247d6e3ffa222784be5b156770e37c665f67e",
+      "rev": "5849ef04c32a6a8e55957b946c0a275801d87530",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neovim": {
@@ -124,7 +124,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "e05fb8c3bd61d909dacff24f77f23beb644daf54",
+      "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -148,7 +148,7 @@
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
     },
     "rustaceanvim": {
-      "rev": "c9eeb10fc3ca48cc1c75b79b420de67433629ba5",
+      "rev": "f52d71ee7f01f04a820d83530388de8fab1bda05",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "sakura.nvim": {
