@@ -1,4 +1,4 @@
-start-at-login = true
+start-at-login = false
 
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
@@ -23,6 +23,10 @@ outer.left = 5
 outer.bottom = 5
 outer.top = 5
 outer.right = 5
+
+[[on-window-detected]]
+if.app-id = "com.valvesoftware.steam"
+run = "layout floating"
 
 [mode.main.binding]
 
