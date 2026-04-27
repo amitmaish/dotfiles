@@ -486,11 +486,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777268103,
-        "narHash": "sha256-0s/HRgCNveghvycWyaQJ9+o6n9Ko6gcKXoVT3vsOhbM=",
+        "lastModified": 1777315473,
+        "narHash": "sha256-zMjTnhT2djmIdm8vTk7T85G7f2N/Ihcilq+8URmYXEM=",
         "owner": "amitmaish",
         "repo": "tinix",
-        "rev": "47a782f1dbfc5a9eff0692064577dfd9a3053ac8",
+        "rev": "2957ba52b3e5c80ba21c86f9c6d742fb04709ecb",
         "type": "github"
       },
       "original": {
