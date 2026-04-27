@@ -12,6 +12,10 @@
     if pkgs.stdenv.isDarwin
     then pkgs.ukmm-bin
     else pkgs.ukmm;
+  azahar =
+    if pkgs.stdenv.isDarwin
+    then pkgs.azahar-bin
+    else pkgs.azahar;
 in {
   options = {
     emulation.enable = lib.mkOption {

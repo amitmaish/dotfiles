@@ -27,7 +27,9 @@ in {
   retroarch.enable = false;
 
   home.packages = with pkgs; [
+    _8bitdo_ultimate_v2
     airdrop-cli
+    dolphin-emu
     dot
     m-cli
     swiftbar
