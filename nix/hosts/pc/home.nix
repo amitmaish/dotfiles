@@ -14,6 +14,7 @@ in {
 
   blender.enable = true;
   blender.cuda = true;
+  pureref.enable = true;
 
   home.packages = [
     dot
