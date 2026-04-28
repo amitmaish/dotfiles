@@ -19,7 +19,7 @@ in {
       cmatrix
       dbus
       delta
-      dict
+      # dict
       dua
       eza
       fastfetch
@@ -40,7 +40,7 @@ in {
       mediainfo
       mermaid-cli
       mpc
-      mpd
+      # mpd
       mupdf
       ngspice
       nushell
@@ -71,7 +71,7 @@ in {
       xclip
       yazi
       yt-dlp
-      zathura
+      # zathura
       zip
       zoxide
     ]
