@@ -40,7 +40,7 @@ in {
       mediainfo
       mermaid-cli
       mpc
-      # mpd
+      mpd
       mupdf
       ngspice
       nushell
