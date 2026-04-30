@@ -2,8 +2,11 @@
   config,
   lib,
   pkgs,
+  inputs,
+  system,
   ...
 }: let
+  pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${system};
   configPath = "${config.home.homeDirectory}/dotfiles/";
   mkMutableSymlink = path: config.lib.file.mkOutOfStoreSymlink (configPath + lib.strings.removePrefix (toString ../../../.) (toString path));
   timeme = pkgs.callPackage ../../apps/timeme/timeme.nix {};
@@ -49,6 +52,7 @@ in {
 
   programs.direnv = {
     enable = true;
+    package = pkgs-stable.direnv;
     enableBashIntegration = true;
     enableFishIntegration = true;
     enableNushellIntegration = true;

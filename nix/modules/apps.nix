@@ -1,12 +1,16 @@
 {
   pkgs,
   lib,
+  inputs,
+  system,
   ...
-}: {
+}: let
+  pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${system};
+in {
   home.packages = with pkgs;
     [
       kitty
-      qutebrowser
+      pkgs-stable.qutebrowser
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
