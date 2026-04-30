@@ -49,7 +49,7 @@
     };
   };
 
-  services.displayManager.ly.enable = true;
+  services.displayManager.lemurs.enable = true;
   programs.niri.enable = true;
 
   programs.fish.enable = true;
