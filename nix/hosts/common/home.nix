@@ -19,7 +19,6 @@ in {
   ];
 
   home.packages = with pkgs; [
-    neovim
     timeme
     uutils-coreutils-noprefix
   ];
@@ -125,12 +124,8 @@ in {
   programs.nushell.enable = true;
 
   programs.neovim = {
-    enable = false;
+    enable = true;
     defaultEditor = true;
-    withNodeJs = true;
-    withPerl = true;
-    withPython3 = true;
-    withRuby = true;
   };
 
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;
@@ -140,7 +135,6 @@ in {
   home.file.".config/kitty".source = mkMutableSymlink ../../../kitty;
   home.file.".config/niri".source = mkMutableSymlink ../../../niri;
   home.file.".config/noctalia".source = mkMutableSymlink ../../../noctalia;
-  home.file.".config/nvim".source = mkMutableSymlink ../../../nvim;
   home.file.".config/qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
   home.file.".config/scripts".source = mkMutableSymlink ../../../scripts/scripts;
   home.file.".config/sesh".source = mkMutableSymlink ../../../sesh;
@@ -150,4 +144,7 @@ in {
   home.file.".nethackrc".source = mkMutableSymlink ../../../nethack/.nethackrc;
   home.file.".qutebrowser".source = mkMutableSymlink ../../../qutebrowser;
   home.file.".tmux.conf".source = mkMutableSymlink ../../../tmux/.tmux.conf;
+
+  home.file.".config/nvim".source = mkMutableSymlink ../../../nvim;
+  xdg.configFile."nvim/init.lua".enable = lib.mkForce false;
 }
