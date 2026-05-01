@@ -27,7 +27,7 @@
       "src": "https://github.com/cocopon/colorswatch.vim"
     },
     "conform.nvim": {
-      "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
+      "rev": "dca1a190aa85f9065979ef35802fb77131911106",
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "crates.nvim": {
@@ -35,7 +35,7 @@
       "src": "https://github.com/saecki/crates.nvim"
     },
     "cyberdream.nvim": {
-      "rev": "39f69ebcd8de69c741bb7a65353aa37dd0680ad1",
+      "rev": "d1866f5b606896ca530be00bafbd12a3e6bb6efd",
       "src": "https://github.com/scottmckendry/cyberdream.nvim"
     },
     "fidget.nvim": {
@@ -96,15 +96,15 @@
       "src": "https://github.com/echasnovski/mini.icons"
     },
     "mini.nvim": {
-      "rev": "5849ef04c32a6a8e55957b946c0a275801d87530",
+      "rev": "be81509b7160aa02264a59789164a2e1c4a6750a",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neovim": {
-      "rev": "9504524e5ed0e326534698f637f9d038ba4cd0ee",
+      "rev": "6a961effd67f6130d36df6d1c05c48c739796dd2",
       "src": "https://github.com/rose-pine/neovim"
     },
     "nightfall.nvim": {
-      "rev": "1eed62c471ff104cc3a324a094eecc74aa19955d",
+      "rev": "c43be1d2a2af9480772dc4d460125c737acae6f5",
       "src": "https://github.com/2giosangmitom/nightfall.nvim"
     },
     "nightfox.nvim": {
@@ -124,7 +124,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "e146efacbafed3789ac568abcc5a981c5decaa58",
+      "rev": "31026a13eefb20681124706a79fc1df6bf11ab27",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -148,11 +148,11 @@
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
     },
     "rustaceanvim": {
-      "rev": "f52d71ee7f01f04a820d83530388de8fab1bda05",
+      "rev": "040ee98d5911046a8b83d5fe181af968f137eddb",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "sakura.nvim": {
-      "rev": "9ec556973513700f6ad3fe816bd1ae6ceebabb3f",
+      "rev": "8976e8278e3b6155a949ef7fed9720d6422ba9fe",
       "src": "https://github.com/anAcc22/sakura.nvim"
     },
     "scnvim": {
@@ -189,7 +189,7 @@
       "src": "https://github.com/vague-theme/vague.nvim"
     },
     "vim": {
-      "rev": "07b144414730cc4cf4405ab840bf46c5fa12704b",
+      "rev": "e7b91facff94bdf3a248df9b683119b84672256a",
       "src": "https://github.com/dracula/vim"
     },
     "vim-cyberpunk": {
