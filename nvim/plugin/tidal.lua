@@ -44,7 +44,7 @@ require("tidal").setup({
 						port = 6013,
 					},
 				},
-				fps = 60,
+				fps = 120,
 			},
 		},
 		split = "v",
