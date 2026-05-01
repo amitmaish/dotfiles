@@ -86,6 +86,7 @@ f = [
   'layout floating tiling',
   'mode main',
 ] # Toggle between floating and tiling layout
+e = 'enable toggle'
 backspace = ['close-all-windows-but-current', 'mode main']
 alt-shift-semicolon = 'mode main'
 
