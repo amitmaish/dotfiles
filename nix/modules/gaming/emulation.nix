@@ -46,6 +46,7 @@ in {
     home.packages = with pkgs;
       [
         azahar
+        ryubing
       ]
       ++ lib.optionals config.retroarch.enable [
         retroarch
