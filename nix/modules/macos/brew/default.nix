@@ -25,6 +25,7 @@
       "plugdata"
       "praat"
       "qmk-toolbox"
+      "raspberry-pi-imager"
       "signal"
       "steam"
       "steinberg-activation-manager"
