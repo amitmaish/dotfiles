@@ -25,6 +25,7 @@
       "plugdata"
       "praat"
       "qmk-toolbox"
+      "qutebrowser"
       "raspberry-pi-imager"
       "signal"
       "steam"

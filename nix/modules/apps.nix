@@ -10,11 +10,11 @@ in {
   home.packages = with pkgs;
     [
       kitty
-      pkgs-stable.qutebrowser
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       anki-bin
+      # pkgs-stable.qutebrowser
       vlc-bin
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
@@ -23,6 +23,7 @@ in {
       fluffychat
       gparted
       nautilus
+      qutebrowser
       signal-desktop
       themix-gui
       thunderbird
