@@ -5,6 +5,7 @@
         with ppkgs; [
           idna
           numpy
+          tldextract
         ]))
     ]
     ++ [
