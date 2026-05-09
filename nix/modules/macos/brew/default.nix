@@ -16,7 +16,6 @@
       "focusrite-control"
       "focusrite-control-2"
       "handbrake-app"
-      "inkscape"
       "loopback"
       "midi-monitor"
       "obs"
@@ -43,6 +42,7 @@
       "xquartz"
       "zoom"
       # "google-drive"
+      # "inkscape"
       # "retroarch"
     ];
     masApps = {

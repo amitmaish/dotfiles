@@ -9,12 +9,13 @@
 in {
   home.packages = with pkgs;
     [
+      inkscape
       kitty
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
-      anki-bin
       # pkgs-stable.qutebrowser
+      anki-bin
       vlc-bin
     ]
     ++ lib.optionals (pkgs.stdenv.isLinux) [
