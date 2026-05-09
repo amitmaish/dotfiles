@@ -1,4 +1,6 @@
 [dependency-groups]
 dev = [
+    "idna>=3.13",
     "qutebrowser>=3.7.0",
+    "tldextract>=5.3.1",
 ]
