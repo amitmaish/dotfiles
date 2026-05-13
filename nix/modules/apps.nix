@@ -11,6 +11,7 @@ in {
     [
       inkscape
       kitty
+      librewolf
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
