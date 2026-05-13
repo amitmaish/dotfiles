@@ -2,6 +2,7 @@
   homebrew = {
     enable = true;
     brews = [
+      "docker"
       "mas"
       "transmission-cli"
     ];
