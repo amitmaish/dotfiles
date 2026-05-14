@@ -9,7 +9,6 @@ config.load_autoconfig(True)
 
 c.backend = 'webengine'
 c.content.javascript.enabled = True
-c.colors.webpage.darkmode.enabled = True
 
 city_lights.setup(config)
 
