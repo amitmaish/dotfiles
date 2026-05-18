@@ -32,6 +32,7 @@ in {
       ghostscript
       glow
       gnupg
+      harlequin
       hledger
       hledger-ui
       hyfetch

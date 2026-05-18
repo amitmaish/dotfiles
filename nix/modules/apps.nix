@@ -12,6 +12,7 @@ in {
       inkscape
       kitty
       librewolf
+      zed-editor
       zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
