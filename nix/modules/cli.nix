@@ -57,6 +57,7 @@ in {
       ripgrep
       rmpc
       rustmission
+      sc-im
       sesh
       skim
       speedtest-rs
