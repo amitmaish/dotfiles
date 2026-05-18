@@ -34,7 +34,7 @@ in {
     m-cli
     swiftbar
     terminal-notifier
-    xorg-server
+    # xorg-server
 
     (writeShellApplication {
       name = "dmenu";

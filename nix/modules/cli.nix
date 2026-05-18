@@ -12,6 +12,8 @@
 in {
   home.packages = with pkgs;
     [
+      # dict
+      # zathura
       asciiquarium
       bat
       bat-extras.batman
@@ -19,7 +21,6 @@ in {
       cmatrix
       dbus
       delta
-      # dict
       dua
       eza
       fastfetch
@@ -27,6 +28,7 @@ in {
       ffmpeg
       figlet
       fontconfig
+      geogebra
       ghostscript
       glow
       gnupg
@@ -66,12 +68,12 @@ in {
       tmux
       tokei
       usbutils
+      visidata
       websocat
       wget
       xclip
       yazi
       yt-dlp
-      # zathura
       zip
       zoxide
     ]
