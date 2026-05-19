@@ -16,6 +16,7 @@
       "dorico"
       "focusrite-control"
       "focusrite-control-2"
+      "gimp"
       "handbrake-app"
       "loopback"
       "midi-monitor"

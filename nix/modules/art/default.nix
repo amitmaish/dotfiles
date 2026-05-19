@@ -6,7 +6,6 @@
   ];
 
   home.packages = with pkgs; [
-    gimp2
     rapidraw
   ];
 }
