@@ -1,17 +1,24 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    bacon
-    cargo-generate
-    cargo-leptos
-    cargo-sweep
-    cargo-tauri
-    cargo-workspaces
-    leptosfmt
-    ron-lsp
-    rust-bin.stable.latest.default
-    rust-bin.stable.latest.rust-analyzer
-    rust-bin.stable.latest.rust-src
-    rusty-man
-    trunk
-  ];
+  home.packages = with pkgs;
+    [
+      (rust-bin.stable.latest.default.override {
+        extensions = [
+          "rust-analyzer"
+          "rust-src"
+        ];
+      })
+    ]
+    ++ [
+      bacon
+      cargo-generate
+      cargo-leptos
+      cargo-sweep
+      cargo-tauri
+      cargo-workspaces
+      leptosfmt
+      ron-lsp
+      rust-bin.stable.latest.default
+      rusty-man
+      trunk
+    ];
 }
