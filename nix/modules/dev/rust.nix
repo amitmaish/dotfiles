@@ -17,7 +17,6 @@
       cargo-workspaces
       leptosfmt
       ron-lsp
-      rust-bin.stable.latest.default
       rusty-man
       trunk
     ];
