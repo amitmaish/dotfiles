@@ -54,6 +54,7 @@
       logic = 634148309;
       mainstage = 634159523;
       motion = 434290957;
+      xcode = 497799835;
     };
     onActivation = {
       cleanup = "zap";
