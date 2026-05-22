@@ -9,11 +9,11 @@
 in {
   home.packages = with pkgs;
     [
+      # zotero
       inkscape
       kitty
       librewolf
       zed-editor
-      zotero
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       # pkgs-stable.qutebrowser
