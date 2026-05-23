@@ -22,6 +22,7 @@ in {
       dbus
       delta
       dua
+      exiftool
       eza
       fastfetch
       fd
