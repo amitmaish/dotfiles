@@ -2,7 +2,6 @@
   homebrew = {
     enable = true;
     brews = [
-      "docker"
       "mas"
       "transmission-cli"
     ];
@@ -13,6 +12,7 @@
       "bibdesk"
       "calibre"
       "dmenu-mac"
+      "docker-desktop"
       "dorico"
       "focusrite-control"
       "focusrite-control-2"
