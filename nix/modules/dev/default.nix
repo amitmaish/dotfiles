@@ -29,6 +29,7 @@
     asm-lsp
     asmfmt
     ast-grep
+    docker
     doppler
     gh
     gnumake
