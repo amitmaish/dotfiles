@@ -7,6 +7,7 @@
     ];
     casks = [
       "adobe-digital-editions"
+      "docker-desktop"
       "arduino-ide"
       "audio-hijack"
       "bibdesk"
