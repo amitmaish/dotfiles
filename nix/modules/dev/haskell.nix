@@ -5,6 +5,7 @@
         with haskellPackages; [
           cabal-gild
           cabal-install
+          random
           stack
           tidal
         ]))
