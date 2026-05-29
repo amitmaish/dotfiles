@@ -7,12 +7,12 @@
     ];
     casks = [
       "adobe-digital-editions"
-      "docker-desktop"
       "arduino-ide"
       "audio-hijack"
       "bibdesk"
       "calibre"
       "dmenu-mac"
+      "docker-desktop"
       "dorico"
       "focusrite-control"
       "focusrite-control-2"
@@ -40,6 +40,7 @@
       "thunderbird"
       "tiled"
       "transmission"
+      "vivaldi"
       "whatsapp"
       "xquartz"
       "zoom"
