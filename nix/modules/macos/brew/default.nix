@@ -40,7 +40,6 @@
       "thunderbird"
       "tiled"
       "transmission"
-      "vivaldi"
       "whatsapp"
       "xquartz"
       "zoom"
