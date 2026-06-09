@@ -52,6 +52,7 @@ in {
       p7zip
       pandoc
       pass
+      passff-host
       pinentry-tty
       porsmo
       presenterm
