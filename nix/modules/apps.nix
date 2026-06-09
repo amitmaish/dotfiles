@@ -37,7 +37,12 @@ in {
 
   programs = {
     discord.enable = true;
-    firefox.enable = true;
+    firefox = {
+      enable = true;
+      nativeMessagingHosts = with pkgs; [
+        passff-host
+      ];
+    };
     ghostty = {
       enable = true;
       enableBashIntegration = true;
