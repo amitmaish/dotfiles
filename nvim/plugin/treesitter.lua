@@ -10,6 +10,17 @@ vim.api.nvim_create_autocmd("PackChanged", {
 	end,
 })
 
+vim.api.nvim_create_autocmd("User", {
+	pattern = "TSUpdate",
+	callback = function()
+		require("nvim-treesitter.parsers").super_factory_manager = {
+			install_info = {
+				url = "https://github.com/amitmaish/tree-sitter-super_factory_manager",
+			},
+		}
+	end,
+})
+
 vim.pack.add({
 	{
 		src = "https://nvim-treesitter/nvim-treesitter",

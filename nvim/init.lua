@@ -123,6 +123,7 @@ WK.add({
 vim.filetype.add({
 	extension = {
 		ncl = "nickel",
+		sfm = "super_factory_manager",
 	},
 })
 
