@@ -31,6 +31,7 @@ vim.lsp.enable({
 	"tinymist",
 	"ty",
 	"vtsls",
+	"wgsl_analyzer",
 	"yamlls",
 	"zls",
 })

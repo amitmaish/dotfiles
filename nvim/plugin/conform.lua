@@ -30,6 +30,7 @@ require("conform").setup({
 		typescript = { "prettier" },
 		typescriptreact = { "prettier" },
 		typst = { "prettypst", "typstyle" },
+		wgsl = { lsp_format = "prefer" },
 		zig = { lsp_format = "prefer" },
 	},
 	format_on_save = function(bufnr)

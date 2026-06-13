@@ -21,6 +21,7 @@
     ./tex.nix
     ./toml.nix
     ./typst.nix
+    ./wgsl.nix
     ./yaml.nix
     ./zig.nix
   ];
