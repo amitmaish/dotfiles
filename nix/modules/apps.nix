@@ -10,6 +10,7 @@ in {
   home.packages = with pkgs;
     [
       # zotero
+      brave
       inkscape
       kitty
       zed-editor
