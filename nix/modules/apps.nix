@@ -13,6 +13,7 @@ in {
       brave
       inkscape
       kitty
+      qbittorrent
       zed-editor
     ]
     ++ lib.optionals (pkgs.stdenv.isDarwin) [

@@ -58,6 +58,7 @@ in {
       presenterm
       ripgrep
       rmpc
+      rqbit
       rustmission
       sc-im
       sesh
