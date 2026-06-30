@@ -11,6 +11,10 @@ name = "time"
 path = "~/"
 
 [[session]]
+name = "anime"
+path = "~/Documents/anime/"
+
+[[session]]
 name = "iamb"
 path = "~/"
 startup_command = "iamb"
