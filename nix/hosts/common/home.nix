@@ -142,6 +142,7 @@ in {
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;
   home.file.".config/bat".source = mkMutableSymlink ../../../bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty;
+  home.file.".config/helix".source = mkMutableSymlink ../../../helix;
   home.file.".config/iamb".source = mkMutableSymlink ../../../iamb;
   home.file.".config/kitty".source = mkMutableSymlink ../../../kitty;
   home.file.".config/niri".source = mkMutableSymlink ../../../niri;
