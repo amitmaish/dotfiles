@@ -135,6 +135,10 @@ in {
     defaultEditor = true;
   };
 
+  programs.helix = {
+    enable = true;
+  };
+
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;
   home.file.".config/bat".source = mkMutableSymlink ../../../bat;
   home.file.".config/ghostty".source = mkMutableSymlink ../../../ghostty;
