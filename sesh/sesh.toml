@@ -11,6 +11,11 @@ name = "time"
 path = "~/"
 
 [[session]]
+name = "mprocs"
+path = "~/"
+startup_command = "mprocs"
+
+[[session]]
 name = "anime"
 path = "~/Documents/anime/"
 
