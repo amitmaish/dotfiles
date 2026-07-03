@@ -47,8 +47,8 @@
       # "inkscape"
       # "retroarch"
     ];
-    # onActivation = {
-    #   cleanup = "zap";
-    # };
+    onActivation = {
+      cleanup = "zap";
+    };
   };
 }
