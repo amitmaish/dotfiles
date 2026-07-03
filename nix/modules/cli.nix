@@ -45,6 +45,7 @@ in {
       mermaid-cli
       mpc
       mpd
+      mprocs
       mupdf
       ngspice
       nushell
