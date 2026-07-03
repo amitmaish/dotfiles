@@ -47,17 +47,8 @@
       # "inkscape"
       # "retroarch"
     ];
-    masApps = {
-      compressor = 424390742;
-      final_cut = 424389933;
-      forScore = 363738376;
-      logic = 634148309;
-      mainstage = 634159523;
-      motion = 434290957;
-      xcode = 497799835;
-    };
-    onActivation = {
-      cleanup = "zap";
-    };
+    # onActivation = {
+    #   cleanup = "zap";
+    # };
   };
 }

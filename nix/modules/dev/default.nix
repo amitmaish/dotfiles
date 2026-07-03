@@ -42,6 +42,7 @@
     mdsf
     pkgconf
     ron-lsp
+    steel
     topiary
     tree
     vscode-langservers-extracted

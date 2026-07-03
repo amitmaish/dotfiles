@@ -45,9 +45,14 @@ in {
     };
   };
 
+  programs.jujutsu = {
+    enable = true;
+  };
+
   programs.delta = {
     enable = true;
     enableGitIntegration = true;
+    enableJujutsuIntegration = true;
   };
 
   programs.direnv = {
@@ -137,6 +142,7 @@ in {
 
   programs.helix = {
     enable = true;
+    package = pkgs.steelix;
   };
 
   home.file.".config/aerospace".source = mkMutableSymlink ../../../aerospace;
