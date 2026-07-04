@@ -1,3 +1,3 @@
-; (require "oil/oil.scm")
+(require "oil.hx/oil.scm")
 
-; (oil-configure! false false)
+(oil-configure! #false #false)
