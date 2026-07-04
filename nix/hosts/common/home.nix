@@ -47,6 +47,12 @@ in {
 
   programs.jujutsu = {
     enable = true;
+    settings = {
+      user = {
+        email = "amit.maish1@gmail.com";
+        name = "amit";
+      };
+    };
   };
 
   programs.delta = {
