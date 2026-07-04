@@ -34,6 +34,7 @@
     doppler
     gh
     gnumake
+    inputs.savepoint.packages.${system}.default
     inputs.tree-sitter.packages.${system}.default
     kdePackages.qtdeclarative
     kdlfmt

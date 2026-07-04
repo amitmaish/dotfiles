@@ -12,10 +12,6 @@
       url = "github:amitmaish/tinix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    tree-sitter = {
-      url = "github:tree-sitter/tree-sitter/release-0.26";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -34,6 +30,14 @@
     };
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     mac-app-util.url = "github:hraban/mac-app-util";
+
+    tree-sitter = {
+      url = "github:tree-sitter/tree-sitter/release-0.26";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    savepoint = {
+      url = "github:NamtaoProductions/savepoint";
+    };
   };
 
   outputs = {flake-parts, ...} @ inputs:
