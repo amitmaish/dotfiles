@@ -45,8 +45,10 @@ in {
   config = lib.mkIf config.emulation.enable {
     home.packages = with pkgs;
       [
+        _2ship2harkinian
         azahar
         ryubing
+        shipwright
       ]
       ++ lib.optionals config.retroarch.enable [
         retroarch
