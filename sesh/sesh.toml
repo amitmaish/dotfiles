@@ -1,4 +1,8 @@
 [[session]]
+name = "amit"
+path = "~/"
+
+[[session]]
 name = "dot"
 path = "~/dotfiles"
 
