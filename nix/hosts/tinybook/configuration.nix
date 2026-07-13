@@ -22,10 +22,7 @@
   nix = {
     package = pkgs.nix;
     settings = {
-      substituters = [
-        "https://zed.cachix.org"
-      ];
-      trusted-public-keys = [];
+      trusted-users = ["amit"];
     };
     gc.automatic = true;
     optimise.automatic = true;
