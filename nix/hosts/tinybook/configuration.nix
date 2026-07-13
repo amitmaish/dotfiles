@@ -19,7 +19,17 @@
   ];
   environment.darwinConfig = "~/dotfiles/nix/flake.nix";
 
-  nix.package = pkgs.nix;
+  nix = {
+    package = pkgs.nix;
+    settings = {
+      substituters = [
+        "https://zed.cachix.org"
+      ];
+      trusted-public-keys = [];
+    };
+    gc.automatic = true;
+    optimise.automatic = true;
+  };
   nixpkgs = {
     config = {
       allowUnfree = true;
