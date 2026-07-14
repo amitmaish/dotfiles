@@ -74,6 +74,17 @@
 
   users.extraGroups.docker.members = ["amit"];
 
+  nix = {
+    settings = {
+      auto-optimise-store = true;
+      trusted-users = ["amit"];
+    };
+    gc.automatic = true;
+    gc.randomizedDelaySec = "45min";
+    optimise.automatic = true;
+    optimise.randomizedDelaySec = "45min";
+  };
+
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -145,18 +156,6 @@
       "nixpkgs"
       "-L" # print build logs
     ];
-    dates = "02:00";
-    randomizedDelaySec = "45min";
-  };
-
-  nix.gc = {
-    automatic = true;
-    dates = "02:00";
-    randomizedDelaySec = "45min";
-  };
-
-  nix.optimise = {
-    automatic = true;
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
