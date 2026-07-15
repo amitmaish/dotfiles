@@ -19,6 +19,7 @@ in {
     ++ lib.optionals (pkgs.stdenv.isDarwin) [
       # pkgs-stable.qutebrowser
       anki-bin
+      protonmail-desktop
       slack
       vlc-bin
     ]
