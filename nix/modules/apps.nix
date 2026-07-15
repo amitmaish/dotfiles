@@ -13,6 +13,7 @@ in {
       brave
       inkscape
       kitty
+      protonmail-bridge
       qbittorrent
       zed-editor
     ]
