@@ -1,4 +1,11 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  system,
+  ...
+}: let
+  pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${system};
+in {
   imports = [
     ./blender.nix
     ./colmap.nix
@@ -6,6 +13,6 @@
   ];
 
   home.packages = with pkgs; [
-    rapidraw
+    pkgs-stable.rapidraw
   ];
 }
