@@ -113,7 +113,7 @@ layout {
 
     }
 }
-spawn-sh-at-startup "noctalia-shell"
+spawn-at-startup "noctalia"
 hotkey-overlay {
     skip-at-startup
 }
@@ -191,13 +191,10 @@ binds {
         spawn "ghostty"
     }
     Mod+Space hotkey-overlay-title="run an application" {
-        spawn-sh "noctalia-shell ipc call launcher toggle"
+        spawn-sh "noctalia msg panel-toggle launcher"
     }
     Ctrl+Super+Q hotkey-overlay-title="lock the screen" {
-        spawn-sh "noctalia-shell ipc call lockScreen lock"
-    }
-    Ctrl+Super+Space hotkey-overlay-title="lock the screen" {
-        spawn-sh "noctalia-shell ipc call launcher emoji"
+        spawn-sh "noctalia msg session lock"
     }
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
