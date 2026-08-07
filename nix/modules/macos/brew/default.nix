@@ -18,6 +18,7 @@
       "focusrite-control-2"
       "gimp"
       "handbrake-app"
+      "lidanglesensor"
       "loopback"
       "midi-monitor"
       "obs"
