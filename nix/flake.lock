@@ -321,11 +321,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786286733,
-        "narHash": "sha256-7dN93WKkEERgutPtTjK7SY3ZarO2LAU33A1+vKu+7cc=",
+        "lastModified": 1786356609,
+        "narHash": "sha256-ou8fYz5w9yhXC8YbvvExybFIa19MyW5G/8dEPqa90hM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "367f7ef80856d18438953d54dda235d42a46ba31",
+        "rev": "c30c7955cec30d664a9baced6bc0112e263d4647",
         "type": "github"
       },
       "original": {
@@ -540,11 +540,11 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1786106723,
-        "narHash": "sha256-CgKDSHL6rqAAQkkvg1xaZDQXb77+4XW73iGcUMJ+2w0=",
-        "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+        "lastModified": 1786384358,
+        "narHash": "sha256-OETwiymkMwunF+pfL25DzLMF2/YpMcJUjVd9qZ0YdsM=",
+        "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1049422.f13ff45afd1b/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1051473.2fcb964de67f/nixexprs.tar.xz"
       },
       "original": {
         "id": "nixpkgs",
@@ -575,11 +575,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786292031,
-        "narHash": "sha256-NUSkPXfefx4Ji2aPJMe0oT36KQSeBKqJQ/wVjkCsCv8=",
+        "lastModified": 1786471551,
+        "narHash": "sha256-7NQU+Peux6ZUszNGvBEtgRhzGCxJ/RQaYP0G7cVPt2c=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "cc1e476b083392487d4b97903c972ed5480f5b25",
+        "rev": "0b1398de6b5e245a7048d9e4c2efdf563fa14d61",
         "type": "github"
       },
       "original": {
@@ -629,11 +629,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786247265,
-        "narHash": "sha256-cVTcTqAhzSNMOVddtBhFpuv+Vx6/SgrhgZWJiI61H24=",
+        "lastModified": 1786420161,
+        "narHash": "sha256-PU4CY4GUCDFOoS67dGrc/fS6Y+d1cYZSh6nbgYqAAwE=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "6df7076ea0f5697e3242719a4c71211f00411cf5",
+        "rev": "3a646bd5daa3af78a78a1cb32329cb72d18fcae0",
         "type": "github"
       },
       "original": {
@@ -786,11 +786,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786309671,
-        "narHash": "sha256-yatdV4kIn+o4QLh0EEIrSsfJjILTwe2zdije7FPJA9o=",
+        "lastModified": 1786425985,
+        "narHash": "sha256-pjuGjc+qAs58wBWypoJMb9eNg0McO9BBtlbnoQjpO0g=",
         "owner": "tree-sitter",
         "repo": "tree-sitter",
-        "rev": "632016551504745421c883b58720d46b2b77a992",
+        "rev": "063f8f886b44e8471928241e6c4dedbdc691a0e5",
         "type": "github"
       },
       "original": {
