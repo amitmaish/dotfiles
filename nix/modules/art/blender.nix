@@ -30,7 +30,8 @@ in {
         })
       ]
       ++ lib.optionals (pkgs.stdenv.isDarwin) [
-        blender-bin
+        # blender-bin
+        blender
       ];
   };
 }
