@@ -13,6 +13,6 @@ in {
   ];
 
   home.packages = with pkgs; [
-    pkgs-stable.rapidraw
+    rapidraw
   ];
 }
