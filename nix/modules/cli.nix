@@ -57,6 +57,7 @@ in {
       pinentry-tty
       porsmo
       presenterm
+      pv
       ripgrep
       rmpc
       rqbit
