@@ -18,8 +18,9 @@ in {
 
   azahar.enable = false;
 
-  home.packages = [
+  home.packages = with pkgs; [
     dot
+    wl-clicker
   ];
 
   xdg.mimeApps = {

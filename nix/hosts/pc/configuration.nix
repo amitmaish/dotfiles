@@ -61,6 +61,7 @@
     extraGroups = [
       "audio"
       "docker"
+      "input"
       "jackaudio"
       "kvm"
       "libvirtd"
