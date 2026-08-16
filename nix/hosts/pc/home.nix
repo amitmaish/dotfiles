@@ -16,6 +16,8 @@ in {
   blender.cuda = true;
   pureref.enable = true;
 
+  azahar.enable = false;
+
   home.packages = [
     dot
   ];

@@ -40,13 +40,19 @@ in {
         description = "enables ukmm. has no effect if cemu is disabled";
       };
     };
+    azahar = {
+      enable = lib.mkOption {
+        type = lib.types.bool;
+        default = true;
+        description = "enables azahar";
+      };
+    };
   };
 
   config = lib.mkIf config.emulation.enable {
     home.packages = with pkgs;
       [
         _2ship2harkinian
-        azahar
         ryubing
         shipwright
       ]
@@ -58,6 +64,9 @@ in {
       ]
       ++ lib.optionals (config.cemu.enable && config.cemu.ukmm) [
         ukmm
+      ]
+      ++ lib.optionals config.azahar.enable [
+        azahar
       ];
   };
 }
