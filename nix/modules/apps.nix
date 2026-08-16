@@ -17,14 +17,14 @@ in {
       qbittorrent
       zed-editor
     ]
-    ++ lib.optionals (pkgs.stdenv.isDarwin) [
+    ++ lib.optionals (pkgs.stdenv.hostPlatform.isDarwin) [
       # pkgs-stable.qutebrowser
       anki-bin
       protonmail-desktop
       slack
       vlc-bin
     ]
-    ++ lib.optionals (pkgs.stdenv.isLinux) [
+    ++ lib.optionals (pkgs.stdenv.hostPlatform.isLinux) [
       anki
       calibre
       fluffychat

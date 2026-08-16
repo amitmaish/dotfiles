@@ -21,7 +21,7 @@
         musescore
         reaper
       ]
-      ++ lib.optionals (pkgs.stdenv.isLinux) [
+      ++ lib.optionals (pkgs.stdenv.hostPlatform.isLinux) [
         plugdata
         supercollider
         surge-xt

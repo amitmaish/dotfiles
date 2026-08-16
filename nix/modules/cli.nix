@@ -4,7 +4,7 @@
       with pkgs; {
         buildInputs =
           []
-          ++ lib.optionals (stdenv.isLinux) [
+          ++ lib.optionals (stdenv.hostPlatform.isLinux) [
             alsa-lib
           ];
       }
@@ -83,7 +83,7 @@ in {
       zip
       zoxide
     ]
-    ++ lib.optionals (pkgs.stdenv.isLinux) [
+    ++ lib.optionals (pkgs.stdenv.hostPlatform.isLinux) [
       dmenu
       hygg
       parted

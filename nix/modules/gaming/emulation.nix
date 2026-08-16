@@ -5,15 +5,15 @@
   ...
 }: let
   cemu =
-    if pkgs.stdenv.isDarwin
+    if pkgs.stdenv.hostPlatform.isDarwin
     then pkgs.cemu-bin
     else pkgs.cemu;
   ukmm =
-    if pkgs.stdenv.isDarwin
+    if pkgs.stdenv.hostPlatform.isDarwin
     then pkgs.ukmm-bin
     else pkgs.ukmm;
   azahar =
-    if pkgs.stdenv.isDarwin
+    if pkgs.stdenv.hostPlatform.isDarwin
     then pkgs.azahar-bin
     else pkgs.azahar;
 in {

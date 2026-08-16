@@ -24,12 +24,12 @@ in {
   config = lib.mkIf config.blender.enable {
     home.packages = with pkgs;
       []
-      ++ lib.optionals (pkgs.stdenv.isLinux) [
+      ++ lib.optionals (pkgs.stdenv.hostPlatform.isLinux) [
         (blender.override {
           cudaSupport = config.blender.cuda;
         })
       ]
-      ++ lib.optionals (pkgs.stdenv.isDarwin) [
+      ++ lib.optionals (pkgs.stdenv.hostPlatform.isDarwin) [
         # blender-bin
         blender
       ];
