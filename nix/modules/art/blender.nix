@@ -30,8 +30,8 @@ in {
         })
       ]
       ++ lib.optionals (pkgs.stdenv.hostPlatform.isDarwin) [
-        # blender-bin
-        blender
+        # blender
+        blender-bin
       ];
   };
 }
